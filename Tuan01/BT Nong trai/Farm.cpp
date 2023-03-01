@@ -1,4 +1,5 @@
 #include "Farm.h"
+#include <cmath>
 
 void inputAFarm(Farm &f, std::FILE *fi) {
     int n;
@@ -31,8 +32,9 @@ double minPerimeter(Farm &f) {
         minY = min(minY, Y);
         maxX = max(maxX, X);
         maxY = max(maxY, Y);
+        // printf("minX %lf minY %lf maxX %lf maxY %lf\n", minX, minY, maxX, maxY);
     }
-    double res = ((maxX - minX) + (maxX - minY)) * 2;
+    double res = ((maxX - minX) + (maxY - minY)) * 2;
     return res;
 }
 
@@ -46,7 +48,7 @@ double max(const double &a, const double &b) {
 
 double minPipesLength(Farm &f) {
     const Point dPoint[] = {{1.0, 0.0}, {-1.0, 0.0}, {0.0, 1.0}, {0.0, -1.0}};
-    const double epsilon = 1E-4;
+    const double epsilon = 1E-8;
     Point *pArr = f.coordinates;
     int n = f.n;
     Point pCurrent = {0.0, 0.0};
@@ -64,8 +66,8 @@ double minPipesLength(Farm &f) {
         flag = false;
         for (int i = 0; i < 4; ++i) {
             Point pNew;
-            pNew.x = pCurrent.x + dPoint[i].x;
-            pNew.y = pCurrent.x + dPoint[i].y;
+            pNew.x = pCurrent.x + testDistance * dPoint[i].x;
+            pNew.y = pCurrent.y + testDistance * dPoint[i].y;
             double newDist = getDistanceSum(pNew, pArr, n);
             if (newDist < minDistance) {
                 flag = true;
@@ -85,7 +87,7 @@ double getDistanceSum(Point p, Point *pArr, int n) {
     for (int i = 0; i < n; ++i) {
         double dx = p.x - pArr[i].x;
         double dy = p.y - pArr[i].y;
-        res += dx * dx + dy * dy;
+        res += std::sqrt(dx * dx + dy * dy);
     }
     return res;
 }
