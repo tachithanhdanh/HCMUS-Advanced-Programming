@@ -1,0 +1,16 @@
+\documentclass[a4paper, 12pt, notitlepage]{article}
+\title{Bài tập tuần 2}
+\author{Tạ Chí Thành Danh}
+\usepackage[utf8]{vietnam} % Unicode tiếng Việt
+\usepackage[left=1.5cm,right=2cm,top=2cm,bottom=2cm]{geometry} % Định dạng khoảng cách lề giấy
+\usepackage{enumitem} % https://tex.stackexchange.com/questions/116101/add-bold-enumerate-items
+% \setlist[enumerate]{font=\bfseries}
+\usepackage{graphicx} % https://latex-tutorial.com/tutorials/figures/
+\begin{document}
+  \maketitle
+  \begin{enumerate}[font=\bfseries]
+    \item[Bài tập 2.2] \textit{p}1 và \textit{p}2 cách nhau số byte là: \(6 \times \textit{sizeof(double)} = 48\) bytes.
+    \item[Bài tập 2.4] Kết quả sau khi chạy chương trình là: -1 3 0 0. Do \(1023\) chia \(256\) dư \(255\), mà kiểu char chỉ chứa được  số trong phạm vi từ \(-128\) đến \(127\) nên khi chứa \(255\) sẽ dẫn đến hiện tượng tràn số.
+  \end{enumerate}
+  
+\end{document}

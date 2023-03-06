@@ -1,3 +1,6 @@
 *.zip
 *.o
 *.exe
+*.synctex.gz
+*.log
+*.aux
