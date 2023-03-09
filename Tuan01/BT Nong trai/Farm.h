@@ -1,3 +1,6 @@
+#ifndef BT1_FARM_H_
+#define BT1_FARM_H_
+
 #include <cstdio>
 
 struct Point {
@@ -26,3 +29,4 @@ double minPipesLength(Farm &f);
 
 double getDistanceSum(Point p, Point *pArr, int n);
 
+#endif
