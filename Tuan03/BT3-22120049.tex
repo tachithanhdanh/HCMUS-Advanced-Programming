@@ -1,0 +1,85 @@
+\documentclass[a4paper, 12pt, notitlepage]{article}
+\title{Bài tập về nhà tuần 3}
+\author{Tạ Chí Thành Danh \\ MSSV: 22120049}
+\usepackage[utf8]{vietnam} % Unicode tiếng Việt
+\usepackage[left=1.3cm,right=2cm,top=2cm,bottom=2cm]{geometry} % Định dạng khoảng cách lề giấy
+\usepackage{enumitem} % https://tex.stackexchange.com/questions/116101/add-bold-enumerate-items
+% \setlist[enumerate]{font=\bfseries}
+\usepackage{graphicx} % https://latex-tutorial.com/tutorials/figures/
+
+\usepackage{enumitem}
+
+\setlist[itemize,2,3]{leftmargin=-2em}
+% https://tex.stackexchange.com/questions/426729/how-can-i-align-bullets-of-nested-itemize-list-to-the-right-edge-of-the-parent-i
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\lstset{style=mystyle}
+\begin{document}
+  \maketitle
+  %\begin{enumerate}[font=\bfseries]
+    %\item[Bài tập 3.1]\mbox{}\\[-1.5\baselineskip]
+    \phantom{a}\newline
+    \textbf{Bài tập 3.1}\\
+    \begin{enumerate}[label=(\alph*)]
+      \item Kiểu địa chỉ của \verb|m[1][3]| là \verb|int *|
+      \item Kiểu địa chỉ của \verb|m[0]| là \verb|(int *)[6]|
+      \item Kiểu địa chỉ của \verb|m| là \verb|(int *)[4][6]|
+      Câu lệnh truy xuất \verb|m[2][4]| mà không cần dùng dấu \verb|[]|: \verb|*(*(m + 2) + 4)|.  
+    \end{enumerate}
+    %\item[Bài tập 3.2]\mbox{}\\[-1.5\baselineskip]
+    \textbf{Bài tập 3.2}\\
+    \begin{enumerate}[label=(\alph*)]
+      \item Xét hàm main:
+      \begin{itemize}
+        \item Ở dòng \verb|double *p[10];|, dòng này khai báo mảng con trỏ \verb|double| có 10 phần tử, lúc này hệ điều hành cấp phát cho chương trình \(8 \times 10 = 80\) bytes đối với hệ điều hành 64-bit, \(4 \times 10 = 40\) bytes đối với hệ điều hành 32-bit.
+        \item Ở dòng \verb|khoiTao(p + 3)|, các con trỏ \verb|p + 3|, \verb|p + 4|, \verb|p + 5|, \verb|p + 6|, \verb|p + 7| được cấp phát phần tử kiểu \verb|double| với số lượng lần lượt là 1, 2, 3, 4, 5 phần tử, do đó số bytes được cấp phát là \(\left(1 + 2 + 3 + 4 + 5\right) \times \textrm{sizeof}(double) = 120\) bytes. 
+      \end{itemize}
+      \item Sau hàm \verb|khoiTao|, các con trỏ từ \verb|p + 3| đến \verb|p + 7| được cấp phát các phần tử kiểu \verb|double| với số lượng tăng dần từ 1 đến 5.
+      \item Hàm \verb|thuHoi| được viết như sau:
+\begin{lstlisting}[language=C]
+void thuHoi(double **p) {
+    for (int i = 3; i < 8; ++i) {
+        delete[] *(p + i);
+        *(p + i) = nullptr;
+    }
+}
+\end{lstlisting}
+    \end{enumerate}
+  %\item[Bài tập 3.3]\mbox{}\\[-1.5\baselineskip]
+  \textbf{Bài tập 3.3}\\
+  \begin{itemize}
+    \item Hàm \verb|void xuly();|: \verb|typedef void (*funcVoid1)();|
+    \item Hàm \verb|int luyThua(int x, int n);|: \verb|typedef int (*funcInt)(int, int);|
+    \item Hàm \verb|int *nhapMang(int &n);|: \verb|typedef int *(*funcPInt(int &));|
+    \item Hàm \verb|void xuatMang(int a[], int n);|: \verb|typedef void (*funcVoid2)(int *, int);|
+    \item Hàm \verb|PhanSo cong(PhanSo p1, PhanSo p2);|: \verb|typedef PhanSo (*funcPhanSo)(PhanSo, PhanSo);|
+  \end{itemize}
+  %\end{enumerate}
+  
+\end{document}
