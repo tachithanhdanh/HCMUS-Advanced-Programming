@@ -19,7 +19,7 @@ void print_guide() {
 
 std::FILE *copy(std::FILE *fi, std::FILE *fo) {
     char buffer[MAX_SIZE] = {};
-    int count;
+    long long int count;
     do {
         count = std::fread(buffer, sizeof(char) * SIZE, COUNT, fi);
         std::fwrite(buffer, sizeof(char) * SIZE, count, fo);
@@ -36,8 +36,8 @@ void copy(int argc, char **argv) {
             print_guide();
         }
     } else if (argc == 3) {
-        int len1 = std::strlen(argv[1]);
-        int len2 = std::strlen(argv[2]);
+        int len1 = static_cast<int>(std::strlen(argv[1]));
+        int len2 = static_cast<int>(std::strlen(argv[2]));
         char *dest_path, *src_path = argv[1];
         bool dynamically_allocated = false;
         if (argv[2][len2 - 1] == '/') {
@@ -61,18 +61,18 @@ void copy(int argc, char **argv) {
             delete []dest_path;
             dest_path = nullptr;
         }
-    } else if (argc == 4) {
+    } else if (argc == 5) {
         std::FILE *fi1, *fi2, *fo;
         if ((fi1 = std::fopen(argv[1], "rb")) == nullptr) {
             printError(fileNotFound);
         }
-        if ((fi2 = std::fopen(argv[2], "rb")) == nullptr) {
+        if ((fi2 = std::fopen(argv[3], "rb")) == nullptr) {
             std::fclose(fi1);
             printError(fileNotFound);
         }
-        fo = std::fopen(argv[3], "wb");
-        char buffer[1 << 6];
-        int count;
+        fo = std::fopen(argv[4], "wb");
+        // char buffer[MAX_SIZE];
+        // int count;
         fo = copy(fi1, fo);
         copy(fi2, fo);
         std::fclose(fi1);

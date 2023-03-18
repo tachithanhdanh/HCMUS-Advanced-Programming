@@ -6,19 +6,13 @@ files := $(wildcard *.cpp)
 
 a := main
 
-all: main.o Process.o Fraction.o IOFunctions.o
-	$(CXX) $(CXXFLAGS) $^ -o main.exe
+all: main.o copy.o
+	$(CXX) $(CXXFLAGS) $^ -o COPY.exe
 
-Fraction.o: Fraction.cpp Fraction.h
-	$(CXX) $(CXXFLAGS) -g -c Fraction.cpp
+copy.o: copy.cpp copy.h
+	$(CXX) $(CXXFLAGS) -g -c copy.cpp
 
-IOFunctions.o: IOFunctions.cpp IOFunctions.h Fraction.h
-	$(CXX) $(CXXFLAGS) -g -c IOFunctions.cpp
-
-Process.o: Process.cpp Process.h Fraction.h
-	$(CXX) $(CXXFLAGS) -g -c Process.cpp
-
-main.o: Process.h IOFunctions.h Fraction.h
+main.o: copy.h main.cpp
 	$(CXX) $(CXXFLAGS) -g -c main.cpp
 
 haha:
