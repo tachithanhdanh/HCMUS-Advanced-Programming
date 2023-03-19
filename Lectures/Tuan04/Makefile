@@ -6,14 +6,14 @@ files := $(wildcard *.cpp)
 
 a := main
 
-all: main.o copy.o
+all: COPY.o copy_function.o
 	$(CXX) $(CXXFLAGS) $^ -o COPY.exe
 
-copy.o: copy.cpp copy.h
-	$(CXX) $(CXXFLAGS) -g -c copy.cpp
+copy_function.o: copy_function.cpp copy_function.h constants.h
+	$(CXX) $(CXXFLAGS) -g -c copy_function.cpp
 
-main.o: copy.h main.cpp
-	$(CXX) $(CXXFLAGS) -g -c main.cpp
+COPY.o: copy_function.h COPY.cpp constants.h
+	$(CXX) $(CXXFLAGS) -g -c COPY.cpp
 
 haha:
 	echo hello world
