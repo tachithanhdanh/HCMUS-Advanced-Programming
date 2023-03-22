@@ -12,19 +12,19 @@ struct Fraction {
 void ReplaceChar();
 void copyFile();
 void exercise_3();
-void readFractionsFromFile(Fraction *fracs, int &n);
+void readFractionsFromFile(Fraction *&fracs, int &n);
 void printFractionsToFile(const Fraction *fracs, const int &n);
-void sortFractionArray(Fraction *fracs, const int &n);
+void sortFractionArray(Fraction *&fracs, const int &n);
 bool greater(const Fraction &frac1, const Fraction &frac2);
 void InsertAFractionToArray(Fraction *&fracs, int &n, Fraction *frac);
 void normalize(Fraction *frac);
 void frequencyOfCharacters();
 
 int main(void) {
-    ReplaceChar();
-    copyFile();
-    exercise_3();
-    frequencyOfCharacters();
+    ReplaceChar(); // bai 1
+    copyFile(); // bai 2
+    exercise_3(); // bai 3
+    frequencyOfCharacters(); // bai 4
     return 0;
 }
 
@@ -41,7 +41,9 @@ void ReplaceChar() {
     char newChar;
     std::cin >> newChar;
     // mo file vua doc vua ghi
-    std::fstream iofile("bai1.txt", std::ios::in | std::ios::out); 
+    // https://stackoverflow.com/questions/12252075/ifstream-tellg-not-returning-the-correct-position
+    // https://stackoverflow.com/questions/2641639/fstreams-tellg-seekg-returning-higher-value-than-expected
+    std::fstream iofile("bai1.txt", std::ios::in | std::ios::out | std::ios::binary); 
 
     char chChar = '\0';
     while (iofile.get(chChar)) {
@@ -56,7 +58,7 @@ void ReplaceChar() {
     }
     iofile.close();
     std::cout << "Da hoan thanh xong bai 1."
-              << " Thay co the mo file bai1.txt de kiem tra ket qua.\n";
+              << " Thay co the mo file bai1.txt de kiem tra ket qua.\n\n";
     return;
 }
 
@@ -77,7 +79,7 @@ void copyFile() {
     ifile.close();
     ofile.close();
     std::cout << "Da hoan thanh xong bai 2."
-              << " Thay co the mo file bai2out.txt de kiem tra.\n";
+              << " Thay co the mo file bai2out.txt de kiem tra.\n\n";
     return;
 }
 
@@ -85,23 +87,24 @@ void copyFile() {
 void exercise_3() {
     std::cout << "Day la bai 3.\n";
     Fraction *fracs = nullptr;
-    int n;
-    std::cout << "xong buoc 0\n";
+    int n = 0;
     readFractionsFromFile(fracs, n);
-    std::cout << "xong buoc 1\n";
-    // sortFractionArray(fracs, n);
-    std::cout << "xong buoc 2\n";
-    std::cout << n << std::endl;
+    sortFractionArray(fracs, n);
     printFractionsToFile(fracs, n);
-    std::cout << "xong buoc 3\n";
+    if (fracs) delete []fracs;
+    std::cout << "Da hoan thanh xong bai 3."
+              << " Thay co the mo file bai3out.txt de kiem tra.\n\n";
     return;
 }
 
-void sortFractionArray(Fraction *fracs, const int &n) {
+void sortFractionArray(Fraction *&fracs, const int &n) {
+    std::cout << "Day la ham sortFractionArray.\n"
+              << "Ham nay co sap xep cac phan so trong mang"
+              << " theo thu tu tang dan.\n";
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
             if (greater(fracs[i], fracs[j])) {
-                std::swap(fracs[i], fracs[j]);
+               std::swap(fracs[i], fracs[j]);
             }
         }
     }
@@ -115,7 +118,10 @@ bool greater(const Fraction &frac1, const Fraction &frac2) {
     return numerator1 > numerator2;
 }
 
-void readFractionsFromFile(Fraction *fracs, int &n) {
+void readFractionsFromFile(Fraction *&fracs, int &n) {
+    std::cout << "Day la ham readFractionsFromFile.\n"
+              << "Ham nay co tac dung doc cac phan so tu file bai3in.txt"
+              << " vao trong mang cap phat dong trong RAM.\n";
     std::ifstream ifile("bai3in.txt");
     Fraction *frac = new Fraction;
     while (ifile >> frac->numerator >> frac->denominator) {
@@ -140,6 +146,9 @@ void normalize(Fraction *frac) {
 }
 
 void printFractionsToFile(const Fraction *fracs, const int &n) {
+    std::cout << "Day la ham printFractionsToFile.\n"
+              << "Ham nay co tac dung ghi cac phan so sau khi da duoc sap xep "
+              << " vao file bai3out.txt\n";
     std::ofstream ofile("bai3out.txt");
     for (int i = 0; i < n; ++i) {
         ofile << fracs[i].numerator << ' ' << fracs[i].denominator << '\n';
@@ -158,7 +167,8 @@ void InsertAFractionToArray(Fraction *&fracs, int &n, Fraction *frac) {
             delete []fracs;
         }
         std::swap(fracs, fracs_new);
-        fracs[n] = *frac;
+        fracs[n].numerator = frac->numerator;
+        fracs[n].denominator = frac->denominator;
         std::swap(n, m);
     } else {
         std::cout << "Khong the them duoc phan tu moi vao cuoi mang!\n";
@@ -167,11 +177,15 @@ void InsertAFractionToArray(Fraction *&fracs, int &n, Fraction *frac) {
 }
 
 void frequencyOfCharacters() {
+    std::cout << "Day la bai 4.\n"
+              << "Day la ham frequencyOfCharacters"
+              << " co tac dung thong ke so luan xuat hien"
+              << " cua cac ky tu tu tap tin van ban bai4in.txt"
+              << " va sau do ghi lai so lan xuat hien ra tap tin bai4out.txt\n";
     std::ifstream ifile("bai4in.txt");
     int count[26] = {};
     char ch;
-    while (ifile) {
-        ifile.get(ch);
+    while (ifile.get(ch)) {
         if (std::isalpha(ch)) {
             ch = static_cast<char>(std::tolower(ch));
             ++count[ch - 'a'];
@@ -180,8 +194,12 @@ void frequencyOfCharacters() {
     ifile.close();
     std::ofstream ofile("bai4out.txt");
     for (int i = 0; i < 26; ++i) {
-        ofile << static_cast<char>(i + 'a') << ": " << count[i] << '\n';
+        if (count[i]) {
+            ofile << static_cast<char>(i + 'a') << ": " << count[i] << '\n';
+        }
     }
     ofile.close();
+    std::cout << "Da hoan thanh xong bai 4."
+              << " Thay co the mo file bai4out.txt de kiem tra.\n\n";
     return;
 }

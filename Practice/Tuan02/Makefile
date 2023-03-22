@@ -7,12 +7,12 @@ files := $(wildcard *.cpp)
 a := main
 
 all: 22120049.o
-	$(CXX) $(CXXFLAGS) $^ -o main.exe
+	$(CXX) $(CXXFLAGS) $^ -o 22120049.exe
 
 22120049.o: 22120049.cpp
 	$(CXX) $(CXXFLAGS) -g -c 22120049.cpp
 
-run: main.exe
+run: 22120049.exe
 	REM this is a comment in cmd
 	REM this outputs all prerequisites
 	REM --------------------
