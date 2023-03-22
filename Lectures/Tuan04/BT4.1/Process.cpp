@@ -62,3 +62,17 @@ void process(const char *inputString, const int inputLen, char **&stringArray, i
     }
     return;
 }
+
+void deleteStringArray(char **&stringArray, int &arrayLen) {
+    for (int i = 0; i < arrayLen; ++i) {
+        deleteDynamicString(stringArray[i]);
+    }
+    delete []stringArray;
+    stringArray = nullptr;
+}
+
+void deleteDynamicString(char *&str) {
+    delete []str;
+    str = nullptr;
+    return;
+}

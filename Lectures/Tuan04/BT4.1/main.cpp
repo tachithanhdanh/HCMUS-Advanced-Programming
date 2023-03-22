@@ -11,5 +11,7 @@ int main(void) {
     int arrayLen = 0;
     process(inputString, inputLen, stringArray, arrayLen, countWords);
     printResultString(stringArray, arrayLen, countWords);
+    deleteDynamicString(inputString);
+    deleteStringArray(stringArray, arrayLen);
     return 0;
 }
