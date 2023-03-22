@@ -1,0 +1,9 @@
+đặt tên file chung: 
+bài 1: bai1.txt
+bài 2: tên file là bai2in.txt và bai2out.txt
+bài 3: tên file là bai3in.txt và bai3out.txt
+bài 4: tên file là bai4in.txt và bai4out.txt
+
+Tham khao tai lieu: 
+https://www.learncpp.com/cpp-tutorial/random-file-io/
+https://www.learncpp.com/cpp-tutorial/basic-file-io/
