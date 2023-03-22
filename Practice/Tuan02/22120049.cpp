@@ -91,7 +91,10 @@ void exercise_3() {
     readFractionsFromFile(fracs, n);
     sortFractionArray(fracs, n);
     printFractionsToFile(fracs, n);
-    if (fracs) delete []fracs;
+    if (fracs) {
+        delete []fracs;
+        fracs = nullptr;
+    }
     std::cout << "Da hoan thanh xong bai 3."
               << " Thay co the mo file bai3out.txt de kiem tra.\n\n";
     return;
@@ -129,6 +132,7 @@ void readFractionsFromFile(Fraction *&fracs, int &n) {
         InsertAFractionToArray(fracs, n, frac);
     }
     delete frac;
+    frac = nullptr;
     ifile.close();
     return;
 }
@@ -165,6 +169,7 @@ void InsertAFractionToArray(Fraction *&fracs, int &n, Fraction *frac) {
         if (fracs != nullptr) {
             std::copy(fracs, fracs + n, fracs_new);
             delete []fracs;
+            fracs = nullptr;
         }
         std::swap(fracs, fracs_new);
         fracs[n].numerator = frac->numerator;
