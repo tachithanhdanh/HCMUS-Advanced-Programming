@@ -13,7 +13,7 @@ IOFunctions.o: IOFunctions.cpp IOFunctions.h Process.h
 Process.o: Process.cpp Process.h
 	$(CXX) $(CXXFLAGS) -g -c Process.cpp
 
-main.o: Process.h IOFunctions.h
+main.o: main.cpp Process.h IOFunctions.h
 	$(CXX) $(CXXFLAGS) -g -c main.cpp
 
 haha:
