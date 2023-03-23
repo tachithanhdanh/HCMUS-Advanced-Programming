@@ -41,6 +41,14 @@ void InsertCharToString(char *&s, int &n, const char c) {
     return;
 }
 
+void normalize(char *s, int n) {
+    *s = static_cast<char>(std::toupper(*s));
+    for (int i = 1; i < n; ++i) {
+        s[i] = static_cast<char>(std::tolower(s[i]));
+    }
+    return;
+}
+
 void process(const char *inputString, const int inputLen, char **&stringArray, int &arrayLen, int &countWords) {
     int start_pos = -1;
     int word_size;
@@ -54,6 +62,7 @@ void process(const char *inputString, const int inputLen, char **&stringArray, i
             word_size = i - start_pos;
             char *word = new char[word_size + 1]{};
             std::strncpy(word, inputString + start_pos, word_size);
+            normalize(word, word_size);
             InsertWordToWordArray(stringArray, arrayLen, word);
             // delete word;
             // word = nullptr;
