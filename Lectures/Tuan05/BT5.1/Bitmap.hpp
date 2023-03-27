@@ -26,16 +26,26 @@ struct DIB {
     std::int32_t number_of_important_colors;
 };
 
+#pragma pack(pop)
+
 struct PixelArray {
     std::int32_t pixel_size;
     std::int32_t pixel_height; // number of rows
-    std::int32_t pixel_width; // number of columns
-    std::int32_t number_of_cols;
+    std::int32_t pixel_width; 
+    std::int32_t number_of_cols; // number of columns
     std::int32_t padding_bytes;
     std::uint8_t **array;
 };
 
-#pragma pack(pop)
+struct Coordinates {
+    std::int32_t len_width;
+    std::int32_t len_height;
+    std::int32_t left;
+    std::int32_t bottom;
+    std::int32_t mini_pixel_width;
+    std::int32_t mini_pixel_height;
+    int pos;
+};
 
 void readBMPHeader(BMPHeader &header, std::ifstream &bmp_file);
 void readDIB(DIB &dib, std::ifstream &bmp_file);
@@ -49,5 +59,6 @@ void printBMPHeaderInfo(const BMPHeader &header);
 void printDIBInfo(const DIB &dib);
 void freeDynamicallyAllocatedMemory(BMPHeader *&headers, DIB *&DIBs, PixelArray *&PAs, PixelArray &main_bmp, int height_parts, int width_parts);
 void deletePixelArray(PixelArray &PArray);
+void calculateCoordinates(Coordinates &C, int i, int j, PixelArray &main_bmp, int height_parts, int width_parts);
 
 #endif

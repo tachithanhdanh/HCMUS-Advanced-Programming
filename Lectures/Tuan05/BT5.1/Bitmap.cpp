@@ -42,34 +42,39 @@ void cutBMP(PixelArray &main_bmp, PixelArray *&mini_bmp,
     mini_bmp = new PixelArray[total];
     headers = new BMPHeader[total];
     DIBs = new DIB[total];
-    std::int32_t len_width = main_bmp.pixel_width / width_parts;
-    std::int32_t len_height = main_bmp.pixel_height / height_parts;
+    Coordinates C;
+    C.len_width = main_bmp.pixel_width / width_parts;
+    C.len_height = main_bmp.pixel_height / height_parts;
     for (int i = 0; i < height_parts; ++i) {
         for (int j = 0; j < width_parts; ++j) {
-            std::int32_t left = j * len_width * main_bmp.pixel_size;
-            std::int32_t bottom = i * len_height;
-            std::int32_t mini_pixel_width = len_width;
-            if (j == width_parts - 1) {
-                mini_pixel_width = main_bmp.pixel_width - len_width * (width_parts - 1);
-            }
-            std::int32_t mini_pixel_height = len_height;
-            if (i == height_parts - 1) {
-                mini_pixel_height = main_bmp.pixel_height - len_height * (height_parts - 1);
-            }
-            int pos = i * width_parts + j;
-            createPixelArray(mini_bmp[pos], mini_pixel_height, mini_pixel_width, dib.color_depth);
-            int top = min(bottom + mini_pixel_height, main_bmp.pixel_height);
-            int right = min(left + mini_pixel_width * main_bmp.pixel_size, main_bmp.number_of_cols);
-            for (int ii = bottom; ii < top; ++ii) {
-                for (int jj = left; jj < right; ++jj) {
+            calculateCoordinates(C, i, j, main_bmp, height_parts, width_parts);
+            createPixelArray(mini_bmp[C.pos], C.mini_pixel_height, C.mini_pixel_width, dib.color_depth);
+            int top = min(C.bottom + C.mini_pixel_height, main_bmp.pixel_height);
+            int right = min(C.left + C.mini_pixel_width * main_bmp.pixel_size, main_bmp.number_of_cols);
+            for (int ii = C.bottom; ii < top; ++ii) {
+                for (int jj = C.left; jj < right; ++jj) {
                     //left + mini_pixel_widthcout << ii - bottom << " " << jj - left << endl;
-                    mini_bmp[pos].array[ii - bottom][jj - left] = main_bmp.array[ii][jj];
+                    mini_bmp[C.pos].array[ii - C.bottom][jj - C.left] = main_bmp.array[ii][jj];
                 }
             }
-            saveData(header, headers[pos], dib, DIBs[pos], mini_bmp[pos]);
-            pushDataIntoBMP(pos, headers[pos], DIBs[pos], mini_bmp[pos], filename);
+            saveData(header, headers[C.pos], dib, DIBs[C.pos], mini_bmp[C.pos]);
+            pushDataIntoBMP(C.pos, headers[C.pos], DIBs[C.pos], mini_bmp[C.pos], filename);
         }
     }
+}
+
+void calculateCoordinates(Coordinates &C, int i, int j, PixelArray &main_bmp, int height_parts, int width_parts) {
+    C.left = j * C.len_width * main_bmp.pixel_size;
+    C.bottom = i * C.len_height;
+    C.mini_pixel_width = C.len_width;
+    if (j == width_parts - 1) {
+        C.mini_pixel_width = main_bmp.pixel_width - C.len_width * (width_parts - 1);
+    }
+    C.mini_pixel_height = C.len_height;
+    if (i == height_parts - 1) {
+        C.mini_pixel_height = main_bmp.pixel_height - C.len_height * (height_parts - 1);
+    }
+    C.pos = i * width_parts + j;
 }
 
 void pushDataIntoBMP(int pos, BMPHeader &header, DIB &dib, const PixelArray &PA, const char *filename) {
