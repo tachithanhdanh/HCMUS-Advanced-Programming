@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <fstream>
 
-#pragma pack(push, 2)
+#pragma pack(push, 1)
 
 struct BMPHeader {
     std::int8_t signature[2];
@@ -31,7 +31,7 @@ struct PixelArray {
     std::int32_t pixel_height; // number of rows
     std::int32_t pixel_width; // number of columns
     std::int32_t number_of_cols;
-    std::size_t padding_bytes;
+    std::int32_t padding_bytes;
     std::uint8_t **array;
 };
 
@@ -43,6 +43,11 @@ void readPixelArray(PixelArray &main_bmp, const BMPHeader &header, const DIB &di
 void cutBMP(PixelArray &main_bmp, PixelArray *&mini_bmp, BMPHeader *&headers, DIB *&DIBs, const BMPHeader &header, const DIB &dib, int height_parts, int width_parts, const char *filename);
 void createPixelArray(PixelArray &PA, int height, int width, int depth);
 void saveData(const BMPHeader &h_src, BMPHeader &h_dest, const DIB &dib_src, DIB &dib_dest, const PixelArray &PA);
-void pushDataIntoBMP(int pos, const BMPHeader &header, const DIB &dib, const PixelArray &PA, const char *filename);
+void pushDataIntoBMP(int pos, BMPHeader &header, DIB &dib, const PixelArray &PA, const char *filename);
+int min(int, int);
+void printBMPHeaderInfo(const BMPHeader &header);
+void printDIBInfo(const DIB &dib);
+void freeDynamicallyAllocatedMemory(BMPHeader *&headers, DIB *&DIBs, PixelArray *&PAs, PixelArray &main_bmp, int height_parts, int width_parts);
+void deletePixelArray(PixelArray &PArray);
 
 #endif
