@@ -42,6 +42,8 @@ struct Coordinates {
     std::int32_t len_height;
     std::int32_t left;
     std::int32_t bottom;
+    std::int32_t top;
+    std::int32_t right;
     std::int32_t mini_pixel_width;
     std::int32_t mini_pixel_height;
     int pos;

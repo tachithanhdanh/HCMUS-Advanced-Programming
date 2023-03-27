@@ -37,8 +37,6 @@ void cutBMP(PixelArray &main_bmp, PixelArray *&mini_bmp,
     // printBMPHeaderInfo(header);
     // printDIBInfo(dib);
     int total = height_parts * width_parts;
-    // using namespace std;
-    // cout << total << endl;
     mini_bmp = new PixelArray[total];
     headers = new BMPHeader[total];
     DIBs = new DIB[total];
@@ -49,10 +47,8 @@ void cutBMP(PixelArray &main_bmp, PixelArray *&mini_bmp,
         for (int j = 0; j < width_parts; ++j) {
             calculateCoordinates(C, i, j, main_bmp, height_parts, width_parts);
             createPixelArray(mini_bmp[C.pos], C.mini_pixel_height, C.mini_pixel_width, dib.color_depth);
-            int top = min(C.bottom + C.mini_pixel_height, main_bmp.pixel_height);
-            int right = min(C.left + C.mini_pixel_width * main_bmp.pixel_size, main_bmp.number_of_cols);
-            for (int ii = C.bottom; ii < top; ++ii) {
-                for (int jj = C.left; jj < right; ++jj) {
+            for (int ii = C.bottom; ii < C.top; ++ii) {
+                for (int jj = C.left; jj < C.right; ++jj) {
                     //left + mini_pixel_widthcout << ii - bottom << " " << jj - left << endl;
                     mini_bmp[C.pos].array[ii - C.bottom][jj - C.left] = main_bmp.array[ii][jj];
                 }
@@ -74,6 +70,8 @@ void calculateCoordinates(Coordinates &C, int i, int j, PixelArray &main_bmp, in
     if (i == height_parts - 1) {
         C.mini_pixel_height = main_bmp.pixel_height - C.len_height * (height_parts - 1);
     }
+    C.top = min(C.bottom + C.mini_pixel_height, main_bmp.pixel_height);
+    C.right = min(C.left + C.mini_pixel_width * main_bmp.pixel_size, main_bmp.number_of_cols);
     C.pos = i * width_parts + j;
 }
 
