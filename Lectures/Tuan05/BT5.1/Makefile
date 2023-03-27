@@ -9,10 +9,10 @@ a := main
 all: cutbmp.o Bitmap.o
 	$(CXX) $(CXXFLAGS) $^ -o cutbmp.exe
 
-cutbmp.o: Bitmap.hpp
+cutbmp.o: Bitmap.hpp cutbmp.cpp
 	$(CXX) $(CXXFLAGS) -g -c cutbmp.cpp
 
-Bitmap.o: Bitmap.hpp
+Bitmap.o: Bitmap.hpp Bitmap.cpp
 	$(CXX) $(CXXFLAGS) -g -c Bitmap.cpp
 
 haha:
