@@ -1,0 +1,23 @@
+Test 1.
+Input:
+Xuan Huong hoc lop 22KDL
+10
+Thay Truong Toan Thinh dep trai vai noi.
+Thay Truong Toan Thinh dep trai, thong minh, co bap luc luong.
+43
+18
+toi nay toi an toi.
+toi
+5
+troi hom nay that dep.
+hom qua
+toi nay toi an toi.
+toi
+
+Output:
+Xuan Huong
+Thay Truong Toan Thinh dep trai vai noi.
+Thay Truong Toan Thinh dep trai, thong minh.
+8
+false
+3
