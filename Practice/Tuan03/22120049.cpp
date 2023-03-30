@@ -43,7 +43,7 @@ void solve() {
 }
 
 // https://stackoverflow.com/questions/1744665/need-help-with-getline
-
+// https://www.learncpp.com/cpp-tutorial/stdcin-and-handling-invalid-input/
 
 void bai1(char *dest, char *source, int &count) {
     std::cout << "Da em chao thay, day la bai lam cua Ta Chi Thanh Danh - MSSV 22120049.\n";
