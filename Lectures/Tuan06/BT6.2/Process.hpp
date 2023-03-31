@@ -6,6 +6,6 @@ int findMaximumElement(int *arr, int l, int r);
 int findAnElementInArray(int *arr, int x, int l, int r);
 void reverseString(char *s, int l, int r);
 void merge(char *s, int l, int mid, int r);
-char *currencyFormatter(int n);
+void currencyFormatter(long long m, char *money, int len, int cnt);
 
 #endif

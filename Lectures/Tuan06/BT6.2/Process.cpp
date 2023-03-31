@@ -1,4 +1,5 @@
 #include "Process.hpp"
+#include <cstring>
 // #include <cassert>
 
 int max(int a, int b) {
@@ -61,6 +62,14 @@ void merge(char *s, int l, int mid, int r) {
     return;
 }
 
-char *currencyFormatter(int n) {
-    return nullptr;
+void currencyFormatter(long long m, char *money, int len, int cnt) {
+    if (m == 0) return;
+    money[len++] = static_cast<char>(m % 10 + '0');
+    ++cnt;
+    if (cnt % 3 == 0 && m / 10) {
+        money[len++] = ',';
+    }
+    currencyFormatter(m / 10, money, len, cnt);
+    money[std::strlen(money)] = '\0';
+    return;
 }

@@ -32,6 +32,20 @@ void solve() {
     int len = static_cast<int>(std::strlen(s));
     reverseString(s, 0, len - 1);
     std::cout << "Chuoi s sau khi duoc dao: " << s << '\n';
+
+    // cau d
+    long long m;
+    std::cout << "Nhap so tien m = ";
+    std::cin >> m;
+    std::memset(s, 0, MAX);
+    currencyFormatter(m, s, 0, 0);
+    len = static_cast<int>(std::strlen(s));
+    s[len] = ' ';
+    s[len + 1] = '$';
+    s[len + 2] = '\0';
+    len = static_cast<int>(std::strlen(s));
+    reverseString(s, 0, len - 1);
+    std::cout << "Dinh dang tien te cua m la: " << s << '\n';
     delete []s;
     s = nullptr;
 }
