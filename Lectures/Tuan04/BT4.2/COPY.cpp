@@ -1,4 +1,4 @@
-#include "copy_function.h"
+#include "copy_function.hpp"
 
 int main(int argc, char **argv) {
     copy(argc, argv);

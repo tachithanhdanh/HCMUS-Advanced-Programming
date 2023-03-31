@@ -1,7 +1,7 @@
-#ifndef BT42_COPY_H_
-#define BT42_COPY_H_
+#ifndef BT42_COPY_HPP_
+#define BT42_COPY_HPP_
 #include <cstdio>
-#include "constants.h"
+#include "constants.hpp"
 
 void print_guide();
 std::FILE *copy(std::FILE *fi, std::FILE *fo);

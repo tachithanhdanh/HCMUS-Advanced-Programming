@@ -1,5 +1,5 @@
-#ifndef BT41_PROCESS_H_
-#define BT41_PROCESS_H_
+#ifndef BT41_PROCESS_HPP_
+#define BT41_PROCESS_HPP_
 
 void InsertCharToString(char *&s, int &n, const char c);
 void InsertWordToWordArray(char **&s, int &n, char *&word);

@@ -1,5 +1,5 @@
-#include "IOFunctions.h"
-#include "Process.h"
+#include "IOFunctions.hpp"
+#include "Process.hpp"
 #include <iostream>
 
 void readInputString(char *&s, int &n) {

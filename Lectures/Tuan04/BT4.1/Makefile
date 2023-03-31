@@ -7,13 +7,13 @@ files := $(wildcard *.cpp)
 all: main.o Process.o IOFunctions.o
 	$(CXX) $(CXXFLAGS) $^ -o main.exe
 
-IOFunctions.o: IOFunctions.cpp IOFunctions.h Process.h
+IOFunctions.o: IOFunctions.cpp IOFunctions.hpp Process.hpp
 	$(CXX) $(CXXFLAGS) -g -c IOFunctions.cpp
 
-Process.o: Process.cpp Process.h
+Process.o: Process.cpp Process.hpp
 	$(CXX) $(CXXFLAGS) -g -c Process.cpp
 
-main.o: main.cpp Process.h IOFunctions.h
+main.o: main.cpp Process.h IOFunctions.hpp
 	$(CXX) $(CXXFLAGS) -g -c main.cpp
 
 haha:

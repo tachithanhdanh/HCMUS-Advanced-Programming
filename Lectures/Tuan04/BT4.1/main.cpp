@@ -1,5 +1,5 @@
-#include "IOFunctions.h"
-#include "Process.h"
+#include "IOFunctions.hpp"
+#include "Process.hpp"
 #include <iostream>
 
 int main(void) {
