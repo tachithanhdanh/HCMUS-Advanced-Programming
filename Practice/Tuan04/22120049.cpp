@@ -148,7 +148,6 @@ void readArray(T *a, int &n) {
     for (int i = 0; i < n; ++i) {
         cin >> a[i];
     }
-    print_horizontal_line();
     return;
 }
 
@@ -221,6 +220,7 @@ void exercise12() {
     readArray(a, n);
     cout << "So cac gia tri phan biet trong mang mot chieu so duong: ";
     cout << count_distinct_numbers_in_array(a, n);
+    cout << "\n";
     print_horizontal_line();
     return;
 }
