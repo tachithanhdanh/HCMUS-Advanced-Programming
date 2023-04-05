@@ -12,7 +12,7 @@ Output: 997.256765069225
 
 Exercise 4:
 Input: x = 37, n = 9
-Output: 6041819695660196125
+Output: 133571788122717
 
 Exercise 5:
 Input: n = 11, x = 5 
