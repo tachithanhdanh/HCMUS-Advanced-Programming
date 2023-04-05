@@ -76,65 +76,51 @@ void solve() {
 
 void exercise1() {
     print_exercise_name(1);
+    cout << "S(n) = 1 x 2 x 3 x ... x n\n";
     int n;
     get_input(n);
-    // cin >> n;
-    // cout << "Ket qua cua bai 1 la S(n) = " << S1(n) << '.\n';
     print_result(1, S1(n));
-    // cout << S1(n) << ".\n";
     print_horizontal_line();
     return;
 }
 
 void exercise2() {
-    // cout << "Day la bai 2.\n";
     print_exercise_name(2);
+    cout << "S(n) = 1 + (1/3) + (1/5) + ... + 1/(2n + 1)\n";
     int n;
     get_input(n);
-    // cin >> n;
     print_result(1, S2(n));
-    // cout << "Ket qua cua bai 2 la S(n) = "  
-    // cout << std::setprecision(12) << S2(n) << ".\n";
     print_horizontal_line();
     return;
 }
 
 void exercise3() {
-    // cout << "Day la bai 3.\n";
     print_exercise_name(3);
+    cout << "S(n) = (1/2) + (3/4) + ... ((2n + 1)/(2n + 2))\n";
     int n;
     get_input(n);
-    // cin >> n;
-    // cout << "Ket qua cua bai 3 la S(n) = "
     print_result(3, S3(n));
     print_horizontal_line();
-    // cout << std::setprecision(12) << S3(n) << ".\n";
     return;
 }
 
 void exercise4() {
-    // cout << "Day la bai 4.\n";
     print_exercise_name(4);
+    cout << "S(n, x) = x + x^2 + x^3 + ... + x^n\n";
     int n, x;
     get_input(n);
-    // cin >> n;
     get_input(x);
-    // cin >> x;
-    // cout << "Ket qua cua bai 4 la S(n, x) = " 
     print_result(4, S4(n, x));
     print_horizontal_line();
-    // cout << S4(n, x) << ".\n";
     return;
 }
 
 void exercise5() {
-    // cout << "Day la bai 5.\n";
     print_exercise_name(5);
+    cout << "S(n, x) = x + (x^2/(1 + 2)) + (x^3/(1 + 2 + 3)) + ...  + (x^n/(1 + 2 + ... + n))\n";
     int n, x;
     get_input(n);
-    // cin >> n;
     get_input(x);
-    // cin >> x;
     print_result(5, S5(n, x));
     print_horizontal_line();
     return;
@@ -324,7 +310,6 @@ void print_index_of_prime_numbers_in_array(int *a, int n) {
 void print_index_of_even_numbers_in_array(int *a, int n) {
     if (n <= 0) return;
     if (a[n - 1] % 2 == 0) {
-        // std:: cout << "a[n - 1] = " << a[n - 1] << " at ";
         std::cout << n - 1 << ' ';
     }
     print_index_of_even_numbers_in_array(a, n - 1);

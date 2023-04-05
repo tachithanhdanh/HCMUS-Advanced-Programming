@@ -1,0 +1,61 @@
+Exercise 1:
+Input: 20
+Output: 2432902008176640000
+
+Exercise 2:
+Input: 1000
+Output: 4.436132423460
+
+Exercise 3:
+Input: 1000
+Output: 997.256765069225
+
+Exercise 4:
+Input: x = 37, n = 9
+Output: 6041819695660196125
+
+Exercise 5:
+Input: n = 11, x = 5 
+Output: 975469.592352092352
+
+Exercise 6:
+Input:
+n = 10
+1000000007 1000000009 1000000097 27644437 999331 19937 479001599 39916801 65537 331777
+Output: 10
+
+Exercise 7:
+Input:
+n = 10
+6 28 496 8128 33550336 1 1 1 1 1 
+Output: 5
+
+Exercise 8:
+Input: 10
+Output: 30
+
+Exercise 9:
+Input: 
+n = 10
+1 3 5 7 9 11 13 15 17 19
+Output:
+1 2 3 5 6 8 9
+
+Exercise 10:
+Input:
+n = 10
+107 204 103 200 888 198 204 103 200 1
+Output:
+8 6 5 4 3 1
+
+Exercise 11: 
+Input:
+n = 10
+107 204 103 200 888 198 204 103 200 1
+Output: 1803.0
+
+Exercise 12: 
+Input:
+n = 10
+107 204 103 200 888 198 204 103 200 1
+Output: 7
