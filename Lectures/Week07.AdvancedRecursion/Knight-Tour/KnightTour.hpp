@@ -1,0 +1,4 @@
+#ifndef WEEK07_KNIGHT_TOUR_HPP_
+#define WEEK07_KNIGHT_TOUR_HPP_
+
+#endif
