@@ -1,3 +1,3 @@
 # HCMUS-Advanced-Programming
 
-This is my weekly exercises of Advanced Programming course in HCMUS.
+These are my weekly exercises for Advanced Programming course in HCMUS.
