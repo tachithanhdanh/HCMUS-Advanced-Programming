@@ -11,4 +11,4 @@ jobs:
           sudo apt install clang-format
           sudo apt install clang-tidy
       - name: Run clang-format
-        run: clang-format --dry-run --Werror *
+        run: clang-format --dry-run --Werror *.cpp *.hpp
