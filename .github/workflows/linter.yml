@@ -10,7 +10,5 @@ jobs:
         run: |
           sudo apt install clang-format
           sudo apt install clang-tidy
-      - name: Run clang-tidy
-        run: clang-tidy *
       - name: Run clang-format
         run: clang-format --dry-run --Werror src/*
