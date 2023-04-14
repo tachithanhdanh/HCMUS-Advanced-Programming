@@ -1,5 +1,6 @@
 #ifndef SINGLYLINKEDLIST_H_
 #define SINGLYLINKEDLIST_H_
+#include <iostream>
 
 class Node {
 private:
@@ -15,6 +16,8 @@ public:
     Node* nextNode() const;
     int getData() const;
     void setNextNode(Node* pNext);
+    friend std::ostream& operator<<(std::ostream& out, const Node& node);
+    friend std::istream& operator>>(std::istream& in, Node& node);
 };
 
 class SLL {
@@ -32,13 +35,16 @@ public:
     Node* getElementWithX(int x) const;
     Node* getTail() const;
     void insertAtBeginning(int x);
-    void insertAfterTail(int x);
+    void insertAtEnd(int x);
     void insertAfterK(int x, int k);
     void insertOrderedNode(int x);
     void deleteAtBeginning();
     void deleteTail();
     void deleteANode(int k);
+    void deleteKthNode(int k);
     void deleteAllNode();
+    friend std::ostream& operator<<(std::ostream& out, const SLL& list);
+    friend std::istream& operator>>(std::istream& in, SLL& list);
 };
 
 #endif

@@ -5,7 +5,9 @@ Node::Node(): m_data(0), m_pNext(nullptr) {}
 Node::Node(int data, Node* pNext): m_data(data), m_pNext(pNext) {}
 
 Node::~Node() {
+    std::cout << "destructor called for node has" << this->getData() << "\n";
     delete this->m_pNext;
+    this->m_pNext = nullptr;
 }
 
 Node::Node(const Node& node): m_data(node.m_data), m_pNext(node.m_pNext) {}
@@ -34,9 +36,21 @@ void Node::setNextNode(Node* pNode) {
     return;
 }
 
+std::ostream& operator<<(std::ostream& out, const Node& node) {
+    out << "Current node: data = " << node.getData() << ", pNext = " << node.nextNode() << '\n';
+    return out;
+}
+
+std::istream& operator>>(std::istream& in, Node& node) {
+    in >> node.m_data;
+    return in;
+}
+
 SLL::SLL(): m_pHead(nullptr) {}
 
-SLL::~SLL() {}
+SLL::~SLL() {
+    delete m_pHead;
+}
 
 SLL::SLL(const SLL& list) {
     
@@ -82,7 +96,7 @@ void SLL::insertAtBeginning(int x) {
     return;
 }
 
-void SLL::insertAfterTail(int x) {
+void SLL::insertAtEnd(int x) {
     Node* pTail = this->getTail();
     if (pTail == nullptr) {
         this->insertAtBeginning(x);
@@ -99,9 +113,74 @@ void SLL::insertAfterK(int x, int k) {
     // TH2: binh thuong -> chen vo sau K, 
     // nho la set new_pNode->setNextNode(pNode->nextNode()) va sau do la pNode->setNextNode(new_pNode)
     // TH3: vuot qua mang -> chen vo sau Tail
-    // Node* pPrev = nullptr;
-    // Node* pNode = this->m_pHead;
-    // for (int i = 0; pNode && i < k; pPrev = pNode, pNode = pNode->nextNode(), ++i);
-    // Node* new_pNode = new Node(k, pPrev );
+    if (k < 0) {
+        this->insertAtBeginning(x);
+        return;
+    }
+
+    Node* pNode = getIthElement(k);
+    if (pNode) {
+        Node* pNext = pNode->nextNode();
+        Node* new_pNode = new Node(x, pNext);
+        pNode->setNextNode(new_pNode);
+    } else {
+        this->insertAtEnd(x);
+    }
     return;
+}
+
+void SLL::insertOrderedNode(int x) {
+    return;
+}
+
+void SLL::deleteAtBeginning() {
+    Node* old_pHead = this->m_pHead;
+    if(this->m_pHead) this->m_pHead = m_pHead->nextNode();
+    old_pHead->setNextNode(nullptr);
+    delete old_pHead;
+    return;
+}
+
+void SLL::deleteANode(int k) {
+    Node* prev = nullptr;
+    Node* cur = this->m_pHead;
+    for (; cur; cur = cur->nextNode()) {
+        if (cur->getData() == k) {
+            // if there is no prev, it must be a head.
+            if (prev) {
+                prev->setNextNode(cur->nextNode());
+                cur->setNextNode(nullptr);
+            } else {
+                this->deleteAtBeginning();
+            }
+            break;
+        }
+    }
+    return;
+}
+
+void SLL::deleteTail() {
+    return;
+}
+
+void SLL::deleteAllNode() {
+    delete this->m_pHead;
+    this->m_pHead = nullptr;
+    return;
+}
+
+std::ostream& operator<<(std::ostream& out, const SLL& list) {
+    if (list.getHead() == nullptr) {
+        out << "Empty List!\n";
+        return out;
+    }
+    out << "Singly Linked List:\n";
+    for (Node* pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
+        out << pNode;
+    }
+    return out;
+}
+
+std::istream& operator>>(std::istream& in, SLL& list) {
+    return in;
 }
