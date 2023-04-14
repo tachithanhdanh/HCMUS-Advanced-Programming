@@ -17,7 +17,7 @@ public:
     int getData() const;
     void setNextNode(Node* pNext);
     friend std::ostream& operator<<(std::ostream& out, const Node& node);
-    friend std::istream& operator>>(std::istream& in, Node& node);
+    // friend std::istream& operator>>(std::istream& in, Node& node);
 };
 
 class SLL {
@@ -28,23 +28,29 @@ public:
     SLL();
     ~SLL();
     SLL(const SLL& list);
-    SLL& operator=(const SLL& list);
+    SLL& operator=(const SLL& list) = delete;
     bool isEmpty() const;
     Node* getHead() const;
-    Node* getIthElement(int i) const;
+    Node* getKthElement(int i) const;
     Node* getElementWithX(int x) const;
     Node* getTail() const;
     void insertAtBeginning(int x);
-    void insertAtEnd(int x);
+    void insertAtEnding(int x);
     void insertAfterK(int x, int k);
+    void insertAtKthElement(int x, int k);
+    void insertElement(Node* pNode, int x);
     void insertOrderedNode(int x);
     void deleteAtBeginning();
-    void deleteTail();
+    void deleteAtEnding();
     void deleteANode(int k);
     void deleteKthNode(int k);
     void deleteAllNode();
+    void inputSLL();
+    void displaySLL();
     friend std::ostream& operator<<(std::ostream& out, const SLL& list);
-    friend std::istream& operator>>(std::istream& in, SLL& list);
+    // friend std::istream& operator>>(std::istream& in, SLL& list);
 };
+
+void SLLDemo();
 
 #endif
