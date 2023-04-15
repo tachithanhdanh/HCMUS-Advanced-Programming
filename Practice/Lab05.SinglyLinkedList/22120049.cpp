@@ -1,18 +1,20 @@
 #include <iostream>
 #include <limits>
-
-using std::cout;
-using std::cin;
+#include <cmath>
 
 struct Fraction {
 private:
+    int m_numerator;
     int m_denominator;
 
 public:
-    int m_numerator;
-    Fraction(int num = 0, int den = 1): m_numerator(num), m_denominator(den) {}
+    Fraction(int num = 0, int den = 1);
+    Fraction(const Fraction& frac);
+    Fraction& operator=(const Fraction& frac);
     ~Fraction();
+    void reduce();
     friend std::istream& operator>>(std::istream& in, Fraction& frac);
+    friend std::ostream& operator<<(std::ostream& out, const Fraction& frac);
     friend bool operator==(const Fraction& f1, const Fraction& f2);
     friend bool operator!=(const Fraction& f1, const Fraction& f2);
 };
@@ -31,7 +33,7 @@ public:
     Node(const Node& node);
     Node& operator=(const Node& node);
     Node* nextNode() const;
-    Fraction getData() const;
+    const Fraction& getData() const;
     void setNextNode(Node* pNext);
     friend std::ostream& operator<<(std::ostream& out, const Node& node);
     // friend std::istream& operator>>(std::istream& in, Node& node);
@@ -52,13 +54,13 @@ public:
     Node* getHead() const;
     Node* getKthElement(int k) const;
     Node* getTail() const;
-    void insertAtBeginning(Fraction x);
-    void insertAtEnding(Fraction x);
-    void insertAtKthElement(Fraction x, int k);
-    void insertElement(Node* pNode, int x);
+    void insertAtBeginning(const Fraction& frac);
+    void insertAtEnding(const Fraction& frac);
+    void insertAtKthElement(const Fraction& frac, int k);
+    void insertAfterElement(Node* pNode, const Fraction& frac);
     void deleteAtBeginning();
     void deleteAtEnding();
-    void deleteANode(Fraction k);
+    void deleteANode(const Fraction& _free_locale);
     void deleteKthNode(int k);
     void deleteAllNode();
     void inputSLL();
@@ -68,21 +70,151 @@ public:
     // friend std::istream& operator>>(std::istream& in, SLL& list);
 };
 
-void SLLDemo();
-SLL* reversedSLL(const SLL& list);
 void solve();
+int gcd(int a, int b);
+void exercise1(SLL*& list);
+void exercise2(SLL*& list);
+void exercise3(SLL*& list);
+void exercise4(SLL*& list);
+void exercise5(SLL*& list);
+void exercise6(SLL*& list);
 
 int main(void) {
-
+    solve();
     return 0;
 }
 
 void solve() {
+    std::cout << "Da em chao thay.\n";
+    std::cout << "Day la bai lam cua Thanh Danh - MSSV 22120049.\n";
+
+    SLL* list = new SLL();
+
+    exercise1(list);
+    exercise2(list);
+    exercise3(list);
+    exercise4(list);
+    exercise5(list);
+    exercise6(list);
+
+    std::cout << "Do ban dau em khoi tao ";
+    std::cout << "danh sach lien ket don thong qua cap phat bo nho dong ";
+    std::cout << "nen em xin giai phong vung nho sau khi su dung xong.\n";
+    delete list;
+    return;
 }
 
-Fraction::Fraction(int num, int den): m_numerator(num), m_denominator(den) {}
+void exercise1(SLL*& list) {
+    std::cout << "Yeu cau 1: Xay dung danh sach cac phan so.\n";
+    list->inputSLL();
+    return;
+}
+
+void exercise2(SLL*& list) {
+    std::cout << "Yeu cau 2: Xuat danh sach cac phan so sau khi da xay dung.\n";
+    std::cout << "Danh sach phan so sau khi da xay dung.\n";
+    list->displaySLL();
+    return;
+}
+
+void exercise3(SLL*& list) {
+    std::cout << "Yeu cau 3: Them mot phan so vao cuoi danh sach.\n";
+    Fraction frac;
+    std::cout << "Moi thay nhap phan so (dinh dang a/b, vi du 1/2): ";
+    std::cin >> frac;
+    list->insertAtEnding(frac);
+    std::cout << "Danh sach phan so sau khi da them phan so moi vao cuoi danh sach.\n";
+    list->displaySLL();
+    return;
+}
+
+void exercise4(SLL*& list) {
+    using std::cout;
+    using std::cin;
+    cout << "Yeu cau 4: Chen mot phan so tai mot vi tri xac dinh trong danh sach.\n";
+    cout << "Moi thay nhap phan so (dinh dang a/b, vi du 1/2): ";
+    Fraction frac;
+    cin >> frac;
+    int k;
+    cout << "Moi thay nhap vi tri can chen trong danh sach: ";
+    cin >> k;
+    list->insertAtKthElement(frac, k);
+    cout << "Danh sach phan so sau khi da them phan so moi tai vi tri " 
+         << k << " trong danh sach.\n";
+    list->displaySLL();
+    return;
+}
+
+void exercise5(SLL*& list) {
+    using std::cout;
+    using std::cin;
+    cout << "Yeu cau 5: Xoa mot phan so tai mot vi tri xac dinh trong danh sach.\n";
+    cout << "Moi thay nhap vi tri can xoa: ";
+    int k;
+    cin >> k;
+    list->deleteKthNode(k);
+    cout << "Danh sach phan so sau khi da xoa phan so tai vi tri " 
+         << k << " trong danh sach.\n";
+    list->displaySLL();
+    return;
+}
+
+void exercise6(SLL*& list) {
+    using std::cout;
+    using std::cin;
+    cout << "Yeu cau 6: Huy toan bo danh sach phan so.\n";
+    list->deleteAllNode();
+    cout << "Da huy xong toan bo danh sach phan so.\n";
+    cout << "Em xin dung ham in danh sach phan so de cho thay thay danh sach hien gio la rong.\n";
+    list->displaySLL();
+    return;
+}
+
+int gcd(int a, int b) {
+    int temp;
+    while (b) {
+        temp = a % b;
+        a = b;
+        b = temp;
+    }
+    return std::abs(a);
+}
+
+Fraction::Fraction(int num, int den): m_numerator(num), m_denominator(den) {
+    this->reduce();
+}
+
+Fraction::Fraction(const Fraction& frac): Fraction(frac.m_numerator, frac.m_denominator) {}
+
+Fraction& Fraction::operator=(const Fraction& frac) {
+    // self-assignment check
+    if (this == &frac) {
+        return *this;
+    }
+
+    this->m_numerator = frac.m_numerator;
+    this->m_denominator = frac.m_denominator;
+    this->reduce();
+    return *this;
+}
 
 Fraction::~Fraction() {}
+
+void Fraction::reduce() {
+    int _gcd = gcd(this->m_numerator, this->m_denominator);
+    if (_gcd) {
+        this->m_numerator /= _gcd;
+        this->m_denominator /= _gcd;
+    }
+
+    if (this->m_numerator * this->m_denominator >= 0) {
+        this->m_numerator = std::abs(this->m_numerator);
+    } else {
+        this->m_numerator = -std::abs(this->m_numerator);
+    }
+    this->m_denominator = std::abs(this->m_denominator);
+    return;
+}
 
 std::istream& operator>>(std::istream& in, Fraction& frac) {
     in >> frac.m_numerator;
@@ -91,12 +223,25 @@ std::istream& operator>>(std::istream& in, Fraction& frac) {
     return in;
 }
 
+std::ostream& operator<<(std::ostream& out, const Fraction& frac) {
+    out << frac.m_numerator << '/' << frac.m_denominator;
+    return out;
+}
+
+bool operator==(const Fraction& f1, const Fraction& f2) {
+    return (f1.m_numerator == f2.m_numerator) && (f1.m_denominator == f2.m_denominator);
+}
+
+bool operator!=(const Fraction& f1, const Fraction& f2) {
+    return !(operator==(f1, f2));
+}
+
 Node::Node(): m_data(0), m_pNext(nullptr) {}
 
 Node::Node(Fraction data, Node* pNext): m_data(data), m_pNext(pNext) {}
 
 Node::~Node() {
-    std::cout << "destructor called for node has " << this->getData();
+    std::cout << "Node destructor called for node has data = " << this->getData();
     std::cout << " at address " << this << '\n';
     // delete this->m_pNext;
     // this->m_pNext = nullptr;
@@ -119,7 +264,7 @@ Node* Node::nextNode() const {
     return this->m_pNext;
 }
 
-Fraction Node::getData() const {
+const Fraction& Node::getData() const {
     return this->m_data;
 }
 
@@ -143,7 +288,7 @@ std::ostream& operator<<(std::ostream& out, const Node& node) {
 SLL::SLL(): m_pHead(nullptr) {}
 
 SLL::~SLL() {
-    std::cout << "SLL destructor called\n";
+    std::cout << "Singly Linked List destructor called.\n";
     this->deleteAllNode();
 }
 
@@ -168,7 +313,7 @@ void SLL::deepCopy(const SLL& list) {
     // this->deleteAllNode();
     this->setHead(nullptr);
     Node* pNode = list.getHead();
-    Node* cur;
+    Node* cur = nullptr;
     for (; pNode; pNode = pNode->nextNode()) {
         if (this->getHead() == nullptr) {
             this->setHead(new Node(pNode->getData()));
@@ -207,48 +352,56 @@ Node* SLL::getTail() const {
     return pNode;
 }
 
-void SLL::insertAtBeginning(Fraction x) {
-    Node* new_pHead = new Node(x, this->getHead());
+void SLL::insertAtBeginning(const Fraction& frac) {
+    Node* new_pHead = new Node(frac, this->getHead());
     this->setHead(new_pHead);
     return;
 }
 
-void SLL::insertAtEnding(Fraction x) {
+void SLL::insertAtEnding(const Fraction& frac) {
     Node* pTail = this->getTail();
     if (pTail == nullptr) {
-        this->insertAtBeginning(x);
+        this->insertAtBeginning(frac);
         return;
     } 
-    Node* new_pTail = new Node(x);
+    Node* new_pTail = new Node(frac);
     pTail->setNextNode(new_pTail);
     return;
 }
 
-void SLL::insertAtKthElement(Fraction x, int k) {
-    // chia 3 TH
-    // TH1: so am -> insertAtBeginning
-    // TH2: binh thuong -> chen vo sau K, 
-    // nho la set new_pNode->setNextNode(pNode->nextNode()) va sau do la pNode->setNextNode(new_pNode)
-    // TH3: vuot qua mang -> chen vo sau Tail
-    if (k < 0) {
-        this->insertAtBeginning(x);
+void SLL::insertAtKthElement(const Fraction& frac, int k) {
+    // chia 2 TH
+    // TH1: so am hoac vuot qua size cua linked list 
+    //      -> khong chen, bao loi
+    // TH2: binh thuong -> chen vo sau K
+    int n = this->countNode();
+    if (k < 0 || k > n) {
+        std::cout << "Invalid index to insert new element to linked list!\n";
         return;
     }
 
-    Node* pNode = this->getKthElement(k);
-    if (pNode) {
-        this->insertElement(pNode, x);
-    } else {
-        this->insertAtEnding(x);
+    // head case
+    if (k == 0) {
+        this->insertAtBeginning(frac);
+        return;
     }
+
+    // tail case
+    if (k == n) {
+        this->insertAtEnding(frac);
+        return;
+    }
+
+    // somewhere in the middle case
+    this->insertAfterElement(this->getKthElement(k - 1), frac);
     return;
 }
 
-void SLL::insertElement(Node* pNode, Fraction x) {
+void SLL::insertAfterElement(Node* pNode, const Fraction& frac) {
     // only insert if it is not nullptr
     if (pNode) {
         Node* pNext = pNode->nextNode();
-        Node* new_pNode = new Node(x, pNext);
+        Node* new_pNode = new Node(frac, pNext);
         pNode->setNextNode(new_pNode);
     }
     return;
@@ -261,11 +414,11 @@ void SLL::deleteAtBeginning() {
     return;
 }
 
-void SLL::deleteANode(Fraction k) {
+void SLL::deleteANode(const Fraction& frac) {
     Node* prev = nullptr;
     Node* cur = this->getHead();
     for (; cur; prev = cur, cur = cur->nextNode()) {
-        if (cur->getData() == k) {
+        if (cur->getData() == frac) {
             // if there is no prev, it must be a head.
             if (prev) {
                 prev->setNextNode(cur->nextNode());
@@ -286,14 +439,22 @@ void SLL::deleteKthNode(int k) {
     // k > position: noop
     // k == position of last element: deleteAtEnding
     // otherwise delete normally
-    if (k < 0) return;
+    int n = this->countNode();
+    if (k < 0 || k >= n) {
+        std::cout << "Invalid index to delete element in linked list!\n";
+        return;
+    }
+
     if (k == 0) {
         this->deleteAtBeginning();
         return;
     }
     Node* prev = nullptr;
     Node* cur = this->getHead();
+
+    // find k-th node
     for (int i = 0; i != k && cur; prev = cur, cur = cur->nextNode(), ++i);
+
     // if cur is not nullptr
     if (cur) {
         if (prev) {
@@ -327,6 +488,7 @@ void SLL::deleteAtEnding() {
 }
 
 void SLL::deleteAllNode() {
+    std::cout << "SLL::deleteAllNode() function called.\n";
     while(this->getHead()) {
         this->deleteAtBeginning();
     }
@@ -338,7 +500,7 @@ std::ostream& operator<<(std::ostream& out, const SLL& list) {
         out << "Empty List!\n";
         return out;
     }
-    out << "Singly Linked List:\n";
+    out << "Singly Linked List (print order from head to tail):\n";
     for (Node* pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
         out << *pNode;
     }
@@ -350,26 +512,28 @@ std::ostream& operator<<(std::ostream& out, const SLL& list) {
 // }
 
 void SLL::inputSLL() {
-    int num, den;
+    using std::cout;
     cout << "Moi thay danh sach cac phan so.\n";
+    cout << "Cac phan so sau khi nhap se duoc xu ly thanh phan so toi gian.\n";
+    cout << "Vi du: thay nhap 100/200 thi em se toi gian lai thanh 1/2\n";
     cout << "Dinh dang nhap: a/b voi a la tu so, b la tu so.\n";
     cout << "Vi du: 1/2, 3/4, 4/5, ...\n";
-    cout << "De dung viec nhap danh sach phan so, thay vui long nhap 0/0.";
-    Fraction x;
-    Node* cur;
+    cout << "De dung viec nhap danh sach phan so, thay vui long nhap 0/0.\n";
+    Fraction frac;
+    Node* cur = nullptr;
     do {
         cout << "Moi thay nhap phan so (nhap 0/0 de dung): ";
-        std::cin >> x;
-        if (x != -1) {
+        std::cin >> frac;
+        if (frac != nullFrac) {
             if (this->isEmpty()) {
-                this->setHead(new Node(x));
+                this->setHead(new Node(frac));
                 cur = this->getHead();
             } else {
-                cur->setNextNode(new Node(x));
+                cur->setNextNode(new Node(frac));
                 cur = cur->nextNode();
             }
         }
-    } while (x != -1);
+    } while (frac != nullFrac);
     return;
 }
 
@@ -385,80 +549,3 @@ int SLL::countNode() const {
     }
     return count;
 }
-
-void SLLDemo() {
-    using std::cout;
-    SLL *list = new SLL();
-    list->inputSLL();
-    list->displaySLL();
-    cout << "countNode(): " << list->countNode() << '\n';
-    std::cout << "Reverse linked list: ";
-    SLL *rList = reversedSLL(*list);
-    rList->displaySLL();
-    int x;
-    cout << "Please input a number x: ";
-    std::cin >> x;
-    cout << "Ordered linked list after add x: ";
-    list->displaySLL();
-    // std::cout << "Head: " << list->getHead() << '\n';
-    // std::cout << "getKthElement(5): " << list->getKthElement(5) << '\n';
-    // std::cout << "getElementWithX(5): " << list->getElementWithX(5) << '\n';
-    // std::cout << "getTail(): " << list->getTail() << '\n';
-    // std::cout << "insertAtBeginning(100): ";
-    // list->insertAtBeginning(100);
-    // list->displaySLL();
-    // std::cout << "insertAtEnding(0): ";
-    // list->insertAtEnding(0);
-    // list->displaySLL();
-    // std::cout << "insertAfterK(5): ";
-    // list->insertAfterK(99, 5);
-    // list->displaySLL();
-    // cout << "insertAtKthElement(5): ";
-    // list->insertAtKthElement(98, 5);
-    // list->displaySLL();
-    // cout << "insertOrderedList(10): ";
-    // list->insertOrderedList(10);
-    // cout << "insertOrderedList(0): ";
-    // list->insertOrderedList(0);
-    // cout << "insertOrderedList(5): ";
-    // list->insertOrderedList(5);
-    // cout << "insertOrderedList(6): ";
-    // list->insertOrderedList(6);
-    // list->displaySLL();
-    // cout << "DeleteAtBeginning(): ";
-    // list->deleteAtBeginning();
-    // list->displaySLL();
-    // cout << "DeleteANode(5): ";
-    // list->deleteANode(5);
-    // list->displaySLL();
-    // cout << "DeleteKthNode(5): ";
-    // list->deleteKthNode(5);
-    // list->displaySLL();
-    // cout << "DeleteAllNode(): ";
-    // list->deleteAllNode();
-    // list->displaySLL();
-    delete list;
-    delete rList;
-    return;
-}
-
-
-/*
-bool isEmpty() const;
-    Node* getHead() const;
-    Node* getKthElement(int i) const;
-    Node* getElementWithX(int x) const;
-    Node* getTail() const;
-    void insertAtBeginning(int x);
-    void insertAtEnding(int x);
-    void insertAfterK(int x, int k);
-    void insertAtKthElement(int x, int k);
-    void insertElement(Node* pNode, int x);
-    void insertOrderedNode(int x);
-    void deleteAtBeginning();
-    void deleteAtEnding();
-    void deleteANode(int k);
-    void deleteKthNode(int k);
-    void deleteAllNode();
-    void inputSLL();
-*/
