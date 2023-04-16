@@ -2,45 +2,46 @@
 #define SINGLYLINKEDLIST_H_
 #include <iostream>
 
-class Node {
+class SNode {
 private:
     int m_data;
-    Node* m_pNext;
+    SNode* m_pNext;
 
 public:
-    Node();
-    Node(int data, Node* pNext = nullptr);
-    ~Node();
-    Node(const Node& node);
-    Node& operator=(const Node& node);
-    Node* nextNode() const;
+    SNode();
+    SNode(int data, SNode* pNext = nullptr);
+    ~SNode();
+    SNode(const SNode& node);
+    SNode& operator=(const SNode& node);
+    SNode* nextNode() const;
     int getData() const;
-    void setNextNode(Node* pNext);
-    friend std::ostream& operator<<(std::ostream& out, const Node& node);
-    // friend std::istream& operator>>(std::istream& in, Node& node);
+    void setNextNode(SNode* pNext);
+    friend std::ostream& operator<<(std::ostream& out, const SNode& node);
+    // friend std::istream& operator>>(std::istream& in, SNode& node);
 };
 
-class SLL {
+class SList {
 private:
-    Node* m_pHead = nullptr;
+    SNode* m_pHead = nullptr;
 
 public:
-    SLL();
-    ~SLL();
-    SLL(const SLL& list);
-    SLL& operator=(const SLL& list);
-    void deepCopy(const SLL& source);
+    SList();
+    ~SList();
+    SList(const SList& list);
+    SList& operator=(const SList& list);
+    void deepCopy(const SList& source);
     bool isEmpty() const;
-    void setHead(Node* pNode);
-    Node* getHead() const;
-    Node* getKthElement(int i) const;
-    Node* getElementWithX(int x) const;
-    Node* getTail() const;
+    void setHead(SNode* pNode);
+    SNode* getHead() const;
+    SNode* getKthElement(int i) const;
+    SNode* getElementWithX(int x) const;
+    SNode* getTail() const;
     void insertAtBeginning(int x);
     void insertAtEnding(int x);
     void insertAfterK(int x, int k);
+    void insertAfterKthElement(int x, int k);
     void insertAtKthElement(int x, int k);
-    void insertElement(Node* pNode, int x);
+    void insertAfterElement(SNode* pNode, int x);
     void insertOrderedList(int x);
     void deleteAtBeginning();
     void deleteAtEnding();
@@ -50,11 +51,11 @@ public:
     void inputSLL();
     void displaySLL() const;
     int countNode() const;
-    friend std::ostream& operator<<(std::ostream& out, const SLL& list);
-    // friend std::istream& operator>>(std::istream& in, SLL& list);
+    friend std::ostream& operator<<(std::ostream& out, const SList& list);
+    // friend std::istream& operator>>(std::istream& in, SList& list);
 };
 
 void SLLDemo();
-SLL* reversedSLL(const SLL& list);
+SList* reversedSLL(const SList& list);
 
 #endif

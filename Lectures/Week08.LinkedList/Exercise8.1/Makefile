@@ -4,13 +4,13 @@ CXXFLAGS = -Wall -Wextra -Wshadow -std=c++20 -pedantic -Wformat=2 -Wfloat-equal 
 
 files := $(wildcard *.cpp)
 
-all: main.o SinglyLinkedList.o
+all: main.o DoublyLinkedList.o
 	$(CXX) $(CXXFLAGS) $^ -o main.exe
 
-SinglyLinkedList.o: SinglyLinkedList.cpp SinglyLinkedList.hpp
-	$(CXX) $(CXXFLAGS) -g -c SinglyLinkedList.cpp
+DoublyLinkedList.o: DoublyLinkedList.cpp DoublyLinkedList.hpp
+	$(CXX) $(CXXFLAGS) -g -c DoublyLinkedList.cpp
 
-main.o: SinglyLinkedList.hpp main.cpp
+main.o: DoublyLinkedList.hpp main.cpp
 	$(CXX) $(CXXFLAGS) -g -c main.cpp
 
 run: main.exe

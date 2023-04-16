@@ -1,19 +1,19 @@
 #include "SinglyLinkedList.hpp"
 
-Node::Node(): m_data(0), m_pNext(nullptr) {}
+SNode::SNode(): m_data(0), m_pNext(nullptr) {}
 
-Node::Node(int data, Node* pNext): m_data(data), m_pNext(pNext) {}
+SNode::SNode(int data, SNode* pNext): m_data(data), m_pNext(pNext) {}
 
-Node::~Node() {
+SNode::~SNode() {
     std::cout << "destructor called for node has " << this->getData();
     std::cout << " at address " << this << '\n';
     // delete this->m_pNext;
     // this->m_pNext = nullptr;
 }
 
-Node::Node(const Node& node): m_data(node.m_data), m_pNext(node.m_pNext) {}
+SNode::SNode(const SNode& node): m_data(node.m_data), m_pNext(node.m_pNext) {}
 
-Node& Node::operator=(const Node& node) {
+SNode& SNode::operator=(const SNode& node) {
     // self-assignment check
     if (this == &node) {
         return *this;
@@ -24,43 +24,43 @@ Node& Node::operator=(const Node& node) {
     return *this;
 }
 
-Node* Node::nextNode() const {
+SNode* SNode::nextNode() const {
     return this->m_pNext;
 }
 
-int Node::getData() const {
+int SNode::getData() const {
     return this->m_data;
 }
 
-void Node::setNextNode(Node* pNode) {
+void SNode::setNextNode(SNode* pNode) {
     this->m_pNext = pNode;
     return;
 }
 
-std::ostream& operator<<(std::ostream& out, const Node& node) {
+std::ostream& operator<<(std::ostream& out, const SNode& node) {
     out << "Current node: data = " << node.getData();
     out << ", address = " << &node; 
     out << ", pNext = " << node.nextNode() << '\n';
     return out;
 }
 
-// std::istream& operator>>(std::istream& in, Node& node) {
+// std::istream& operator>>(std::istream& in, SNode& node) {
 //     in >> node.m_data;
 //     return in;
 // }
 
-SLL::SLL(): m_pHead(nullptr) {}
+SList::SList(): m_pHead(nullptr) {}
 
-SLL::~SLL() {
-    std::cout << "SLL destructor called\n";
+SList::~SList() {
+    std::cout << "SList destructor called\n";
     this->deleteAllNode();
 }
 
-SLL::SLL(const SLL& list) {
+SList::SList(const SList& list) {
     this->deepCopy(list);
 }
 
-SLL& SLL::operator=(const SLL& list) {
+SList& SList::operator=(const SList& list) {
     // self-assigment check
     if (this == &list) {
         return *this;
@@ -73,44 +73,44 @@ SLL& SLL::operator=(const SLL& list) {
     return *this;
 }
 
-void SLL::deepCopy(const SLL& list) {
+void SList::deepCopy(const SList& list) {
     // this->deleteAllNode();
     this->setHead(nullptr);
-    Node* pNode = list.getHead();
-    Node* cur;
+    SNode* pNode = list.getHead();
+    SNode* cur;
     for (; pNode; pNode = pNode->nextNode()) {
         if (this->getHead() == nullptr) {
-            this->setHead(new Node(pNode->getData()));
+            this->setHead(new SNode(pNode->getData()));
             cur = this->getHead();
         } else {
-            cur->setNextNode(new Node(pNode->getData()));
+            cur->setNextNode(new SNode(pNode->getData()));
             cur = cur->nextNode();
         }
     }
     return;
 }
 
-bool SLL::isEmpty() const {
+bool SList::isEmpty() const {
     return this->getHead() == nullptr;
 }
 
-void SLL::setHead(Node* pNode) {
+void SList::setHead(SNode* pNode) {
     this->m_pHead = pNode;
     return;
 }
 
-Node* SLL::getHead() const {
+SNode* SList::getHead() const {
     return this->m_pHead;
 }
 
-Node* SLL::getKthElement(int k) const {
-    Node* pNode = this->getHead();
+SNode* SList::getKthElement(int k) const {
+    SNode* pNode = this->getHead();
     for(int i = 0; pNode && i != k; pNode = pNode->nextNode(), ++i);
     return pNode;
 }
 
-Node* SLL::getElementWithX(int x) const {
-    for (Node* pNode = this->getHead(); pNode; pNode = pNode->nextNode()) {
+SNode* SList::getElementWithX(int x) const {
+    for (SNode* pNode = this->getHead(); pNode; pNode = pNode->nextNode()) {
         if (pNode->getData() == x) {
             return pNode;
         }
@@ -118,37 +118,37 @@ Node* SLL::getElementWithX(int x) const {
     return nullptr;
 }
 
-Node* SLL::getTail() const {
+SNode* SList::getTail() const {
     if (isEmpty()) return nullptr;
-    Node* pNode = this->getHead();
+    SNode* pNode = this->getHead();
     for (; pNode->nextNode(); pNode = pNode->nextNode());
     return pNode;
 }
 
-void SLL::insertAtBeginning(int x) {
-    Node* new_pHead = new Node(x, this->getHead());
+void SList::insertAtBeginning(int x) {
+    SNode* new_pHead = new SNode(x, this->getHead());
     this->setHead(new_pHead);
     return;
 }
 
-void SLL::insertAtEnding(int x) {
-    Node* pTail = this->getTail();
+void SList::insertAtEnding(int x) {
+    SNode* pTail = this->getTail();
     if (pTail == nullptr) {
         this->insertAtBeginning(x);
         return;
     } 
-    Node* new_pTail = new Node(x);
+    SNode* new_pTail = new SNode(x);
     pTail->setNextNode(new_pTail);
     return;
 }
 
-void SLL::insertAfterK(int x, int k) {
-    Node* pNode = this->getElementWithX(k);
-    this->insertElement(pNode, x);
+void SList::insertAfterK(int x, int k) {
+    SNode* pNode = this->getElementWithX(k);
+    this->insertAfterElement(pNode, x);
     return;
 }
 
-void SLL::insertAtKthElement(int x, int k) {
+void SList::insertAfterKthElement(int x, int k) {
     // chia 3 TH
     // TH1: so am -> insertAtBeginning
     // TH2: binh thuong -> chen vo sau K, 
@@ -159,55 +159,83 @@ void SLL::insertAtKthElement(int x, int k) {
         return;
     }
 
-    Node* pNode = this->getKthElement(k);
+    SNode* pNode = this->getKthElement(k);
     if (pNode) {
-        this->insertElement(pNode, x);
+        this->insertAfterElement(pNode, x);
     } else {
         this->insertAtEnding(x);
     }
     return;
 }
 
-void SLL::insertElement(Node* pNode, int x) {
+void SList::insertAtKthElement(int x, int k) {
+    // chia 2 TH
+    // TH1: so am hoac vuot qua size cua linked list 
+    //      -> khong chen, bao loi
+    // TH2: binh thuong -> chen vo sau K
+    int n = this->countNode();
+    if (k < 0 || k > n) {
+        std::cout << "Invalid index to insert new element to linked list!\n";
+        return;
+    }
+
+    // head case
+    if (k == 0) {
+        this->insertAtBeginning(x);
+        return;
+    }
+
+    // tail case
+    if (k == n) {
+        this->insertAtEnding(x);
+        return;
+    }
+
+    // somewhere in the middle case
+    this->insertAfterElement(this->getKthElement(k - 1), x);
+    return;
+}
+
+void SList::insertAfterElement(SNode* pNode, int x) {
     // only insert if it is not nullptr
     if (pNode) {
-        Node* pNext = pNode->nextNode();
-        Node* new_pNode = new Node(x, pNext);
+        SNode* pNext = pNode->nextNode();
+        SNode* new_pNode = new SNode(x, pNext);
         pNode->setNextNode(new_pNode);
     }
     return;
 }
 
-void SLL::insertOrderedList(int x) {
+void SList::insertOrderedList(int x) {
     if (this->getHead() == nullptr) {
         this->insertAtBeginning(x);
         return;
     }
     if (this->getHead()->getData() > x) {
-        Node* tmp = new Node(x, this->getHead());
+        SNode* tmp = new SNode(x, this->getHead());
         this->setHead(tmp);
         return;
     }
-    Node* cur = this->getHead();
+    SNode* cur = this->getHead();
     for (; cur->nextNode(); cur = cur->nextNode()) {
         if (cur->nextNode()->getData() > x) {
             break;
         }
     }
-    this->insertElement(cur, x);
+    this->insertAfterElement(cur, x);
     return;
 }
 
-void SLL::deleteAtBeginning() {
-    Node* old_pHead = this->getHead();
+void SList::deleteAtBeginning() {
+    SNode* old_pHead = this->getHead();
     if(this->getHead()) this->setHead(this->getHead()->nextNode());
     delete old_pHead;
     return;
 }
 
-void SLL::deleteANode(int k) {
-    Node* prev = nullptr;
-    Node* cur = this->getHead();
+void SList::deleteANode(int k) {
+    SNode* prev = nullptr;
+    SNode* cur = this->getHead();
     for (; cur; prev = cur, cur = cur->nextNode()) {
         if (cur->getData() == k) {
             // if there is no prev, it must be a head.
@@ -215,6 +243,7 @@ void SLL::deleteANode(int k) {
                 prev->setNextNode(cur->nextNode());
             } else {
                 this->deleteAtBeginning();
+                return;
             }
             break;
         }
@@ -223,7 +252,7 @@ void SLL::deleteANode(int k) {
     return;
 }
 
-void SLL::deleteKthNode(int k) {
+void SList::deleteKthNode(int k) {
     // handle 5 cases:
     // k < 0: noop
     // k == 0: deleteAtBeginning
@@ -235,8 +264,8 @@ void SLL::deleteKthNode(int k) {
         this->deleteAtBeginning();
         return;
     }
-    Node* prev = nullptr;
-    Node* cur = this->getHead();
+    SNode* prev = nullptr;
+    SNode* cur = this->getHead();
     for (int i = 0; i != k && cur; prev = cur, cur = cur->nextNode(), ++i);
     // if cur is not nullptr
     if (cur) {
@@ -248,8 +277,8 @@ void SLL::deleteKthNode(int k) {
     return;
 }
 
-void SLL::deleteAtEnding() {
-    Node* pNode = this->getHead();
+void SList::deleteAtEnding() {
+    SNode* pNode = this->getHead();
 
     // if a list is empty then do nothing
     if (pNode == nullptr) {
@@ -270,42 +299,42 @@ void SLL::deleteAtEnding() {
     return;
 }
 
-void SLL::deleteAllNode() {
+void SList::deleteAllNode() {
     while(this->getHead()) {
         this->deleteAtBeginning();
     }
     return;
 }
 
-std::ostream& operator<<(std::ostream& out, const SLL& list) {
+std::ostream& operator<<(std::ostream& out, const SList& list) {
     if (list.getHead() == nullptr) {
         out << "Empty List!\n";
         return out;
     }
     out << "Singly Linked List:\n";
-    for (Node* pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
+    for (SNode* pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
         out << *pNode;
     }
     return out;
 }
 
-// std::istream& operator>>(std::istream& in, SLL& list) {
+// std::istream& operator>>(std::istream& in, SList& list) {
 //     return in;
 // }
 
-void SLL::inputSLL() {
+void SList::inputSLL() {
     int x;
-    Node* cur;
+    SNode* cur;
     std::cout << "Input a Singly Linked list.\n";
     do {
         std::cout << "Please input the number (-1 to stop): ";
         std::cin >> x;
         if (x != -1) {
             if (this->isEmpty()) {
-                this->setHead(new Node(x));
+                this->setHead(new SNode(x));
                 cur = this->getHead();
             } else {
-                cur->setNextNode(new Node(x));
+                cur->setNextNode(new SNode(x));
                 cur = cur->nextNode();
             }
         }
@@ -313,14 +342,14 @@ void SLL::inputSLL() {
     return;
 }
 
-void SLL::displaySLL() const {
+void SList::displaySLL() const {
     std::cout << *this;
     return;
 }
 
-int SLL::countNode() const {
+int SList::countNode() const {
     int count = 0;
-    for (Node* pNode = this->getHead(); pNode; pNode = pNode->nextNode()) {
+    for (SNode* pNode = this->getHead(); pNode; pNode = pNode->nextNode()) {
         ++count;
     }
     return count;
@@ -328,18 +357,18 @@ int SLL::countNode() const {
 
 
 // https://www.geeksforgeeks.org/reverse-a-linked-list/
-SLL* reversedSLL(const SLL& list) {
+SList* reversedSLL(const SList& list) {
     // create rList using copy constructor
-    SLL* rList = new SLL(list);
+    SList* rList = new SList(list);
     // rList->displaySLL();
     // if the list is empty, no need to reverse
     if (rList->getHead() == nullptr) {
         return rList;
     }
 
-    Node* prev = nullptr;
-    Node* cur = rList->getHead();
-    Node* next = nullptr;
+    SNode* prev = nullptr;
+    SNode* cur = rList->getHead();
+    SNode* next = nullptr;
 
     for (; cur; prev = cur, cur = next) {
         // store next node address before reverse
@@ -356,56 +385,59 @@ SLL* reversedSLL(const SLL& list) {
 
 void SLLDemo() {
     using std::cout;
-    SLL *list = new SLL();
+    SList *list = new SList();
     list->inputSLL();
     list->displaySLL();
     cout << "countNode(): " << list->countNode() << '\n';
     std::cout << "Reverse linked list: ";
-    SLL *rList = reversedSLL(*list);
+    SList *rList = reversedSLL(*list);
     rList->displaySLL();
     int x;
     cout << "Please input a number x: ";
     std::cin >> x;
     cout << "Ordered linked list after add x: ";
-    list->insertOrderedList(10);
+    list->insertOrderedList(x);
     list->displaySLL();
-    // std::cout << "Head: " << list->getHead() << '\n';
-    // std::cout << "getKthElement(5): " << list->getKthElement(5) << '\n';
-    // std::cout << "getElementWithX(5): " << list->getElementWithX(5) << '\n';
-    // std::cout << "getTail(): " << list->getTail() << '\n';
-    // std::cout << "insertAtBeginning(100): ";
-    // list->insertAtBeginning(100);
-    // list->displaySLL();
-    // std::cout << "insertAtEnding(0): ";
-    // list->insertAtEnding(0);
-    // list->displaySLL();
-    // std::cout << "insertAfterK(5): ";
-    // list->insertAfterK(99, 5);
-    // list->displaySLL();
-    // cout << "insertAtKthElement(5): ";
-    // list->insertAtKthElement(98, 5);
-    // list->displaySLL();
-    // cout << "insertOrderedList(10): ";
-    // list->insertOrderedList(10);
-    // cout << "insertOrderedList(0): ";
-    // list->insertOrderedList(0);
-    // cout << "insertOrderedList(5): ";
-    // list->insertOrderedList(5);
-    // cout << "insertOrderedList(6): ";
-    // list->insertOrderedList(6);
-    // list->displaySLL();
-    // cout << "DeleteAtBeginning(): ";
-    // list->deleteAtBeginning();
-    // list->displaySLL();
-    // cout << "DeleteANode(5): ";
-    // list->deleteANode(5);
-    // list->displaySLL();
-    // cout << "DeleteKthNode(5): ";
-    // list->deleteKthNode(5);
-    // list->displaySLL();
-    // cout << "DeleteAllNode(): ";
-    // list->deleteAllNode();
-    // list->displaySLL();
+    std::cout << "Head: " << list->getHead() << '\n';
+    std::cout << "getKthElement(5): " << list->getKthElement(5) << '\n';
+    std::cout << "getElementWithX(5): " << list->getElementWithX(5) << '\n';
+    std::cout << "getTail(): " << list->getTail() << '\n';
+    std::cout << "insertAtBeginning(8): ";
+    list->insertAtBeginning(8);
+    list->displaySLL();
+    std::cout << "insertAtEnding(90): ";
+    list->insertAtEnding(90);
+    list->displaySLL();
+    std::cout << "insertAfterK(25, 20): ";
+    list->insertAfterK(25, 5);
+    list->displaySLL();
+    cout << "insertAfterKthElement(5): ";
+    list->insertAfterKthElement(45, 5);
+    list->displaySLL();
+    cout << "insertAtKthElement(42, 5): ";
+    list->insertAfterKthElement(42, 5);
+    list->displaySLL();
+    cout << "insertOrderedList(10): ";
+    list->insertOrderedList(10);
+    cout << "insertOrderedList(0): ";
+    list->insertOrderedList(0);
+    cout << "insertOrderedList(5): ";
+    list->insertOrderedList(5);
+    cout << "insertOrderedList(6): ";
+    list->insertOrderedList(6);
+    list->displaySLL();
+    cout << "DeleteAtBeginning(): ";
+    list->deleteAtBeginning();
+    list->displaySLL();
+    cout << "DeleteANode(5): ";
+    list->deleteANode(5);
+    list->displaySLL();
+    cout << "DeleteKthNode(5): ";
+    list->deleteKthNode(5);
+    list->displaySLL();
+    cout << "DeleteAllNode(): ";
+    list->deleteAllNode();
+    list->displaySLL();
     delete list;
     delete rList;
     return;
@@ -414,15 +446,15 @@ void SLLDemo() {
 
 /*
 bool isEmpty() const;
-    Node* getHead() const;
-    Node* getKthElement(int i) const;
-    Node* getElementWithX(int x) const;
-    Node* getTail() const;
+    SNode* getHead() const;
+    SNode* getKthElement(int i) const;
+    SNode* getElementWithX(int x) const;
+    SNode* getTail() const;
     void insertAtBeginning(int x);
     void insertAtEnding(int x);
     void insertAfterK(int x, int k);
     void insertAtKthElement(int x, int k);
-    void insertElement(Node* pNode, int x);
+    void insertElement(SNode* pNode, int x);
     void insertOrderedNode(int x);
     void deleteAtBeginning();
     void deleteAtEnding();

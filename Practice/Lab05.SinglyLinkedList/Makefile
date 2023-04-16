@@ -11,4 +11,4 @@ all: 22120049.o
 	$(CXX) $(CXXFLAGS) -g -c 22120049.cpp
 
 run: 22120049.exe
-	22120049.exe 
+	22120049.exe
