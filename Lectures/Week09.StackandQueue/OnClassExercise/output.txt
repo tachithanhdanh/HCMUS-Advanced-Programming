@@ -1,0 +1,185 @@
+Stack demo program.
+Init stack: Input Stack.
+Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Stack after input.
+Stack ADT.
+Size: 6
+Top element: 31
+Stack's node list:
+Current node: data = 31, pNext = 0x213bb9d34c0
+Current node: data = 29, pNext = 0x213bb9d34a0
+Current node: data = 23, pNext = 0x213bb9b6d50
+Current node: data = 19, pNext = 0x213bb9b6d30
+Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 13, pNext = 0
+
+Popping stack element one by one.
+Current top element: 31
+Popping...
+Destructor called for node having data = 31, address = 0x213bb9d34e0
+Current stack after popping top element:
+Stack ADT.
+Size: 5
+Top element: 29
+Stack's node list:
+Current node: data = 29, pNext = 0x213bb9d34a0
+Current node: data = 23, pNext = 0x213bb9b6d50
+Current node: data = 19, pNext = 0x213bb9b6d30
+Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 13, pNext = 0
+
+Current top element: 29
+Popping...
+Destructor called for node having data = 29, address = 0x213bb9d34c0
+Current stack after popping top element:
+Stack ADT.
+Size: 4
+Top element: 23
+Stack's node list:
+Current node: data = 23, pNext = 0x213bb9b6d50
+Current node: data = 19, pNext = 0x213bb9b6d30
+Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 13, pNext = 0
+
+Current top element: 23
+Popping...
+Destructor called for node having data = 23, address = 0x213bb9d34a0
+Current stack after popping top element:
+Stack ADT.
+Size: 3
+Top element: 19
+Stack's node list:
+Current node: data = 19, pNext = 0x213bb9b6d30
+Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 13, pNext = 0
+
+Current top element: 19
+Popping...
+Destructor called for node having data = 19, address = 0x213bb9b6d50
+Current stack after popping top element:
+Stack ADT.
+Size: 2
+Top element: 17
+Stack's node list:
+Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 13, pNext = 0
+
+Current top element: 17
+Popping...
+Destructor called for node having data = 17, address = 0x213bb9b6d30
+Current stack after popping top element:
+Stack ADT.
+Size: 1
+Top element: 13
+Stack's node list:
+Current node: data = 13, pNext = 0
+
+Current top element: 13
+Popping...
+Destructor called for node having data = 13, address = 0x213bb9b6fb0
+Current stack after popping top element:
+Stack ADT.
+Size: 0
+Top element: -1
+Stack's node list:
+Empty stack!
+
+Stack destructor called.
+
+Stack demo program.
+Init queue: Input Queue.
+Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Queue after input.
+Monotonic queue ADT.
+Size: 6
+Front element: 2
+Back element: 12
+Queue node list:
+Current node: data = 2, pNext = 0x213bb9b6d30
+Current node: data = 4, pNext = 0x213bb9b6d50
+Current node: data = 6, pNext = 0x213bb9d34a0
+Current node: data = 8, pNext = 0x213bb9d34c0
+Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 12, pNext = 0
+
+Popping queue element one by one.
+Current front element: 2
+Current back element: 12
+Popping...
+Destructor called for node having data = 2, address = 0x213bb9b6fb0
+Current queue after popping front element:
+Monotonic queue ADT.
+Size: 5
+Front element: 4
+Back element: 12
+Queue node list:
+Current node: data = 4, pNext = 0x213bb9b6d50
+Current node: data = 6, pNext = 0x213bb9d34a0
+Current node: data = 8, pNext = 0x213bb9d34c0
+Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 12, pNext = 0
+
+Current front element: 4
+Current back element: 12
+Popping...
+Destructor called for node having data = 4, address = 0x213bb9b6d30
+Current queue after popping front element:
+Monotonic queue ADT.
+Size: 4
+Front element: 6
+Back element: 12
+Queue node list:
+Current node: data = 6, pNext = 0x213bb9d34a0
+Current node: data = 8, pNext = 0x213bb9d34c0
+Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 12, pNext = 0
+
+Current front element: 6
+Current back element: 12
+Popping...
+Destructor called for node having data = 6, address = 0x213bb9b6d50
+Current queue after popping front element:
+Monotonic queue ADT.
+Size: 3
+Front element: 8
+Back element: 12
+Queue node list:
+Current node: data = 8, pNext = 0x213bb9d34c0
+Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 12, pNext = 0
+
+Current front element: 8
+Current back element: 12
+Popping...
+Destructor called for node having data = 8, address = 0x213bb9d34a0
+Current queue after popping front element:
+Monotonic queue ADT.
+Size: 2
+Front element: 10
+Back element: 12
+Queue node list:
+Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 12, pNext = 0
+
+Current front element: 10
+Current back element: 12
+Popping...
+Destructor called for node having data = 10, address = 0x213bb9d34c0
+Current queue after popping front element:
+Monotonic queue ADT.
+Size: 1
+Front element: 12
+Back element: 12
+Queue node list:
+Current node: data = 12, pNext = 0
+
+Current front element: 12
+Current back element: 12
+Popping...
+Destructor called for node having data = 12, address = 0x213bb9d34e0
+Current queue after popping front element:
+Monotonic queue ADT.
+Size: 0
+Front element: -1
+Back element: -1
+Queue node list:
+Empty queue!
+

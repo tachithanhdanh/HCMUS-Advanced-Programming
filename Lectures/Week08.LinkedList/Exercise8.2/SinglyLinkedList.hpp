@@ -1,5 +1,5 @@
-#ifndef SINGLYLINKEDLIST_H_
-#define SINGLYLINKEDLIST_H_
+#ifndef SINGLYLINKEDLIST_HPP_
+#define SINGLYLINKEDLIST_HPP_
 #include <iostream>
 
 class SNode {

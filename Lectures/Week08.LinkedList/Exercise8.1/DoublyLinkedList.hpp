@@ -1,5 +1,5 @@
-#ifndef DOUBLYLINKEDLIST_H_
-#define DOUBLYLINKEDLIST_H_
+#ifndef DOUBLYLINKEDLIST_HPP_
+#define DOUBLYLINKEDLIST_HPP_
 #include <iostream>
 
 class DNode {
