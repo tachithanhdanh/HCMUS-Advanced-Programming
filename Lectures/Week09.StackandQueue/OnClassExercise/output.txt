@@ -5,67 +5,67 @@ Stack ADT.
 Size: 6
 Top element: 31
 Stack's node list:
-Current node: data = 31, pNext = 0x213bb9d34c0
-Current node: data = 29, pNext = 0x213bb9d34a0
-Current node: data = 23, pNext = 0x213bb9b6d50
-Current node: data = 19, pNext = 0x213bb9b6d30
-Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 31, pNext = 0x225886034c0
+Current node: data = 29, pNext = 0x225886034a0
+Current node: data = 23, pNext = 0x225887d6d50
+Current node: data = 19, pNext = 0x225887d6d30
+Current node: data = 17, pNext = 0x225887d6fb0
 Current node: data = 13, pNext = 0
 
 Popping stack element one by one.
 Current top element: 31
 Popping...
-Destructor called for node having data = 31, address = 0x213bb9d34e0
+Destructor called for node having data = 31, address = 0x225886034e0
 Current stack after popping top element:
 Stack ADT.
 Size: 5
 Top element: 29
 Stack's node list:
-Current node: data = 29, pNext = 0x213bb9d34a0
-Current node: data = 23, pNext = 0x213bb9b6d50
-Current node: data = 19, pNext = 0x213bb9b6d30
-Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 29, pNext = 0x225886034a0
+Current node: data = 23, pNext = 0x225887d6d50
+Current node: data = 19, pNext = 0x225887d6d30
+Current node: data = 17, pNext = 0x225887d6fb0
 Current node: data = 13, pNext = 0
 
 Current top element: 29
 Popping...
-Destructor called for node having data = 29, address = 0x213bb9d34c0
+Destructor called for node having data = 29, address = 0x225886034c0
 Current stack after popping top element:
 Stack ADT.
 Size: 4
 Top element: 23
 Stack's node list:
-Current node: data = 23, pNext = 0x213bb9b6d50
-Current node: data = 19, pNext = 0x213bb9b6d30
-Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 23, pNext = 0x225887d6d50
+Current node: data = 19, pNext = 0x225887d6d30
+Current node: data = 17, pNext = 0x225887d6fb0
 Current node: data = 13, pNext = 0
 
 Current top element: 23
 Popping...
-Destructor called for node having data = 23, address = 0x213bb9d34a0
+Destructor called for node having data = 23, address = 0x225886034a0
 Current stack after popping top element:
 Stack ADT.
 Size: 3
 Top element: 19
 Stack's node list:
-Current node: data = 19, pNext = 0x213bb9b6d30
-Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 19, pNext = 0x225887d6d30
+Current node: data = 17, pNext = 0x225887d6fb0
 Current node: data = 13, pNext = 0
 
 Current top element: 19
 Popping...
-Destructor called for node having data = 19, address = 0x213bb9b6d50
+Destructor called for node having data = 19, address = 0x225887d6d50
 Current stack after popping top element:
 Stack ADT.
 Size: 2
 Top element: 17
 Stack's node list:
-Current node: data = 17, pNext = 0x213bb9b6fb0
+Current node: data = 17, pNext = 0x225887d6fb0
 Current node: data = 13, pNext = 0
 
 Current top element: 17
 Popping...
-Destructor called for node having data = 17, address = 0x213bb9b6d30
+Destructor called for node having data = 17, address = 0x225887d6d30
 Current stack after popping top element:
 Stack ADT.
 Size: 1
@@ -75,7 +75,7 @@ Current node: data = 13, pNext = 0
 
 Current top element: 13
 Popping...
-Destructor called for node having data = 13, address = 0x213bb9b6fb0
+Destructor called for node having data = 13, address = 0x225887d6fb0
 Current stack after popping top element:
 Stack ADT.
 Size: 0
@@ -84,8 +84,7 @@ Stack's node list:
 Empty stack!
 
 Stack destructor called.
-
-Stack demo program.
+Queue demo program.
 Init queue: Input Queue.
 Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Queue after input.
 Monotonic queue ADT.
@@ -93,76 +92,76 @@ Size: 6
 Front element: 2
 Back element: 12
 Queue node list:
-Current node: data = 2, pNext = 0x213bb9b6d30
-Current node: data = 4, pNext = 0x213bb9b6d50
-Current node: data = 6, pNext = 0x213bb9d34a0
-Current node: data = 8, pNext = 0x213bb9d34c0
-Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 2, pNext = 0x225887d6d30
+Current node: data = 4, pNext = 0x225887d6d50
+Current node: data = 6, pNext = 0x225886034a0
+Current node: data = 8, pNext = 0x225886034c0
+Current node: data = 10, pNext = 0x225886034e0
 Current node: data = 12, pNext = 0
 
 Popping queue element one by one.
 Current front element: 2
 Current back element: 12
 Popping...
-Destructor called for node having data = 2, address = 0x213bb9b6fb0
+Destructor called for node having data = 2, address = 0x225887d6fb0
 Current queue after popping front element:
 Monotonic queue ADT.
 Size: 5
 Front element: 4
 Back element: 12
 Queue node list:
-Current node: data = 4, pNext = 0x213bb9b6d50
-Current node: data = 6, pNext = 0x213bb9d34a0
-Current node: data = 8, pNext = 0x213bb9d34c0
-Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 4, pNext = 0x225887d6d50
+Current node: data = 6, pNext = 0x225886034a0
+Current node: data = 8, pNext = 0x225886034c0
+Current node: data = 10, pNext = 0x225886034e0
 Current node: data = 12, pNext = 0
 
 Current front element: 4
 Current back element: 12
 Popping...
-Destructor called for node having data = 4, address = 0x213bb9b6d30
+Destructor called for node having data = 4, address = 0x225887d6d30
 Current queue after popping front element:
 Monotonic queue ADT.
 Size: 4
 Front element: 6
 Back element: 12
 Queue node list:
-Current node: data = 6, pNext = 0x213bb9d34a0
-Current node: data = 8, pNext = 0x213bb9d34c0
-Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 6, pNext = 0x225886034a0
+Current node: data = 8, pNext = 0x225886034c0
+Current node: data = 10, pNext = 0x225886034e0
 Current node: data = 12, pNext = 0
 
 Current front element: 6
 Current back element: 12
 Popping...
-Destructor called for node having data = 6, address = 0x213bb9b6d50
+Destructor called for node having data = 6, address = 0x225887d6d50
 Current queue after popping front element:
 Monotonic queue ADT.
 Size: 3
 Front element: 8
 Back element: 12
 Queue node list:
-Current node: data = 8, pNext = 0x213bb9d34c0
-Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 8, pNext = 0x225886034c0
+Current node: data = 10, pNext = 0x225886034e0
 Current node: data = 12, pNext = 0
 
 Current front element: 8
 Current back element: 12
 Popping...
-Destructor called for node having data = 8, address = 0x213bb9d34a0
+Destructor called for node having data = 8, address = 0x225886034a0
 Current queue after popping front element:
 Monotonic queue ADT.
 Size: 2
 Front element: 10
 Back element: 12
 Queue node list:
-Current node: data = 10, pNext = 0x213bb9d34e0
+Current node: data = 10, pNext = 0x225886034e0
 Current node: data = 12, pNext = 0
 
 Current front element: 10
 Current back element: 12
 Popping...
-Destructor called for node having data = 10, address = 0x213bb9d34c0
+Destructor called for node having data = 10, address = 0x225886034c0
 Current queue after popping front element:
 Monotonic queue ADT.
 Size: 1
@@ -174,7 +173,7 @@ Current node: data = 12, pNext = 0
 Current front element: 12
 Current back element: 12
 Popping...
-Destructor called for node having data = 12, address = 0x213bb9d34e0
+Destructor called for node having data = 12, address = 0x225886034e0
 Current queue after popping front element:
 Monotonic queue ADT.
 Size: 0
@@ -183,3 +182,181 @@ Back element: -1
 Queue node list:
 Empty queue!
 
+Queue destructor called.
+Deque demo program.
+Init deque: Input Deque.
+Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Please input insert mode (0 is push_front, 1 is push_back): Please input the number (-1 to stop): Deque after input.
+Double-ended queue ADT.
+Size: 10
+Front element: 9
+Back element: 10
+Queue node list:
+Current node: data = 9, address = 0x22588603540, pPrev = 0, pNext = 0x22588603500
+Current node: data = 7, address = 0x22588603500, pPrev = 0x22588603540, pNext = 0x225886034c0
+Current node: data = 5, address = 0x225886034c0, pPrev = 0x22588603500, pNext = 0x225887d6d50
+Current node: data = 3, address = 0x225887d6d50, pPrev = 0x225886034c0, pNext = 0x225887d6fb0
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0x225887d6d50, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0x225886034a0
+Current node: data = 4, address = 0x225886034a0, pPrev = 0x225887d6d30, pNext = 0x225886034e0
+Current node: data = 6, address = 0x225886034e0, pPrev = 0x225886034a0, pNext = 0x22588603520
+Current node: data = 8, address = 0x22588603520, pPrev = 0x225886034e0, pNext = 0x22588603850
+Current node: data = 10, address = 0x22588603850, pPrev = 0x22588603520, pNext = 0
+
+Popping deque element front and back one after another.
+Current front element: 9
+Current back element: 10
+Popping front...
+Destructor called for node having 9 at address 0x22588603540
+Current deque after popping front element:
+Double-ended queue ADT.
+Size: 9
+Front element: 7
+Back element: 10
+Queue node list:
+Current node: data = 7, address = 0x22588603500, pPrev = 0, pNext = 0x225886034c0
+Current node: data = 5, address = 0x225886034c0, pPrev = 0x22588603500, pNext = 0x225887d6d50
+Current node: data = 3, address = 0x225887d6d50, pPrev = 0x225886034c0, pNext = 0x225887d6fb0
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0x225887d6d50, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0x225886034a0
+Current node: data = 4, address = 0x225886034a0, pPrev = 0x225887d6d30, pNext = 0x225886034e0
+Current node: data = 6, address = 0x225886034e0, pPrev = 0x225886034a0, pNext = 0x22588603520
+Current node: data = 8, address = 0x22588603520, pPrev = 0x225886034e0, pNext = 0x22588603850
+Current node: data = 10, address = 0x22588603850, pPrev = 0x22588603520, pNext = 0
+
+Current front element: 7
+Current back element: 10
+Popping back...
+Destructor called for node having 10 at address 0x22588603850
+Current deque after popping back element:
+Double-ended queue ADT.
+Size: 8
+Front element: 7
+Back element: 8
+Queue node list:
+Current node: data = 7, address = 0x22588603500, pPrev = 0, pNext = 0x225886034c0
+Current node: data = 5, address = 0x225886034c0, pPrev = 0x22588603500, pNext = 0x225887d6d50
+Current node: data = 3, address = 0x225887d6d50, pPrev = 0x225886034c0, pNext = 0x225887d6fb0
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0x225887d6d50, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0x225886034a0
+Current node: data = 4, address = 0x225886034a0, pPrev = 0x225887d6d30, pNext = 0x225886034e0
+Current node: data = 6, address = 0x225886034e0, pPrev = 0x225886034a0, pNext = 0x22588603520
+Current node: data = 8, address = 0x22588603520, pPrev = 0x225886034e0, pNext = 0
+
+Current front element: 7
+Current back element: 8
+Popping front...
+Destructor called for node having 7 at address 0x22588603500
+Current deque after popping front element:
+Double-ended queue ADT.
+Size: 7
+Front element: 5
+Back element: 8
+Queue node list:
+Current node: data = 5, address = 0x225886034c0, pPrev = 0, pNext = 0x225887d6d50
+Current node: data = 3, address = 0x225887d6d50, pPrev = 0x225886034c0, pNext = 0x225887d6fb0
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0x225887d6d50, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0x225886034a0
+Current node: data = 4, address = 0x225886034a0, pPrev = 0x225887d6d30, pNext = 0x225886034e0
+Current node: data = 6, address = 0x225886034e0, pPrev = 0x225886034a0, pNext = 0x22588603520
+Current node: data = 8, address = 0x22588603520, pPrev = 0x225886034e0, pNext = 0
+
+Current front element: 5
+Current back element: 8
+Popping back...
+Destructor called for node having 8 at address 0x22588603520
+Current deque after popping back element:
+Double-ended queue ADT.
+Size: 6
+Front element: 5
+Back element: 6
+Queue node list:
+Current node: data = 5, address = 0x225886034c0, pPrev = 0, pNext = 0x225887d6d50
+Current node: data = 3, address = 0x225887d6d50, pPrev = 0x225886034c0, pNext = 0x225887d6fb0
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0x225887d6d50, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0x225886034a0
+Current node: data = 4, address = 0x225886034a0, pPrev = 0x225887d6d30, pNext = 0x225886034e0
+Current node: data = 6, address = 0x225886034e0, pPrev = 0x225886034a0, pNext = 0
+
+Current front element: 5
+Current back element: 6
+Popping front...
+Destructor called for node having 5 at address 0x225886034c0
+Current deque after popping front element:
+Double-ended queue ADT.
+Size: 5
+Front element: 3
+Back element: 6
+Queue node list:
+Current node: data = 3, address = 0x225887d6d50, pPrev = 0, pNext = 0x225887d6fb0
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0x225887d6d50, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0x225886034a0
+Current node: data = 4, address = 0x225886034a0, pPrev = 0x225887d6d30, pNext = 0x225886034e0
+Current node: data = 6, address = 0x225886034e0, pPrev = 0x225886034a0, pNext = 0
+
+Current front element: 3
+Current back element: 6
+Popping back...
+Destructor called for node having 6 at address 0x225886034e0
+Current deque after popping back element:
+Double-ended queue ADT.
+Size: 4
+Front element: 3
+Back element: 4
+Queue node list:
+Current node: data = 3, address = 0x225887d6d50, pPrev = 0, pNext = 0x225887d6fb0
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0x225887d6d50, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0x225886034a0
+Current node: data = 4, address = 0x225886034a0, pPrev = 0x225887d6d30, pNext = 0
+
+Current front element: 3
+Current back element: 4
+Popping front...
+Destructor called for node having 3 at address 0x225887d6d50
+Current deque after popping front element:
+Double-ended queue ADT.
+Size: 3
+Front element: 1
+Back element: 4
+Queue node list:
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0x225886034a0
+Current node: data = 4, address = 0x225886034a0, pPrev = 0x225887d6d30, pNext = 0
+
+Current front element: 1
+Current back element: 4
+Popping back...
+Destructor called for node having 4 at address 0x225886034a0
+Current deque after popping back element:
+Double-ended queue ADT.
+Size: 2
+Front element: 1
+Back element: 2
+Queue node list:
+Current node: data = 1, address = 0x225887d6fb0, pPrev = 0, pNext = 0x225887d6d30
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0x225887d6fb0, pNext = 0
+
+Current front element: 1
+Current back element: 2
+Popping front...
+Destructor called for node having 1 at address 0x225887d6fb0
+Current deque after popping front element:
+Double-ended queue ADT.
+Size: 1
+Front element: 2
+Back element: 2
+Queue node list:
+Current node: data = 2, address = 0x225887d6d30, pPrev = 0, pNext = 0
+
+Current front element: 2
+Current back element: 2
+Popping back...
+Destructor called for node having 2 at address 0x225887d6d30
+Current deque after popping back element:
+Double-ended queue ADT.
+Size: 0
+Front element: -1
+Back element: -1
+Queue node list:
+Empty deque!
+
+Deque destructor called.

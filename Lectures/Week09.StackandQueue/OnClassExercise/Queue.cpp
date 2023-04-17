@@ -3,6 +3,7 @@
 Queue::Queue(): m_frontNode(nullptr), m_backNode(nullptr), m_size(0) {}
 
 Queue::~Queue() {
+    std::cout << "Queue destructor called.\n";
     while(!this->empty()) {
         this->pop();
     }
@@ -51,6 +52,10 @@ void Queue::pop() {
     if (this->empty()) return;
     SNode* oldFrontNode = this->getFrontNode();
     this->setFrontNode(oldFrontNode->nextNode());
+    if (this->getFrontNode() == nullptr) {
+        // if queue is empty, then set backNode to nullptr
+        this->setBackNode(nullptr);
+    }
     delete oldFrontNode;
     --m_size;
     return;

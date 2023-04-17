@@ -1,11 +1,9 @@
-#include "Process.hpp"
-#include "Stack.hpp"
-#include "Queue.hpp"
+#include "Demo.hpp"
 #include <iostream>
 
 int main(void) {
     demoStack();
-    std::cout << '\n';
     demoQueue();
+    demoDeque();
     return 0;
 }

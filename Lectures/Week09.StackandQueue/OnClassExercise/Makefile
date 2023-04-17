@@ -4,7 +4,7 @@ CXXFLAGS = -Wall -Wextra -Wshadow -std=c++20 -pedantic -Wformat=2 -Wfloat-equal 
 
 files := $(wildcard *.cpp)
 
-all: main.o SNode.o Stack.o Queue.o Process.o
+all: main.o SNode.o Stack.o Queue.o Demo.o DNode.o Deque.o
 	$(CXX) $(CXXFLAGS) $^ -o main.exe
 
 SNode.o: SNode.cpp SNode.hpp
@@ -16,11 +16,21 @@ Stack.o: Stack.cpp Stack.hpp SNode.hpp
 Queue.o: Queue.cpp Queue.hpp SNode.hpp
 	$(CXX) $(CXXFLAGS) -g -c Queue.cpp
 
-Process.o: Process.cpp Process.hpp Stack.hpp Queue.hpp SNode.hpp
-	$(CXX) $(CXXFLAGS) -g -c Process.cpp
+Demo.o: Demo.cpp Demo.hpp Stack.hpp Queue.hpp SNode.hpp DNode.hpp Deque.hpp
+	$(CXX) $(CXXFLAGS) -g -c Demo.cpp
 
-main.o: main.cpp Process.hpp Stack.hpp Queue.hpp SNode.hpp
+Deque.o: Deque.cpp Deque.hpp DNode.hpp
+	$(CXX) $(CXXFLAGS) -g -c Deque.cpp
+
+DNode.o: DNode.cpp DNode.hpp
+	$(CXX) $(CXXFLAGS) -g -c DNode.cpp
+
+main.o: main.cpp Demo.hpp Stack.hpp Queue.hpp SNode.hpp DNode.hpp Deque.hpp
 	$(CXX) $(CXXFLAGS) -g -c main.cpp
 
 run: main.exe
 	main.exe < input.txt > output.txt
+
+clean:
+	del *.o
+	del *.exe
