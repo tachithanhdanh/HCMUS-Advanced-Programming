@@ -1,0 +1,6 @@
+Please input the number of numbers to convert to binary: 
+Please input a non-negative number: Binary representation of 324071203: 10011010100001110111100100011
+Please input a non-negative number: Binary representation of 22280037: 1010100111111011101100101
+Please input a non-negative number: Binary representation of 22120049: 1010100011000011001110001
+Please input a non-negative number: Binary representation of 22120025: 1010100011000011001011001
+Please input a non-negative number: Binary representation of 4333: 1000011101101
