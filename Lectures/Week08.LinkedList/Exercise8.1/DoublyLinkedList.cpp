@@ -1,65 +1,5 @@
 #include "DoublyLinkedList.hpp"
 
-DNode::DNode(int data, DNode* pPrev, DNode* pNext)
-    : m_data(data)
-    , m_pPrev(pPrev)
-    , m_pNext(pNext) {}
-
-DNode::~DNode() {
-    std::cout << "destructor called for node has " << this->getData();
-    std::cout << " at address " << this << '\n';
-    // delete this->m_pNext;
-    // this->m_pNext = nullptr;
-}
-
-DNode::DNode(const DNode& node): m_data(node.m_data), m_pNext(node.m_pNext) {}
-
-DNode& DNode::operator=(const DNode& node) {
-    // self-assignment check
-    if (this == &node) {
-        return *this;
-    }
-
-    this->m_data = node.m_data;
-    this->m_pNext = node.m_pNext;
-    return *this;
-}
-
-DNode* DNode::prevNode() const {
-    return this->m_pPrev;
-}
-
-DNode* DNode::nextNode() const {
-    return this->m_pNext;
-}
-
-int DNode::getData() const {
-    return this->m_data;
-}
-
-void DNode::setPrevNode(DNode *pNode) {
-    this->m_pPrev = pNode;
-    return;
-}
-
-void DNode::setNextNode(DNode* pNode) {
-    this->m_pNext = pNode;
-    return;
-}
-
-std::ostream& operator<<(std::ostream& out, const DNode& node) {
-    out << "Current node: data = " << node.getData();
-    out << ", address = " << &node; 
-    out << ", pPrev = " << node.prevNode();
-    out << ", pNext = " << node.nextNode() << '\n';
-    return out;
-}
-
-// std::istream& operator>>(std::istream& in, DNode& node) {
-//     in >> node.m_data;
-//     return in;
-// }
-
 DList::DList(): m_pHead(nullptr), m_pTail(nullptr) {}
 
 DList::~DList() {
@@ -135,8 +75,17 @@ DNode* DList::getKthElement(int k) const {
     return pNode;
 }
 
-DNode* DList::getElementWithX(int x) const {
+DNode* DList::findFirstData(int x) const {
     for (DNode* pNode = this->getHead(); pNode; pNode = pNode->nextNode()) {
+        if (pNode->getData() == x) {
+            return pNode;
+        }
+    }
+    return nullptr;
+}
+
+DNode* DList::findLastData(int x) const {
+    for (DNode* pNode = this->getTail(); pNode; pNode = pNode->prevNode()) {
         if (pNode->getData() == x) {
             return pNode;
         }
@@ -180,7 +129,7 @@ void DList::insertAtEnding(int x) {
 }
 
 void DList::insertAfterK(int x, int k) {
-    DNode* pNode = this->getElementWithX(k);
+    DNode* pNode = this->findFirstData(k);
     this->insertAfterElement(pNode, x);
     return;
 }
@@ -230,6 +179,11 @@ void DList::insertAtKthElement(int x, int k) {
 
     // somewhere in the middle case
     this->insertAfterElement(this->getKthElement(k - 1), x);
+    return;
+}
+
+void DList::insertBeforeKthElement(int x, int k) {
+    this->insertAtKthElement(x, k);
     return;
 }
 
@@ -391,6 +345,18 @@ void DList::deleteKthNode(int k) {
     return;
 }
 
+void DList::deleteFirstData(int data) {
+    DNode* pNode = findFirstData(data);
+    deleteANode(pNode);
+    return;
+}
+
+void DList::deleteLastData(int data) {
+    DNode* pNode = findLastData(data);
+    deleteANode(pNode);
+    return;
+}
+
 void DList::deleteAllNode() {
     while(this->getHead()) {
         this->deleteAtBeginning();
@@ -404,6 +370,7 @@ std::ostream& operator<<(std::ostream& out, const DList& list) {
         return out;
     }
     out << "Doubly Linked List:\n";
+    out << "isEmpty: " << std::boolalpha << list.isEmpty() << '\n';
     out << "Head: " << list.getHead() << '\n';
     out << "Tail: " << list.getTail() << '\n';
     out << "Length: " << list.countNode() << '\n';
@@ -454,93 +421,3 @@ int DList::countNode() const {
     }
     return count;
 }
-
-void DLLDemo() {
-    using std::cout;
-    DList *list = new DList();
-
-    list->inputDLL();
-    list->displayDLL();
-    // int x;
-    // cout << "Please input a number x: ";
-    // std::cin >> x;
-    // cout << "Ordered linked list after add x: ";
-    // list->insertOrderedList(10);
-    // list->displayDLL();
-
-    std::cout << "getKthElement(5): " << list->getKthElement(5) << '\n';
-    std::cout << "getElementWithX(5): " << list->getElementWithX(5) << '\n';
-    std::cout << "insertAtBeginning(100): ";
-    list->insertAtBeginning(100);
-    list->displayDLL();
-
-    std::cout << "insertAtEnding(0): ";
-    list->insertAtEnding(0);
-    list->displayDLL();
-
-    std::cout << "insertAfterK(5): ";
-    list->insertAfterK(99, 5);
-    list->displayDLL();
-
-    cout << "insertAfterKthElement(98, 5): ";
-    list->insertAfterKthElement(98, 5);
-    list->displayDLL();
-
-    cout << "insertAtKthElement(37, 3): ";
-    list->insertAtKthElement(37, 3);
-    list->displayDLL();
-
-    // cout << "insertOrderedList(10): ";
-    // list->insertOrderedList(10);
-    // cout << "insertOrderedList(0): ";
-    // list->insertOrderedList(0);
-    // cout << "insertOrderedList(5): ";
-    // list->insertOrderedList(5);
-    // cout << "insertOrderedList(6): \n";
-    // list->insertOrderedList(6);
-    // list->displayDLL();
-
-    cout << "DeleteAtBeginning(): ";
-    list->deleteAtBeginning();
-    list->displayDLL();
-
-    cout << "Delete1K(5): ";
-    list->delete1K(5);
-    list->displayDLL();
-
-    cout << "DeleteKthNode(5): ";
-    list->deleteKthNode(5);
-    list->displayDLL();
-
-    cout << "DeleteAtEnding(): ";
-    list->deleteAtEnding();
-    list->displayDLL();
-
-    cout << "DeleteAllNode(): ";
-    list->deleteAllNode();
-    list->displayDLL();
-
-    delete list;
-    return;
-}
-
-
-/*
-bool isEmpty() const;
-    DNode* getHead() const;
-    DNode* getKthElement(int i) const;
-    DNode* getElementWithX(int x) const;
-    DNode* getTail() const;
-    void insertAtBeginning(int x);
-    void insertAtEnding(int x);
-    void insertAfterK(int x, int k);
-    void insertAtKthElement(int x, int k);
-    void insertElement(DNode* pNode, int x);
-    void insertOrderedNode(int x);
-    void deleteAtBeginning();
-    void deleteAtEnding();
-    void deleteANode(int k);
-    void deleteKthNode(int k);
-    void deleteAllNode();
-    void inputDLL();
-*/

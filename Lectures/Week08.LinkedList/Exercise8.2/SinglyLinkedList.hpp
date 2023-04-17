@@ -1,24 +1,7 @@
 #ifndef SINGLYLINKEDLIST_HPP_
 #define SINGLYLINKEDLIST_HPP_
+#include "SNode.hpp"
 #include <iostream>
-
-class SNode {
-private:
-    int m_data;
-    SNode* m_pNext;
-
-public:
-    SNode();
-    SNode(int data, SNode* pNext = nullptr);
-    ~SNode();
-    SNode(const SNode& node);
-    SNode& operator=(const SNode& node);
-    SNode* nextNode() const;
-    int getData() const;
-    void setNextNode(SNode* pNext);
-    friend std::ostream& operator<<(std::ostream& out, const SNode& node);
-    // friend std::istream& operator>>(std::istream& in, SNode& node);
-};
 
 class SList {
 private:
@@ -54,8 +37,5 @@ public:
     friend std::ostream& operator<<(std::ostream& out, const SList& list);
     // friend std::istream& operator>>(std::istream& in, SList& list);
 };
-
-void SLLDemo();
-SList* reversedSLL(const SList& list);
 
 #endif

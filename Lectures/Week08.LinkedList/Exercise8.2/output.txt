@@ -1,162 +1,43 @@
 Input a Singly Linked list.
 Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Singly Linked List:
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0
+countNode: 6
+Current node: data = 10, address = 0x1c179f76d40, pNext = 0x1c179f76f80
+Current node: data = 20, address = 0x1c179f76f80, pNext = 0x1c179f76fa0
+Current node: data = 30, address = 0x1c179f76fa0, pNext = 0x1c179f934a0
+Current node: data = 40, address = 0x1c179f934a0, pNext = 0x1c179f934c0
+Current node: data = 50, address = 0x1c179f934c0, pNext = 0x1c179f934e0
+Current node: data = 60, address = 0x1c179f934e0, pNext = 0
 countNode(): 6
 Reverse linked list: Singly Linked List:
-Current node: data = 60, address = 0x203f11f35c0, pNext = 0x203f11f35a0
-Current node: data = 50, address = 0x203f11f35a0, pNext = 0x203f11f3580
-Current node: data = 40, address = 0x203f11f3580, pNext = 0x203f11f3560
-Current node: data = 30, address = 0x203f11f3560, pNext = 0x203f11f3540
-Current node: data = 20, address = 0x203f11f3540, pNext = 0x203f11f3520
-Current node: data = 10, address = 0x203f11f3520, pNext = 0
-Please input a number x: Ordered linked list after add x: Singly Linked List:
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0
-Head: 0x203f11f3790
-getKthElement(5): 0x203f11f34c0
-getElementWithX(5): 0
-getTail(): 0x203f11f34e0
-insertAtBeginning(8): Singly Linked List:
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0
-insertAtEnding(90): Singly Linked List:
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0x203f11f37f0
-Current node: data = 90, address = 0x203f11f37f0, pNext = 0
-insertAfterK(25, 20): Singly Linked List:
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0x203f11f37f0
-Current node: data = 90, address = 0x203f11f37f0, pNext = 0
-insertAfterKthElement(5): Singly Linked List:
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f3990
-Current node: data = 45, address = 0x203f11f3990, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0x203f11f37f0
-Current node: data = 90, address = 0x203f11f37f0, pNext = 0
-insertAtKthElement(42, 5): Singly Linked List:
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f3850
-Current node: data = 42, address = 0x203f11f3850, pNext = 0x203f11f3990
-Current node: data = 45, address = 0x203f11f3990, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0x203f11f37f0
-Current node: data = 90, address = 0x203f11f37f0, pNext = 0
-insertOrderedList(10): insertOrderedList(0): insertOrderedList(5): insertOrderedList(6): Singly Linked List:
-Current node: data = 0, address = 0x203f11f36d0, pNext = 0x203f11f37b0
-Current node: data = 5, address = 0x203f11f37b0, pNext = 0x203f11f38b0
-Current node: data = 6, address = 0x203f11f38b0, pNext = 0x203f11f39b0
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f11f3830
-Current node: data = 10, address = 0x203f11f3830, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f3850
-Current node: data = 42, address = 0x203f11f3850, pNext = 0x203f11f3990
-Current node: data = 45, address = 0x203f11f3990, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0x203f11f37f0
-Current node: data = 90, address = 0x203f11f37f0, pNext = 0
-DeleteAtBeginning(): destructor called for node has 0 at address 0x203f11f36d0
+countNode: 6
+Current node: data = 60, address = 0x1c179f935c0, pNext = 0x1c179f935a0
+Current node: data = 50, address = 0x1c179f935a0, pNext = 0x1c179f93580
+Current node: data = 40, address = 0x1c179f93580, pNext = 0x1c179f93560
+Current node: data = 30, address = 0x1c179f93560, pNext = 0x1c179f93540
+Current node: data = 20, address = 0x1c179f93540, pNext = 0x1c179f93520
+Current node: data = 10, address = 0x1c179f93520, pNext = 0
+Please input a number x: Ordered linked list after add 9 into list.
 Singly Linked List:
-Current node: data = 5, address = 0x203f11f37b0, pNext = 0x203f11f38b0
-Current node: data = 6, address = 0x203f11f38b0, pNext = 0x203f11f39b0
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f11f3830
-Current node: data = 10, address = 0x203f11f3830, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f3850
-Current node: data = 42, address = 0x203f11f3850, pNext = 0x203f11f3990
-Current node: data = 45, address = 0x203f11f3990, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0x203f11f37f0
-Current node: data = 90, address = 0x203f11f37f0, pNext = 0
-DeleteANode(5): destructor called for node has 5 at address 0x203f11f37b0
-Singly Linked List:
-Current node: data = 6, address = 0x203f11f38b0, pNext = 0x203f11f39b0
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f11f3830
-Current node: data = 10, address = 0x203f11f3830, pNext = 0x203f1346f80
-Current node: data = 20, address = 0x203f1346f80, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f3850
-Current node: data = 42, address = 0x203f11f3850, pNext = 0x203f11f3990
-Current node: data = 45, address = 0x203f11f3990, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0x203f11f37f0
-Current node: data = 90, address = 0x203f11f37f0, pNext = 0
-DeleteKthNode(5): destructor called for node has 20 at address 0x203f1346f80
-Singly Linked List:
-Current node: data = 6, address = 0x203f11f38b0, pNext = 0x203f11f39b0
-Current node: data = 8, address = 0x203f11f39b0, pNext = 0x203f11f3790
-Current node: data = 9, address = 0x203f11f3790, pNext = 0x203f1346d40
-Current node: data = 10, address = 0x203f1346d40, pNext = 0x203f11f3830
-Current node: data = 10, address = 0x203f11f3830, pNext = 0x203f1346fa0
-Current node: data = 30, address = 0x203f1346fa0, pNext = 0x203f11f34a0
-Current node: data = 40, address = 0x203f11f34a0, pNext = 0x203f11f3850
-Current node: data = 42, address = 0x203f11f3850, pNext = 0x203f11f3990
-Current node: data = 45, address = 0x203f11f3990, pNext = 0x203f11f34c0
-Current node: data = 50, address = 0x203f11f34c0, pNext = 0x203f11f34e0
-Current node: data = 60, address = 0x203f11f34e0, pNext = 0x203f11f37f0
-Current node: data = 90, address = 0x203f11f37f0, pNext = 0
-DeleteAllNode(): destructor called for node has 6 at address 0x203f11f38b0
-destructor called for node has 8 at address 0x203f11f39b0
-destructor called for node has 9 at address 0x203f11f3790
-destructor called for node has 10 at address 0x203f1346d40
-destructor called for node has 10 at address 0x203f11f3830
-destructor called for node has 30 at address 0x203f1346fa0
-destructor called for node has 40 at address 0x203f11f34a0
-destructor called for node has 42 at address 0x203f11f3850
-destructor called for node has 45 at address 0x203f11f3990
-destructor called for node has 50 at address 0x203f11f34c0
-destructor called for node has 60 at address 0x203f11f34e0
-destructor called for node has 90 at address 0x203f11f37f0
-Empty List!
+countNode: 7
+Current node: data = 9, address = 0x1c179f936b0, pNext = 0x1c179f76d40
+Current node: data = 10, address = 0x1c179f76d40, pNext = 0x1c179f76f80
+Current node: data = 20, address = 0x1c179f76f80, pNext = 0x1c179f76fa0
+Current node: data = 30, address = 0x1c179f76fa0, pNext = 0x1c179f934a0
+Current node: data = 40, address = 0x1c179f934a0, pNext = 0x1c179f934c0
+Current node: data = 50, address = 0x1c179f934c0, pNext = 0x1c179f934e0
+Current node: data = 60, address = 0x1c179f934e0, pNext = 0
 SList destructor called
+destructor called for node has 9 at address 0x1c179f936b0
+destructor called for node has 10 at address 0x1c179f76d40
+destructor called for node has 20 at address 0x1c179f76f80
+destructor called for node has 30 at address 0x1c179f76fa0
+destructor called for node has 40 at address 0x1c179f934a0
+destructor called for node has 50 at address 0x1c179f934c0
+destructor called for node has 60 at address 0x1c179f934e0
 SList destructor called
-destructor called for node has 60 at address 0x203f11f35c0
-destructor called for node has 50 at address 0x203f11f35a0
-destructor called for node has 40 at address 0x203f11f3580
-destructor called for node has 30 at address 0x203f11f3560
-destructor called for node has 20 at address 0x203f11f3540
-destructor called for node has 10 at address 0x203f11f3520
+destructor called for node has 60 at address 0x1c179f935c0
+destructor called for node has 50 at address 0x1c179f935a0
+destructor called for node has 40 at address 0x1c179f93580
+destructor called for node has 30 at address 0x1c179f93560
+destructor called for node has 20 at address 0x1c179f93540
+destructor called for node has 10 at address 0x1c179f93520

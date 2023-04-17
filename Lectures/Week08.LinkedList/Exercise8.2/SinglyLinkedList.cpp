@@ -1,54 +1,5 @@
 #include "SinglyLinkedList.hpp"
 
-SNode::SNode(): m_data(0), m_pNext(nullptr) {}
-
-SNode::SNode(int data, SNode* pNext): m_data(data), m_pNext(pNext) {}
-
-SNode::~SNode() {
-    std::cout << "destructor called for node has " << this->getData();
-    std::cout << " at address " << this << '\n';
-    // delete this->m_pNext;
-    // this->m_pNext = nullptr;
-}
-
-SNode::SNode(const SNode& node): m_data(node.m_data), m_pNext(node.m_pNext) {}
-
-SNode& SNode::operator=(const SNode& node) {
-    // self-assignment check
-    if (this == &node) {
-        return *this;
-    }
-
-    this->m_data = node.m_data;
-    this->m_pNext = node.m_pNext;
-    return *this;
-}
-
-SNode* SNode::nextNode() const {
-    return this->m_pNext;
-}
-
-int SNode::getData() const {
-    return this->m_data;
-}
-
-void SNode::setNextNode(SNode* pNode) {
-    this->m_pNext = pNode;
-    return;
-}
-
-std::ostream& operator<<(std::ostream& out, const SNode& node) {
-    out << "Current node: data = " << node.getData();
-    out << ", address = " << &node; 
-    out << ", pNext = " << node.nextNode() << '\n';
-    return out;
-}
-
-// std::istream& operator>>(std::istream& in, SNode& node) {
-//     in >> node.m_data;
-//     return in;
-// }
-
 SList::SList(): m_pHead(nullptr) {}
 
 SList::~SList() {
@@ -312,6 +263,7 @@ std::ostream& operator<<(std::ostream& out, const SList& list) {
         return out;
     }
     out << "Singly Linked List:\n";
+    out << "countNode: " << list.countNode() << '\n';
     for (SNode* pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
         out << *pNode;
     }
@@ -354,112 +306,3 @@ int SList::countNode() const {
     }
     return count;
 }
-
-
-// https://www.geeksforgeeks.org/reverse-a-linked-list/
-SList* reversedSLL(const SList& list) {
-    // create rList using copy constructor
-    SList* rList = new SList(list);
-    // rList->displaySLL();
-    // if the list is empty, no need to reverse
-    if (rList->getHead() == nullptr) {
-        return rList;
-    }
-
-    SNode* prev = nullptr;
-    SNode* cur = rList->getHead();
-    SNode* next = nullptr;
-
-    for (; cur; prev = cur, cur = next) {
-        // store next node address before reverse
-        next = cur->nextNode();
-        
-        // reverse current node by setting its next node to prev
-        cur->setNextNode(prev);
-    }
-
-    rList->setHead(prev);
-
-    return rList;
-}
-
-void SLLDemo() {
-    using std::cout;
-    SList *list = new SList();
-    list->inputSLL();
-    list->displaySLL();
-    cout << "countNode(): " << list->countNode() << '\n';
-    std::cout << "Reverse linked list: ";
-    SList *rList = reversedSLL(*list);
-    rList->displaySLL();
-    int x;
-    cout << "Please input a number x: ";
-    std::cin >> x;
-    cout << "Ordered linked list after add x: ";
-    list->insertOrderedList(x);
-    list->displaySLL();
-    std::cout << "Head: " << list->getHead() << '\n';
-    std::cout << "getKthElement(5): " << list->getKthElement(5) << '\n';
-    std::cout << "getElementWithX(5): " << list->getElementWithX(5) << '\n';
-    std::cout << "getTail(): " << list->getTail() << '\n';
-    std::cout << "insertAtBeginning(8): ";
-    list->insertAtBeginning(8);
-    list->displaySLL();
-    std::cout << "insertAtEnding(90): ";
-    list->insertAtEnding(90);
-    list->displaySLL();
-    std::cout << "insertAfterK(25, 20): ";
-    list->insertAfterK(25, 5);
-    list->displaySLL();
-    cout << "insertAfterKthElement(5): ";
-    list->insertAfterKthElement(45, 5);
-    list->displaySLL();
-    cout << "insertAtKthElement(42, 5): ";
-    list->insertAfterKthElement(42, 5);
-    list->displaySLL();
-    cout << "insertOrderedList(10): ";
-    list->insertOrderedList(10);
-    cout << "insertOrderedList(0): ";
-    list->insertOrderedList(0);
-    cout << "insertOrderedList(5): ";
-    list->insertOrderedList(5);
-    cout << "insertOrderedList(6): ";
-    list->insertOrderedList(6);
-    list->displaySLL();
-    cout << "DeleteAtBeginning(): ";
-    list->deleteAtBeginning();
-    list->displaySLL();
-    cout << "DeleteANode(5): ";
-    list->deleteANode(5);
-    list->displaySLL();
-    cout << "DeleteKthNode(5): ";
-    list->deleteKthNode(5);
-    list->displaySLL();
-    cout << "DeleteAllNode(): ";
-    list->deleteAllNode();
-    list->displaySLL();
-    delete list;
-    delete rList;
-    return;
-}
-
-
-/*
-bool isEmpty() const;
-    SNode* getHead() const;
-    SNode* getKthElement(int i) const;
-    SNode* getElementWithX(int x) const;
-    SNode* getTail() const;
-    void insertAtBeginning(int x);
-    void insertAtEnding(int x);
-    void insertAfterK(int x, int k);
-    void insertAtKthElement(int x, int k);
-    void insertElement(SNode* pNode, int x);
-    void insertOrderedNode(int x);
-    void deleteAtBeginning();
-    void deleteAtEnding();
-    void deleteANode(int k);
-    void deleteKthNode(int k);
-    void deleteAllNode();
-    void inputSLL();
-*/

@@ -1,141 +1,186 @@
+Initialize doubly linked list: Check empty: isEmpty() = true
 Input a Doubly Linked list.
-Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Doubly Linked List:
-Head: 0x1bcf8496d40
-Tail: 0x1bcf83734e0
-Length: 6
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8496f80, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf83734c0
-Current node: data = 5, address = 0x1bcf83734c0, pPrev = 0x1bcf83734a0, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf83734c0, pNext = 0
-getKthElement(5): 0x1bcf83734e0
-getElementWithX(5): 0x1bcf83734c0
-insertAtBeginning(100): Doubly Linked List:
-Head: 0x1bcf8373500
-Tail: 0x1bcf83734e0
-Length: 7
-Current node: data = 100, address = 0x1bcf8373500, pPrev = 0, pNext = 0x1bcf8496d40
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0x1bcf8373500, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8496f80, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf83734c0
-Current node: data = 5, address = 0x1bcf83734c0, pPrev = 0x1bcf83734a0, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf83734c0, pNext = 0
-insertAtEnding(0): Doubly Linked List:
-Head: 0x1bcf8373500
-Tail: 0x1bcf8373520
-Length: 8
-Current node: data = 100, address = 0x1bcf8373500, pPrev = 0, pNext = 0x1bcf8496d40
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0x1bcf8373500, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8496f80, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf83734c0
-Current node: data = 5, address = 0x1bcf83734c0, pPrev = 0x1bcf83734a0, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf83734c0, pNext = 0x1bcf8373520
-Current node: data = 0, address = 0x1bcf8373520, pPrev = 0x1bcf83734e0, pNext = 0
-insertAfterK(5): Doubly Linked List:
-Head: 0x1bcf8373500
-Tail: 0x1bcf8373520
-Length: 9
-Current node: data = 100, address = 0x1bcf8373500, pPrev = 0, pNext = 0x1bcf8496d40
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0x1bcf8373500, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8496f80, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf83734c0
-Current node: data = 5, address = 0x1bcf83734c0, pPrev = 0x1bcf83734a0, pNext = 0x1bcf8373540
-Current node: data = 99, address = 0x1bcf8373540, pPrev = 0x1bcf83734c0, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf8373540, pNext = 0x1bcf8373520
-Current node: data = 0, address = 0x1bcf8373520, pPrev = 0x1bcf83734e0, pNext = 0
-insertAfterKthElement(98, 5): Doubly Linked List:
-Head: 0x1bcf8373500
-Tail: 0x1bcf8373520
-Length: 10
-Current node: data = 100, address = 0x1bcf8373500, pPrev = 0, pNext = 0x1bcf8496d40
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0x1bcf8373500, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8496f80, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf83734c0
-Current node: data = 5, address = 0x1bcf83734c0, pPrev = 0x1bcf83734a0, pNext = 0x1bcf8373560
-Current node: data = 98, address = 0x1bcf8373560, pPrev = 0x1bcf83734c0, pNext = 0x1bcf8373540
-Current node: data = 99, address = 0x1bcf8373540, pPrev = 0x1bcf8373560, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf8373540, pNext = 0x1bcf8373520
-Current node: data = 0, address = 0x1bcf8373520, pPrev = 0x1bcf83734e0, pNext = 0
-insertAtKthElement(37, 3): Doubly Linked List:
-Head: 0x1bcf8373500
-Tail: 0x1bcf8373520
+Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Please input the number (-1 to stop): Doubly Linked List:
+isEmpty: false
+Head: 0x2e4a44c6d40
+Tail: 0x2e4a44e37d0
+Length: 12
+Current node: data = 1, address = 0x2e4a44c6d40, pPrev = 0, pNext = 0x2e4a44c6f80
+Current node: data = 2, address = 0x2e4a44c6f80, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44c6fa0
+Current node: data = 3, address = 0x2e4a44c6fa0, pPrev = 0x2e4a44c6f80, pNext = 0x2e4a44e34a0
+Current node: data = 4, address = 0x2e4a44e34a0, pPrev = 0x2e4a44c6fa0, pNext = 0x2e4a44e34c0
+Current node: data = 5, address = 0x2e4a44e34c0, pPrev = 0x2e4a44e34a0, pNext = 0x2e4a44e34e0
+Current node: data = 6, address = 0x2e4a44e34e0, pPrev = 0x2e4a44e34c0, pNext = 0x2e4a44e3500
+Current node: data = 1, address = 0x2e4a44e3500, pPrev = 0x2e4a44e34e0, pNext = 0x2e4a44e3520
+Current node: data = 2, address = 0x2e4a44e3520, pPrev = 0x2e4a44e3500, pNext = 0x2e4a44e3540
+Current node: data = 3, address = 0x2e4a44e3540, pPrev = 0x2e4a44e3520, pNext = 0x2e4a44e3560
+Current node: data = 1, address = 0x2e4a44e3560, pPrev = 0x2e4a44e3540, pNext = 0x2e4a44e3580
+Current node: data = 2, address = 0x2e4a44e3580, pPrev = 0x2e4a44e3560, pNext = 0x2e4a44e37d0
+Current node: data = 3, address = 0x2e4a44e37d0, pPrev = 0x2e4a44e3580, pNext = 0
+findFirstData(data) demonstration.
+Please input data: list->findFirstData(2):
+Data found at node having address: 0x2e4a44c6f80
+Node info: Current node: data = 2, address = 0x2e4a44c6f80, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44c6fa0
+findLastData(data) demonstration.
+Please input data: list->findLastData(2):
+Data found at node having address: 0x2e4a44e3580
+Node info: Current node: data = 2, address = 0x2e4a44e3580, pPrev = 0x2e4a44e3560, pNext = 0x2e4a44e37d0
+addHead(data) demonstration.
+Please input data: List after inserting new head.
+Doubly Linked List:
+isEmpty: false
+Head: 0x2e4a44e3850
+Tail: 0x2e4a44e37d0
+Length: 13
+Current node: data = 10, address = 0x2e4a44e3850, pPrev = 0, pNext = 0x2e4a44c6d40
+Current node: data = 1, address = 0x2e4a44c6d40, pPrev = 0x2e4a44e3850, pNext = 0x2e4a44c6f80
+Current node: data = 2, address = 0x2e4a44c6f80, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44c6fa0
+Current node: data = 3, address = 0x2e4a44c6fa0, pPrev = 0x2e4a44c6f80, pNext = 0x2e4a44e34a0
+Current node: data = 4, address = 0x2e4a44e34a0, pPrev = 0x2e4a44c6fa0, pNext = 0x2e4a44e34c0
+Current node: data = 5, address = 0x2e4a44e34c0, pPrev = 0x2e4a44e34a0, pNext = 0x2e4a44e34e0
+Current node: data = 6, address = 0x2e4a44e34e0, pPrev = 0x2e4a44e34c0, pNext = 0x2e4a44e3500
+Current node: data = 1, address = 0x2e4a44e3500, pPrev = 0x2e4a44e34e0, pNext = 0x2e4a44e3520
+Current node: data = 2, address = 0x2e4a44e3520, pPrev = 0x2e4a44e3500, pNext = 0x2e4a44e3540
+Current node: data = 3, address = 0x2e4a44e3540, pPrev = 0x2e4a44e3520, pNext = 0x2e4a44e3560
+Current node: data = 1, address = 0x2e4a44e3560, pPrev = 0x2e4a44e3540, pNext = 0x2e4a44e3580
+Current node: data = 2, address = 0x2e4a44e3580, pPrev = 0x2e4a44e3560, pNext = 0x2e4a44e37d0
+Current node: data = 3, address = 0x2e4a44e37d0, pPrev = 0x2e4a44e3580, pNext = 0
+addTail(data) demonstration.
+Please input data: List after insering new tail.
+Doubly Linked List:
+isEmpty: false
+Head: 0x2e4a44e3850
+Tail: 0x2e4a44e38b0
+Length: 14
+Current node: data = 10, address = 0x2e4a44e3850, pPrev = 0, pNext = 0x2e4a44c6d40
+Current node: data = 1, address = 0x2e4a44c6d40, pPrev = 0x2e4a44e3850, pNext = 0x2e4a44c6f80
+Current node: data = 2, address = 0x2e4a44c6f80, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44c6fa0
+Current node: data = 3, address = 0x2e4a44c6fa0, pPrev = 0x2e4a44c6f80, pNext = 0x2e4a44e34a0
+Current node: data = 4, address = 0x2e4a44e34a0, pPrev = 0x2e4a44c6fa0, pNext = 0x2e4a44e34c0
+Current node: data = 5, address = 0x2e4a44e34c0, pPrev = 0x2e4a44e34a0, pNext = 0x2e4a44e34e0
+Current node: data = 6, address = 0x2e4a44e34e0, pPrev = 0x2e4a44e34c0, pNext = 0x2e4a44e3500
+Current node: data = 1, address = 0x2e4a44e3500, pPrev = 0x2e4a44e34e0, pNext = 0x2e4a44e3520
+Current node: data = 2, address = 0x2e4a44e3520, pPrev = 0x2e4a44e3500, pNext = 0x2e4a44e3540
+Current node: data = 3, address = 0x2e4a44e3540, pPrev = 0x2e4a44e3520, pNext = 0x2e4a44e3560
+Current node: data = 1, address = 0x2e4a44e3560, pPrev = 0x2e4a44e3540, pNext = 0x2e4a44e3580
+Current node: data = 2, address = 0x2e4a44e3580, pPrev = 0x2e4a44e3560, pNext = 0x2e4a44e37d0
+Current node: data = 3, address = 0x2e4a44e37d0, pPrev = 0x2e4a44e3580, pNext = 0x2e4a44e38b0
+Current node: data = 20, address = 0x2e4a44e38b0, pPrev = 0x2e4a44e37d0, pNext = 0
+addbeforeIthElement(data, i) demonstration.
+Please input data: Please input position to insert before: List after inserting 37 before 6.
+Doubly Linked List:
+isEmpty: false
+Head: 0x2e4a44e3850
+Tail: 0x2e4a44e38b0
+Length: 15
+Current node: data = 10, address = 0x2e4a44e3850, pPrev = 0, pNext = 0x2e4a44c6d40
+Current node: data = 1, address = 0x2e4a44c6d40, pPrev = 0x2e4a44e3850, pNext = 0x2e4a44c6f80
+Current node: data = 2, address = 0x2e4a44c6f80, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44c6fa0
+Current node: data = 3, address = 0x2e4a44c6fa0, pPrev = 0x2e4a44c6f80, pNext = 0x2e4a44e34a0
+Current node: data = 4, address = 0x2e4a44e34a0, pPrev = 0x2e4a44c6fa0, pNext = 0x2e4a44e34c0
+Current node: data = 5, address = 0x2e4a44e34c0, pPrev = 0x2e4a44e34a0, pNext = 0x2e4a44e3630
+Current node: data = 37, address = 0x2e4a44e3630, pPrev = 0x2e4a44e34c0, pNext = 0x2e4a44e34e0
+Current node: data = 6, address = 0x2e4a44e34e0, pPrev = 0x2e4a44e3630, pNext = 0x2e4a44e3500
+Current node: data = 1, address = 0x2e4a44e3500, pPrev = 0x2e4a44e34e0, pNext = 0x2e4a44e3520
+Current node: data = 2, address = 0x2e4a44e3520, pPrev = 0x2e4a44e3500, pNext = 0x2e4a44e3540
+Current node: data = 3, address = 0x2e4a44e3540, pPrev = 0x2e4a44e3520, pNext = 0x2e4a44e3560
+Current node: data = 1, address = 0x2e4a44e3560, pPrev = 0x2e4a44e3540, pNext = 0x2e4a44e3580
+Current node: data = 2, address = 0x2e4a44e3580, pPrev = 0x2e4a44e3560, pNext = 0x2e4a44e37d0
+Current node: data = 3, address = 0x2e4a44e37d0, pPrev = 0x2e4a44e3580, pNext = 0x2e4a44e38b0
+Current node: data = 20, address = 0x2e4a44e38b0, pPrev = 0x2e4a44e37d0, pNext = 0
+removeHead() demonstration.
+Removing head...
+destructor called for node has 10 at address 0x2e4a44e3850
+List after removing head.
+Doubly Linked List:
+isEmpty: false
+Head: 0x2e4a44c6d40
+Tail: 0x2e4a44e38b0
+Length: 14
+Current node: data = 1, address = 0x2e4a44c6d40, pPrev = 0, pNext = 0x2e4a44c6f80
+Current node: data = 2, address = 0x2e4a44c6f80, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44c6fa0
+Current node: data = 3, address = 0x2e4a44c6fa0, pPrev = 0x2e4a44c6f80, pNext = 0x2e4a44e34a0
+Current node: data = 4, address = 0x2e4a44e34a0, pPrev = 0x2e4a44c6fa0, pNext = 0x2e4a44e34c0
+Current node: data = 5, address = 0x2e4a44e34c0, pPrev = 0x2e4a44e34a0, pNext = 0x2e4a44e3630
+Current node: data = 37, address = 0x2e4a44e3630, pPrev = 0x2e4a44e34c0, pNext = 0x2e4a44e34e0
+Current node: data = 6, address = 0x2e4a44e34e0, pPrev = 0x2e4a44e3630, pNext = 0x2e4a44e3500
+Current node: data = 1, address = 0x2e4a44e3500, pPrev = 0x2e4a44e34e0, pNext = 0x2e4a44e3520
+Current node: data = 2, address = 0x2e4a44e3520, pPrev = 0x2e4a44e3500, pNext = 0x2e4a44e3540
+Current node: data = 3, address = 0x2e4a44e3540, pPrev = 0x2e4a44e3520, pNext = 0x2e4a44e3560
+Current node: data = 1, address = 0x2e4a44e3560, pPrev = 0x2e4a44e3540, pNext = 0x2e4a44e3580
+Current node: data = 2, address = 0x2e4a44e3580, pPrev = 0x2e4a44e3560, pNext = 0x2e4a44e37d0
+Current node: data = 3, address = 0x2e4a44e37d0, pPrev = 0x2e4a44e3580, pNext = 0x2e4a44e38b0
+Current node: data = 20, address = 0x2e4a44e38b0, pPrev = 0x2e4a44e37d0, pNext = 0
+removeTail() demonstration.
+Removing Tail...
+destructor called for node has 20 at address 0x2e4a44e38b0
+List after removing tail.
+Doubly Linked List:
+isEmpty: false
+Head: 0x2e4a44c6d40
+Tail: 0x2e4a44e37d0
+Length: 13
+Current node: data = 1, address = 0x2e4a44c6d40, pPrev = 0, pNext = 0x2e4a44c6f80
+Current node: data = 2, address = 0x2e4a44c6f80, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44c6fa0
+Current node: data = 3, address = 0x2e4a44c6fa0, pPrev = 0x2e4a44c6f80, pNext = 0x2e4a44e34a0
+Current node: data = 4, address = 0x2e4a44e34a0, pPrev = 0x2e4a44c6fa0, pNext = 0x2e4a44e34c0
+Current node: data = 5, address = 0x2e4a44e34c0, pPrev = 0x2e4a44e34a0, pNext = 0x2e4a44e3630
+Current node: data = 37, address = 0x2e4a44e3630, pPrev = 0x2e4a44e34c0, pNext = 0x2e4a44e34e0
+Current node: data = 6, address = 0x2e4a44e34e0, pPrev = 0x2e4a44e3630, pNext = 0x2e4a44e3500
+Current node: data = 1, address = 0x2e4a44e3500, pPrev = 0x2e4a44e34e0, pNext = 0x2e4a44e3520
+Current node: data = 2, address = 0x2e4a44e3520, pPrev = 0x2e4a44e3500, pNext = 0x2e4a44e3540
+Current node: data = 3, address = 0x2e4a44e3540, pPrev = 0x2e4a44e3520, pNext = 0x2e4a44e3560
+Current node: data = 1, address = 0x2e4a44e3560, pPrev = 0x2e4a44e3540, pNext = 0x2e4a44e3580
+Current node: data = 2, address = 0x2e4a44e3580, pPrev = 0x2e4a44e3560, pNext = 0x2e4a44e37d0
+Current node: data = 3, address = 0x2e4a44e37d0, pPrev = 0x2e4a44e3580, pNext = 0
+removeDataFirst(data) demonstration.
+Please input data: destructor called for node has 2 at address 0x2e4a44c6f80
+List after running removeDataFirst(2).
+Doubly Linked List:
+isEmpty: false
+Head: 0x2e4a44c6d40
+Tail: 0x2e4a44e37d0
+Length: 12
+Current node: data = 1, address = 0x2e4a44c6d40, pPrev = 0, pNext = 0x2e4a44c6fa0
+Current node: data = 3, address = 0x2e4a44c6fa0, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44e34a0
+Current node: data = 4, address = 0x2e4a44e34a0, pPrev = 0x2e4a44c6fa0, pNext = 0x2e4a44e34c0
+Current node: data = 5, address = 0x2e4a44e34c0, pPrev = 0x2e4a44e34a0, pNext = 0x2e4a44e3630
+Current node: data = 37, address = 0x2e4a44e3630, pPrev = 0x2e4a44e34c0, pNext = 0x2e4a44e34e0
+Current node: data = 6, address = 0x2e4a44e34e0, pPrev = 0x2e4a44e3630, pNext = 0x2e4a44e3500
+Current node: data = 1, address = 0x2e4a44e3500, pPrev = 0x2e4a44e34e0, pNext = 0x2e4a44e3520
+Current node: data = 2, address = 0x2e4a44e3520, pPrev = 0x2e4a44e3500, pNext = 0x2e4a44e3540
+Current node: data = 3, address = 0x2e4a44e3540, pPrev = 0x2e4a44e3520, pNext = 0x2e4a44e3560
+Current node: data = 1, address = 0x2e4a44e3560, pPrev = 0x2e4a44e3540, pNext = 0x2e4a44e3580
+Current node: data = 2, address = 0x2e4a44e3580, pPrev = 0x2e4a44e3560, pNext = 0x2e4a44e37d0
+Current node: data = 3, address = 0x2e4a44e37d0, pPrev = 0x2e4a44e3580, pNext = 0
+removeDataLast(data) demonstration.
+Please input data: destructor called for node has 2 at address 0x2e4a44e3580
+List after running removeDataLast(2).
+Doubly Linked List:
+isEmpty: false
+Head: 0x2e4a44c6d40
+Tail: 0x2e4a44e37d0
 Length: 11
-Current node: data = 100, address = 0x1bcf8373500, pPrev = 0, pNext = 0x1bcf8496d40
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0x1bcf8373500, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8373580
-Current node: data = 37, address = 0x1bcf8373580, pPrev = 0x1bcf8496f80, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8373580, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf83734c0
-Current node: data = 5, address = 0x1bcf83734c0, pPrev = 0x1bcf83734a0, pNext = 0x1bcf8373560
-Current node: data = 98, address = 0x1bcf8373560, pPrev = 0x1bcf83734c0, pNext = 0x1bcf8373540
-Current node: data = 99, address = 0x1bcf8373540, pPrev = 0x1bcf8373560, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf8373540, pNext = 0x1bcf8373520
-Current node: data = 0, address = 0x1bcf8373520, pPrev = 0x1bcf83734e0, pNext = 0
-DeleteAtBeginning(): destructor called for node has 100 at address 0x1bcf8373500
-Doubly Linked List:
-Head: 0x1bcf8496d40
-Tail: 0x1bcf8373520
-Length: 10
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8373580
-Current node: data = 37, address = 0x1bcf8373580, pPrev = 0x1bcf8496f80, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8373580, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf83734c0
-Current node: data = 5, address = 0x1bcf83734c0, pPrev = 0x1bcf83734a0, pNext = 0x1bcf8373560
-Current node: data = 98, address = 0x1bcf8373560, pPrev = 0x1bcf83734c0, pNext = 0x1bcf8373540
-Current node: data = 99, address = 0x1bcf8373540, pPrev = 0x1bcf8373560, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf8373540, pNext = 0x1bcf8373520
-Current node: data = 0, address = 0x1bcf8373520, pPrev = 0x1bcf83734e0, pNext = 0
-Delete1K(5): destructor called for node has 5 at address 0x1bcf83734c0
-Doubly Linked List:
-Head: 0x1bcf8496d40
-Tail: 0x1bcf8373520
-Length: 9
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8373580
-Current node: data = 37, address = 0x1bcf8373580, pPrev = 0x1bcf8496f80, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8373580, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf8373560
-Current node: data = 98, address = 0x1bcf8373560, pPrev = 0x1bcf83734a0, pNext = 0x1bcf8373540
-Current node: data = 99, address = 0x1bcf8373540, pPrev = 0x1bcf8373560, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf8373540, pNext = 0x1bcf8373520
-Current node: data = 0, address = 0x1bcf8373520, pPrev = 0x1bcf83734e0, pNext = 0
-DeleteKthNode(5): destructor called for node has 98 at address 0x1bcf8373560
-Doubly Linked List:
-Head: 0x1bcf8496d40
-Tail: 0x1bcf8373520
-Length: 8
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8373580
-Current node: data = 37, address = 0x1bcf8373580, pPrev = 0x1bcf8496f80, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8373580, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf8373540
-Current node: data = 99, address = 0x1bcf8373540, pPrev = 0x1bcf83734a0, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf8373540, pNext = 0x1bcf8373520
-Current node: data = 0, address = 0x1bcf8373520, pPrev = 0x1bcf83734e0, pNext = 0
-DeleteAtEnding(): destructor called for node has 0 at address 0x1bcf8373520
-Doubly Linked List:
-Head: 0x1bcf8496d40
-Tail: 0x1bcf83734e0
-Length: 7
-Current node: data = 1, address = 0x1bcf8496d40, pPrev = 0, pNext = 0x1bcf8496f80
-Current node: data = 2, address = 0x1bcf8496f80, pPrev = 0x1bcf8496d40, pNext = 0x1bcf8373580
-Current node: data = 37, address = 0x1bcf8373580, pPrev = 0x1bcf8496f80, pNext = 0x1bcf8496fa0
-Current node: data = 3, address = 0x1bcf8496fa0, pPrev = 0x1bcf8373580, pNext = 0x1bcf83734a0
-Current node: data = 4, address = 0x1bcf83734a0, pPrev = 0x1bcf8496fa0, pNext = 0x1bcf8373540
-Current node: data = 99, address = 0x1bcf8373540, pPrev = 0x1bcf83734a0, pNext = 0x1bcf83734e0
-Current node: data = 6, address = 0x1bcf83734e0, pPrev = 0x1bcf8373540, pNext = 0
-DeleteAllNode(): destructor called for node has 1 at address 0x1bcf8496d40
-destructor called for node has 2 at address 0x1bcf8496f80
-destructor called for node has 37 at address 0x1bcf8373580
-destructor called for node has 3 at address 0x1bcf8496fa0
-destructor called for node has 4 at address 0x1bcf83734a0
-destructor called for node has 99 at address 0x1bcf8373540
-destructor called for node has 6 at address 0x1bcf83734e0
-Empty List!
+Current node: data = 1, address = 0x2e4a44c6d40, pPrev = 0, pNext = 0x2e4a44c6fa0
+Current node: data = 3, address = 0x2e4a44c6fa0, pPrev = 0x2e4a44c6d40, pNext = 0x2e4a44e34a0
+Current node: data = 4, address = 0x2e4a44e34a0, pPrev = 0x2e4a44c6fa0, pNext = 0x2e4a44e34c0
+Current node: data = 5, address = 0x2e4a44e34c0, pPrev = 0x2e4a44e34a0, pNext = 0x2e4a44e3630
+Current node: data = 37, address = 0x2e4a44e3630, pPrev = 0x2e4a44e34c0, pNext = 0x2e4a44e34e0
+Current node: data = 6, address = 0x2e4a44e34e0, pPrev = 0x2e4a44e3630, pNext = 0x2e4a44e3500
+Current node: data = 1, address = 0x2e4a44e3500, pPrev = 0x2e4a44e34e0, pNext = 0x2e4a44e3520
+Current node: data = 2, address = 0x2e4a44e3520, pPrev = 0x2e4a44e3500, pNext = 0x2e4a44e3540
+Current node: data = 3, address = 0x2e4a44e3540, pPrev = 0x2e4a44e3520, pNext = 0x2e4a44e3560
+Current node: data = 1, address = 0x2e4a44e3560, pPrev = 0x2e4a44e3540, pNext = 0x2e4a44e37d0
+Current node: data = 3, address = 0x2e4a44e37d0, pPrev = 0x2e4a44e3560, pNext = 0
 DList destructor called
+destructor called for node has 1 at address 0x2e4a44c6d40
+destructor called for node has 3 at address 0x2e4a44c6fa0
+destructor called for node has 4 at address 0x2e4a44e34a0
+destructor called for node has 5 at address 0x2e4a44e34c0
+destructor called for node has 37 at address 0x2e4a44e3630
+destructor called for node has 6 at address 0x2e4a44e34e0
+destructor called for node has 1 at address 0x2e4a44e3500
+destructor called for node has 2 at address 0x2e4a44e3520
+destructor called for node has 3 at address 0x2e4a44e3540
+destructor called for node has 1 at address 0x2e4a44e3560
+destructor called for node has 3 at address 0x2e4a44e37d0

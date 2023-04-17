@@ -1,5 +1,4 @@
-#include "SinglyLinkedList.hpp"
-#include <iostream>
+#include "DemoSList.hpp"
 
 int main(void) {
     SLLDemo();
