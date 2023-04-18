@@ -2,9 +2,10 @@
 #define EXERCISE94_PROCESS_HPP_
 #include "Stack.hpp"
 
-bool is_op(char c);
-int priority(char c);
-void process_op(Stack& values, char op);
+int precedence(int op);
+void process_op(Stack& values, int op);
 int evaluate(char* tokens);
+void getExpression(char *expression, int max_size);
+void printResultOfExpression(char *expression);
 
 #endif

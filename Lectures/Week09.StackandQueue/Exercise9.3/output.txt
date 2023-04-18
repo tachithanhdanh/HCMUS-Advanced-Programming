@@ -1,0 +1,2 @@
+Please input number of expressions to calculate: Please input expression: Result of corresponding expression:
+(17 + 29) * (27 / 3) * 19 + 37 * 23 - 101 = 8616
