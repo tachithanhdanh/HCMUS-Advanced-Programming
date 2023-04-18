@@ -1,2 +1,10 @@
 Please input number of expressions to calculate: Please input expression: Result of corresponding expression:
 (17 + 29) * (27 / 3) * 19 + 37 * 23 - 101 = 8616
+Please input expression: Result of corresponding expression:
+(37 * 31) - 14 * 12 + 17 * 39 * 32 / 16 - 10 + 20 / 4 = 2300
+Please input expression: Result of corresponding expression:
+10 - 100 + 78 / 39 * 12 + 17 * 18 * (200 + 45 - 19 + 28 * 14 + 19 - 13) = 190878
+Please input expression: Result of corresponding expression:
+12 + 13 + 14 + 16 * (10 + 12) / 8 = 83
+Please input expression: Result of corresponding expression:
+12 - 10 + 43 - 10 * 99 / 33 + 33 * 12 + 100 / (12 + 13) = 415

@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/42318343/avoid-duplicates-in-n-queen-iterative-solutions-no-recursion-allowed
+https://www.sanfoundry.com/python-program-solve-n-queen-problem-without-recursion/

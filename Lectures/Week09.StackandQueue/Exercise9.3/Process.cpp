@@ -99,6 +99,6 @@ void getExpression(char *expression, int max_size) {
 
 void printResultOfExpression(char *expression) {
     std::cout << "Result of corresponding expression:\n";
-    std::cout << expression << " = " << evaluate(expression);
+    std::cout << expression << " = " << evaluate(expression) << '\n';
     return;
 }
