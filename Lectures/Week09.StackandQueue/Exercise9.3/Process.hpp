@@ -1,9 +1,11 @@
 #ifndef EXERCISE93_PROCESS_HPP_
-#define EXERCISE94_PROCESS_HPP_
-#include "Stack.hpp"
+#define EXERCISE93_PROCESS_HPP_
 
-int precedence(int op);
-void process_op(Stack& values, int op);
+// #include "Stack.hpp"
+#include "TemplateStack.hpp"
+
+int precedence(char op);
+void process_op(Stack<int>& values, char op);
 int evaluate(char* tokens);
 void getExpression(char *expression, int max_size);
 void printResultOfExpression(char *expression);

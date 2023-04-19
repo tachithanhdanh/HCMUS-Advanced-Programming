@@ -10,7 +10,7 @@
 
 // returns the precedence (priority) of op
 // the higher the precedence, the bigger the number
-int precedence(int op) {
+int precedence(char op) {
     if (op == '*' || op == '/') {
         return 2;
     }
@@ -22,7 +22,7 @@ int precedence(int op) {
     return 0;
 }
 
-void process_op(Stack& values, int op) {
+void process_op(Stack<int>& values, char op) {
     int r = values.top(); values.pop();
     int l = values.top(); values.pop();
     switch (op) {
@@ -37,8 +37,8 @@ void process_op(Stack& values, int op) {
 
 int evaluate(char* tokens) {
     int len = static_cast<int>(std::strlen(tokens));
-    Stack values;
-    Stack ops;
+    Stack<int> values;
+    Stack<char> ops;
     for (int i = 0; i < len; ++i) {
         // Current token is not a paranthesis or a digit or an operator,
         // skip it.

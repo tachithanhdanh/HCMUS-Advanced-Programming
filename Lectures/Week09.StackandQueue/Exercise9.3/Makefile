@@ -4,7 +4,7 @@ CXXFLAGS = -Wall -Wextra -Wshadow -std=c++20 -pedantic -Wformat=2 -Wfloat-equal 
 
 files := $(wildcard *.cpp)
 
-all: main.o SNode.o Stack.o Process.o
+all: main.o Process.o
 	$(CXX) $(CXXFLAGS) $^ -o main.exe
 
 SNode.o: SNode.cpp SNode.hpp
@@ -13,10 +13,10 @@ SNode.o: SNode.cpp SNode.hpp
 Stack.o: Stack.cpp Stack.hpp SNode.hpp
 	$(CXX) $(CXXFLAGS) -g -c Stack.cpp
 
-Process.o: Process.cpp Process.hpp Stack.hpp SNode.hpp
+Process.o: Process.cpp Process.hpp TemplateStack.hpp
 	$(CXX) $(CXXFLAGS) -g -c Process.cpp
 
-main.o: main.cpp Process.hpp Stack.hpp SNode.hpp
+main.o: main.cpp Process.hpp TemplateStack.hpp
 	$(CXX) $(CXXFLAGS) -g -c main.cpp
 
 run: main.exe
