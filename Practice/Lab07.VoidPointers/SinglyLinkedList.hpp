@@ -6,12 +6,13 @@
 
 struct SLL {
 private:
-    Node* m_head = nullptr;
+    int m_data_size;
+    Node_ptr m_head = nullptr;
 
 public:
 
     // constructors and destructors
-    SLL();
+    SLL(int data_size = 1, Node_ptr head = nullptr);
     ~SLL();
 
     // deleted methods
@@ -21,30 +22,54 @@ public:
 
     // basic methods
     bool isEmpty() const;
-    void setHead(Node* pNode);
-    Node* getHead() const;
+    void setHead(Node_ptr pNode);
+    Node_ptr getHead() const;
+    Node_ptr getTail() const;
+    Node_ptr getKthElement(int k) const;
 
     // operation 1
     void inputSLL() = delete;
+    void insertAtBeginning(void_ptr data);
 
     // operation 2
     void displaySLL() const = delete;
     friend std::ostream& operator<<(std::ostream& out, const SLL& list) = delete;
 
-
-    
-    Node* getKthElement(int k) const;
-    Node* getTail() const;
-    void insertAtBeginning(const Fraction& frac);
-    void insertAtEnding(const Fraction& frac);
-    void insertAtKthElement(const Fraction& frac, int k);
-    void insertAfterElement(Node* pNode, const Fraction& frac);
-    void deleteAtBeginning();
-    void deleteAtEnding();
-    void deleteANode(const Fraction& frac);
-    void deleteKthNode(int k);
+    // operation 3
     void deleteAllNode();
+
+    // operation 4
+    void insertAtEnding(void_ptr data);
+    
+    // operation 5
+    void insertAfterElement(Node_ptr pNode, void_ptr data);
+
+    // operation 6
+    void insertBeforeElement(Node_ptr pNode, void_ptr data);
+
+    // operation 7
+    void deleteAtBeginning();
+
+    // operation 8
+    void deleteAtEnding();
+
+    // operation 9
+    void deleteMiddle(Node_ptr pNode);
+
+    // operation 10
     int countNode() const;
+
+    // operation 11
+    void insertBeforeKthElement(void_ptr data, int k);
+
+    // operation 12
+    void deleteKthNode(int k);
+    
+    // miscellaneous methods
+    void deleteANode(void_ptr data);
+
+
+    // void insertAfterKthElement(void_ptr data, int k);
     // friend std::istream& operator>>(std::istream& in, SLL& list);
 };
 

@@ -14,9 +14,12 @@ void greeting(const string& dataType) {
 
 void demoFractionSLL() {
     greeting("Fraction");
-    SLL FractionList;
+    SLL FractionList(sizeof(Fraction));
     inputFractionSLL(FractionList);
     outputFractionSLL(FractionList);
+    cout << "Vi thao tac thu 3 la \
+        thao tac xoa toan bo danh sach lien ket \
+        nen em xin phep demo cuoi cung.\n";
 }
 
 void inputFractionSLL(SLL& FractionList) {
@@ -33,9 +36,12 @@ void outputFractionSLL(const SLL& FractionList) {
 
 void demoFractionSLL() {
     greeting("std::string");
-    SLL StringList;
+    SLL StringList(sizeof(string));
     inputStringSLL(StringList);
     outputFractionSLL(StringList);
+    cout << "Vi thao tac thu 3 la \
+        thao tac xoa toan bo danh sach lien ket \
+        nen em xin phep demo cuoi cung.\n";
 }
 
 void inputStringSLL(SLL& StringList) {

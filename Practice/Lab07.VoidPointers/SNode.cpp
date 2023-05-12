@@ -9,19 +9,6 @@ Node::~Node() {
     // this->m_pNext = nullptr;
 }
 
-// Node::Node(const Node& node) : m_data(node.m_data), m_pNext(node.m_pNext) {}
-
-// Node& Node::operator=(const Node& node) {
-//     // self-assignment check
-//     if (this == &node) {
-//         return *this;
-//     }
-
-//     this->m_data = node.m_data;
-//     this->m_pNext = node.m_pNext;
-//     return *this;
-// }
-
 Node* Node::nextNode() const {
     return this->m_next;
 }

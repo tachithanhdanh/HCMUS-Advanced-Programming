@@ -1,90 +1,83 @@
 #include "SinglyLinkedList.hpp"
 
-SLL::SLL() : m_head(nullptr) {}
+SLL::SLL(int data_size, Node_ptr head)
+    : m_data_size(data_size)
+    , m_head(head) {}
 
 SLL::~SLL() {
     std::cout << "Singly Linked List destructor called\n";
     this->deleteAllNode();
 }
 
-// SLL::SLL(const SLL& list) {
-//     this->deepCopy(list);
-// }
-
-// SLL& SLL::operator=(const SLL& list) {
-//     // self-assigment check
-//     if (this == &list) {
-//         return *this;
-//     }
-
-//     // delete all nodes before deep copying
-//     this->deleteAllNode();
-//     this->deepCopy(list);
-
-//     return *this;
-// }
-
-// void SLL::deepCopy(const SLL& list) {
-//     // this->deleteAllNode();
-//     this->setHead(nullptr);
-//     Node* pNode = list.getHead();
-//     Node* cur = nullptr;
-//     for (; pNode; pNode = pNode->nextNode()) {
-//         if (this->getHead() == nullptr) {
-//             this->setHead(new Node(pNode->getData()));
-//             cur = this->getHead();
-//         } else {
-//             cur->setNextNode(new Node(pNode->getData()));
-//             if (cur) cur = cur->nextNode();
-//         }
-//     }
-//     return;
-// }
-
 bool SLL::isEmpty() const {
     return this->getHead() == nullptr;
 }
 
-void SLL::setHead(Node* pNode) {
+void SLL::setHead(Node_ptr pNode) {
     this->m_head = pNode;
     return;
 }
 
-Node* SLL::getHead() const {
+Node_ptr SLL::getHead() const {
     return this->m_head;
 }
 
-Node* SLL::getKthElement(int k) const {
-    Node* pNode = this->getHead();
-    for (int i = 0; pNode && i != k; pNode = pNode->nextNode(), ++i);
-    return pNode;
-}
-
-Node* SLL::getTail() const {
+Node_ptr SLL::getTail() const {
     if (isEmpty()) return nullptr;
-    Node* pNode = this->getHead();
+    Node_ptr pNode = this->getHead();
     for (; pNode->nextNode(); pNode = pNode->nextNode());
     return pNode;
 }
 
-void SLL::insertAtBeginning(const Fraction& frac) {
-    Node* new_pHead = new Node(frac, this->getHead());
+Node_ptr SLL::getKthElement(int k) const {
+    Node_ptr pNode = this->getHead();
+    for (int i = 0; pNode && i != k; pNode = pNode->nextNode(), ++i);
+    return pNode;
+}
+
+void SLL::insertAtBeginning(void_ptr data) {
+    Node_ptr new_pHead = new Node(data, this->getHead());
     this->setHead(new_pHead);
     return;
 }
 
-void SLL::insertAtEnding(const Fraction& frac) {
-    Node* pTail = this->getTail();
+void SLL::insertAtEnding(void_ptr data) {
+    Node_ptr pTail = this->getTail();
     if (pTail == nullptr) {
-        this->insertAtBeginning(frac);
+        this->insertAtBeginning(data);
         return;
     }
-    Node* new_pTail = new Node(frac);
+    Node_ptr new_pTail = new Node(data);
     pTail->setNextNode(new_pTail);
     return;
 }
 
-void SLL::insertAtKthElement(const Fraction& frac, int k) {
+void SLL::insertAfterElement(Node_ptr pNode, void_ptr data) {
+    // only insert if it is not nullptr
+    if (pNode) {
+        Node_ptr pNext = pNode->nextNode();
+        Node_ptr new_pNode = new Node(data, pNext);
+        pNode->setNextNode(new_pNode);
+    }
+    return;
+}
+
+void SLL::insertBeforeElement(Node_ptr pNode, void_ptr data) {
+    if (pNode) {
+        Node_ptr cur = getHead();
+        if (pNode == getHead()) {
+            insertAtBeginning(data);
+        } else {
+            for (; cur; cur = cur->nextNode()) {
+                if (cur->nextNode() == pNode) {
+                    insertAfterElement(cur, data);
+                }
+            }
+        }
+    }
+}
+
+void SLL::insertBeforeKthElement(void_ptr data, int k) {
     // chia 2 TH
     // TH1: so am hoac vuot qua size cua linked list 
     //      -> khong chen, bao loi
@@ -97,43 +90,33 @@ void SLL::insertAtKthElement(const Fraction& frac, int k) {
 
     // head case
     if (k == 0) {
-        this->insertAtBeginning(frac);
+        this->insertAtBeginning(data);
         return;
     }
 
     // tail case
     if (k == n) {
-        this->insertAtEnding(frac);
+        this->insertAtEnding(data);
         return;
     }
 
     // somewhere in the middle case
-    this->insertAfterElement(this->getKthElement(k - 1), frac);
-    return;
-}
-
-void SLL::insertAfterElement(Node* pNode, const Fraction& frac) {
-    // only insert if it is not nullptr
-    if (pNode) {
-        Node* pNext = pNode->nextNode();
-        Node* new_pNode = new Node(frac, pNext);
-        pNode->setNextNode(new_pNode);
-    }
+    this->insertAfterElement(this->getKthElement(k - 1), data);
     return;
 }
 
 void SLL::deleteAtBeginning() {
-    Node* old_pHead = this->getHead();
+    Node_ptr old_pHead = this->getHead();
     if (this->getHead()) this->setHead(this->getHead()->nextNode());
     delete old_pHead;
     return;
 }
 
-void SLL::deleteANode(const Fraction& frac) {
-    Node* prev = nullptr;
-    Node* cur = this->getHead();
+void SLL::deleteANode(void_ptr data) {
+    Node_ptr prev = nullptr;
+    Node_ptr cur = this->getHead();
     for (; cur; prev = cur, cur = cur->nextNode()) {
-        if (cur->getData() == frac) {
+        if (cur->getData() == data) {
             // if there is no prev, it must be a head.
             if (prev) {
                 prev->setNextNode(cur->nextNode());
@@ -165,8 +148,8 @@ void SLL::deleteKthNode(int k) {
         this->deleteAtBeginning();
         return;
     }
-    Node* prev = nullptr;
-    Node* cur = this->getHead();
+    Node_ptr prev = nullptr;
+    Node_ptr cur = this->getHead();
 
     // find k-th node
     for (int i = 0; i != k && cur; prev = cur, cur = cur->nextNode(), ++i);
@@ -182,7 +165,7 @@ void SLL::deleteKthNode(int k) {
 }
 
 void SLL::deleteAtEnding() {
-    Node* pNode = this->getHead();
+    Node_ptr pNode = this->getHead();
 
     // if a list is empty then do nothing
     if (pNode == nullptr) {
@@ -217,7 +200,7 @@ void SLL::deleteAllNode() {
 //         return out;
 //     }
 //     out << "Singly Linked List (print order from head to tail):\n";
-//     for (Node* pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
+//     for (Node_ptr pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
 //         out << *pNode;
 //     }
 //     return out;
@@ -235,21 +218,21 @@ void SLL::deleteAllNode() {
 //     cout << "Dinh dang nhap: a/b voi a la tu so, b la tu so.\n";
 //     cout << "Vi du: 1/2, 3/4, 4/5, ...\n";
 //     cout << "De dung viec nhap danh sach phan so, thay vui long nhap 0/0.\n";
-//     Fraction frac;
-//     Node* cur = nullptr;
+//     Fraction data;
+//     Node_ptr cur = nullptr;
 //     do {
 //         cout << "Moi thay nhap phan so (nhap 0/0 de dung): ";
-//         std::cin >> frac;
-//         if (frac != nullFrac) {
+//         std::cin >> data;
+//         if (data != nullFrac) {
 //             if (this->isEmpty()) {
-//                 this->setHead(new Node(frac));
+//                 this->setHead(new Node(data));
 //                 cur = this->getHead();
 //             } else {
-//                 cur->setNextNode(new Node(frac));
+//                 cur->setNextNode(new Node(data));
 //                 if (cur) cur = cur->nextNode();
 //             }
 //         }
-//     } while (frac != nullFrac);
+//     } while (data != nullFrac);
 //     return;
 // }
 
@@ -260,7 +243,7 @@ void SLL::deleteAllNode() {
 
 int SLL::countNode() const {
     int count = 0;
-    for (Node* pNode = this->getHead(); pNode; pNode = pNode->nextNode()) {
+    for (Node_ptr pNode = this->getHead(); pNode; pNode = pNode->nextNode()) {
         ++count;
     }
     return count;
