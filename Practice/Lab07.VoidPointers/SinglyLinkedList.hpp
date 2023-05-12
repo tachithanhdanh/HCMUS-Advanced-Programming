@@ -23,6 +23,16 @@ public:
     bool isEmpty() const;
     void setHead(Node* pNode);
     Node* getHead() const;
+
+    // operation 1
+    void inputSLL() = delete;
+
+    // operation 2
+    void displaySLL() const = delete;
+    friend std::ostream& operator<<(std::ostream& out, const SLL& list) = delete;
+
+
+    
     Node* getKthElement(int k) const;
     Node* getTail() const;
     void insertAtBeginning(const Fraction& frac);
@@ -34,10 +44,7 @@ public:
     void deleteANode(const Fraction& frac);
     void deleteKthNode(int k);
     void deleteAllNode();
-    void inputSLL();
-    void displaySLL() const;
     int countNode() const;
-    friend std::ostream& operator<<(std::ostream& out, const SLL& list);
     // friend std::istream& operator>>(std::istream& in, SLL& list);
 };
 

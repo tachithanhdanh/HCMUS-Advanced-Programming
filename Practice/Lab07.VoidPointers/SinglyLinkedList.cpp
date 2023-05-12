@@ -211,52 +211,52 @@ void SLL::deleteAllNode() {
     return;
 }
 
-std::ostream& operator<<(std::ostream& out, const SLL& list) {
-    if (list.getHead() == nullptr) {
-        out << "Empty List!\n";
-        return out;
-    }
-    out << "Singly Linked List (print order from head to tail):\n";
-    for (Node* pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
-        out << *pNode;
-    }
-    return out;
-}
+// std::ostream& operator<<(std::ostream& out, const SLL& list) {
+//     if (list.getHead() == nullptr) {
+//         out << "Empty List!\n";
+//         return out;
+//     }
+//     out << "Singly Linked List (print order from head to tail):\n";
+//     for (Node* pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
+//         out << *pNode;
+//     }
+//     return out;
+// }
 
 // std::istream& operator>>(std::istream& in, SLL& list) {
 //     return in;
 // }
 
-void SLL::inputSLL() {
-    using std::cout;
-    cout << "Moi thay danh sach cac phan so.\n";
-    cout << "Cac phan so sau khi nhap se duoc xu ly thanh phan so toi gian.\n";
-    cout << "Vi du: thay nhap 100/200 thi em se toi gian lai thanh 1/2\n";
-    cout << "Dinh dang nhap: a/b voi a la tu so, b la tu so.\n";
-    cout << "Vi du: 1/2, 3/4, 4/5, ...\n";
-    cout << "De dung viec nhap danh sach phan so, thay vui long nhap 0/0.\n";
-    Fraction frac;
-    Node* cur = nullptr;
-    do {
-        cout << "Moi thay nhap phan so (nhap 0/0 de dung): ";
-        std::cin >> frac;
-        if (frac != nullFrac) {
-            if (this->isEmpty()) {
-                this->setHead(new Node(frac));
-                cur = this->getHead();
-            } else {
-                cur->setNextNode(new Node(frac));
-                if (cur) cur = cur->nextNode();
-            }
-        }
-    } while (frac != nullFrac);
-    return;
-}
+// void SLL::inputSLL() {
+//     using std::cout;
+//     cout << "Moi thay danh sach cac phan so.\n";
+//     cout << "Cac phan so sau khi nhap se duoc xu ly thanh phan so toi gian.\n";
+//     cout << "Vi du: thay nhap 100/200 thi em se toi gian lai thanh 1/2\n";
+//     cout << "Dinh dang nhap: a/b voi a la tu so, b la tu so.\n";
+//     cout << "Vi du: 1/2, 3/4, 4/5, ...\n";
+//     cout << "De dung viec nhap danh sach phan so, thay vui long nhap 0/0.\n";
+//     Fraction frac;
+//     Node* cur = nullptr;
+//     do {
+//         cout << "Moi thay nhap phan so (nhap 0/0 de dung): ";
+//         std::cin >> frac;
+//         if (frac != nullFrac) {
+//             if (this->isEmpty()) {
+//                 this->setHead(new Node(frac));
+//                 cur = this->getHead();
+//             } else {
+//                 cur->setNextNode(new Node(frac));
+//                 if (cur) cur = cur->nextNode();
+//             }
+//         }
+//     } while (frac != nullFrac);
+//     return;
+// }
 
-void SLL::displaySLL() const {
-    std::cout << *this;
-    return;
-}
+// void SLL::displaySLL() const {
+//     std::cout << *this;
+//     return;
+// }
 
 int SLL::countNode() const {
     int count = 0;
