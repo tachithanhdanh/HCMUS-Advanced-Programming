@@ -34,3 +34,5 @@ run: main.exe
 demo: 22120049.exe
 	22120049.exe < input.txt > output.txt
 
+clean:
+	del *.exe *.o
