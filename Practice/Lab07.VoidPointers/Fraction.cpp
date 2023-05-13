@@ -44,6 +44,7 @@ std::istream& operator>>(std::istream& in, Fraction& frac) {
     in >> frac.m_numerator;
     in.ignore(std::numeric_limits<std::streamsize>::max(), '/');
     in >> frac.m_denominator;
+    frac.reduce();
     return in;
 }
 

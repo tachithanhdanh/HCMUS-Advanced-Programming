@@ -4,6 +4,9 @@
 #include "SNode.hpp"
 #include <iostream>
 
+using cmpFcn = bool(void_ptr, void_ptr);
+using cmpFcn_ptr = cmpFcn*;
+
 struct SLL {
 private:
     int m_data_size;
@@ -42,10 +45,10 @@ public:
     void insertAtEnding(void_ptr data);
     
     // operation 5
-    void insertAfterElement(Node_ptr pNode, void_ptr data);
+    void insertAfter(Node_ptr pNode, void_ptr data, bool flag = true);
 
     // operation 6
-    void insertBeforeElement(Node_ptr pNode, void_ptr data);
+    void insertBefore(Node_ptr pNode, void_ptr data);
 
     // operation 7
     void deleteAtBeginning();
@@ -54,7 +57,8 @@ public:
     void deleteAtEnding();
 
     // operation 9
-    void deleteMiddle(Node_ptr pNode);
+    void deleteNodeWithData(void_ptr data);
+    void deleteANode(Node_ptr pNode);
 
     // operation 10
     int countNode() const;
@@ -64,13 +68,6 @@ public:
 
     // operation 12
     void deleteKthNode(int k);
-    
-    // miscellaneous methods
-    void deleteANode(void_ptr data);
-
-
-    // void insertAfterKthElement(void_ptr data, int k);
-    // friend std::istream& operator>>(std::istream& in, SLL& list);
 };
 
 #endif

@@ -1,0 +1,380 @@
+Da em chao thay, sau day em xin demo danh sach lien ket dung cho kieu du lieu Fraction
+Trong qua trinh demo cac thao tac, se co mot so thao tac duoc su dung lai nhieu lan do dac thu cua chuong trinh.
+Vi thao tac thu 3 la thao tac xoa toan bo danh sach lien ket nen em xin phep demo cuoi cung.
+Thao tac 1: Xay dung danh sach lien ket  dung kieu du lieu Fraction.
+Moi thay nhap danh sach cac phan so.
+Cac phan so sau khi nhap se duoc xu ly thanh phan so toi gian.
+Vi du: thay nhap 100/200 thi em se toi gian lai thanh 1/2
+Dinh dang nhap: a/b voi a la tu so, b la tu so.
+Vi du: 1/2, 3/4, 4/5, ...
+De dung viec nhap danh sach phan so, thay vui long nhap 0/0.
+Moi thay nhap phan so: Thao tac 4: them phan tu vao cuoi danh sach.
+Danh sach lien ket hien tai dang rong nen thao tac 4 se goi thao tac 0 den them phan tu moi vao dau danh sach.
+Thao tac 0: them phan tu vao dau danh sach.
+Moi thay nhap phan so: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap phan so: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap phan so: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap phan so: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap phan so: Da thuc hien xong thao tac 1.
+
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137b6230, address = 0x214137b6250, pNext = 0x214137be610, data = 1/2
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be650, data = 2/3
+Current node: address of data = 0x214137be630, address = 0x214137be650, pNext = 0x214137be690, data = 3/4
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0, data = 5/6
+
+Moi thay nhap phan so de phuc vu cho thao tac tiep theo.
+Moi thay nhap phan so: Thao tac 4: them phan tu vao cuoi danh sach.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137b6230, address = 0x214137b6250, pNext = 0x214137be610, data = 1/2
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be650, data = 2/3
+Current node: address of data = 0x214137be630, address = 0x214137be650, pNext = 0x214137be690, data = 3/4
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0x214137be710, data = 5/6
+Current node: address of data = 0x214137be6f0, address = 0x214137be710, pNext = 0, data = 6/7
+
+Bay gio em se demo thao tac so 5 bang cach lay ngau nhien mot node nao do de chen phan so moi vao sau no.
+Node duoc insertAfter co dia chi la 0x214137be650 chua du lieu la phan so 3/4
+Moi thay nhap phan so: Thao tac 5: them phan tu vao sau mot phan tu nao do trong danh sach.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137b6230, address = 0x214137b6250, pNext = 0x214137be610, data = 1/2
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be650, data = 2/3
+Current node: address of data = 0x214137be630, address = 0x214137be650, pNext = 0x214137be750, data = 3/4
+Current node: address of data = 0x214137be730, address = 0x214137be750, pNext = 0x214137be690, data = 7/8
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0x214137be710, data = 5/6
+Current node: address of data = 0x214137be6f0, address = 0x214137be710, pNext = 0, data = 6/7
+
+Bay gio em se demo thao tac so 6 bang cach lay ngau nhien mot node nao do de chen phan so moi vao truoc no.
+Node duoc insertBefore co dia chi la 0x214137be690 chua du lieu la phan so 3/4
+Moi thay nhap phan so: Thao tac 6: Them phan tu vao truoc phan tu nao do trong danh sach.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137b6230, address = 0x214137b6250, pNext = 0x214137be610, data = 1/2
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be790, data = 2/3
+Current node: address of data = 0x214137be770, address = 0x214137be790, pNext = 0x214137be650, data = 8/9
+Current node: address of data = 0x214137be630, address = 0x214137be650, pNext = 0x214137be750, data = 3/4
+Current node: address of data = 0x214137be730, address = 0x214137be750, pNext = 0x214137be690, data = 7/8
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0x214137be710, data = 5/6
+Current node: address of data = 0x214137be6f0, address = 0x214137be710, pNext = 0, data = 6/7
+
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137b6250
+Node destructor called for node has data address = 0x214137b6230 at address 0x214137b6250
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be790, data = 2/3
+Current node: address of data = 0x214137be770, address = 0x214137be790, pNext = 0x214137be650, data = 8/9
+Current node: address of data = 0x214137be630, address = 0x214137be650, pNext = 0x214137be750, data = 3/4
+Current node: address of data = 0x214137be730, address = 0x214137be750, pNext = 0x214137be690, data = 7/8
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0x214137be710, data = 5/6
+Current node: address of data = 0x214137be6f0, address = 0x214137be710, pNext = 0, data = 6/7
+
+Thao tac 8: Xoa phan tu cuoi danh sach lien ket.
+Node destructor called for node has data address = 0x214137be6f0 at address 0x214137be710
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be790, data = 2/3
+Current node: address of data = 0x214137be770, address = 0x214137be790, pNext = 0x214137be650, data = 8/9
+Current node: address of data = 0x214137be630, address = 0x214137be650, pNext = 0x214137be750, data = 3/4
+Current node: address of data = 0x214137be730, address = 0x214137be750, pNext = 0x214137be690, data = 7/8
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0, data = 5/6
+
+Bay gio em se demo thao tac so 9 bang cach lay ngau nhien mot node nao do de xoa.
+Node duoc deleteMiddle co dia chi la 0x214137be750 chua du lieu la phan so 7/8
+Thao tac 9: Xoa phan tu giua trong danh sach lien ket.
+Node destructor called for node has data address = 0x214137be730 at address 0x214137be750
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be790, data = 2/3
+Current node: address of data = 0x214137be770, address = 0x214137be790, pNext = 0x214137be650, data = 8/9
+Current node: address of data = 0x214137be630, address = 0x214137be650, pNext = 0x214137be690, data = 3/4
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0, data = 5/6
+
+Thao tac so 10: Dem so phan tu cua danh sach lien ket.
+So phan tu cua danh sach lien ket hien tai: 5
+
+Thao tac 11: Chen phan tu vao vi tri xac dinh trong danh sach lien ket.
+Moi thay nhap vi tri can chen: Moi thay nhap phan so de phuc vu cho thao tac tiep theo.
+Moi thay nhap phan so: Vi tri thay vua nhap nam o giua danh sach lien ket nen ta goi thao tac 6.
+Thao tac 6: Them phan tu vao truoc phan tu nao do trong danh sach.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be790, data = 2/3
+Current node: address of data = 0x214137be770, address = 0x214137be790, pNext = 0x214137be650, data = 8/9
+Current node: address of data = 0x214137be630, address = 0x214137be650, pNext = 0x214137be710, data = 3/4
+Current node: address of data = 0x214137be750, address = 0x214137be710, pNext = 0x214137be690, data = 37/49
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0, data = 5/6
+
+Thao tac so 12: Xoa phan tu tai vi tri xac dinh trong danh sach lien ket.
+Moi thay nhap vi tri can xoa: Node destructor called for node has data address = 0x214137be630 at address 0x214137be650
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be5f0, address = 0x214137be610, pNext = 0x214137be790, data = 2/3
+Current node: address of data = 0x214137be770, address = 0x214137be790, pNext = 0x214137be710, data = 8/9
+Current node: address of data = 0x214137be750, address = 0x214137be710, pNext = 0x214137be690, data = 37/49
+Current node: address of data = 0x214137be670, address = 0x214137be690, pNext = 0x214137be6d0, data = 4/5
+Current node: address of data = 0x214137be6b0, address = 0x214137be6d0, pNext = 0, data = 5/6
+
+Thao tac 3: Thao tac huy toan bo danh sach lien ket don.
+SLL::deleteAllNode function called.
+Ban dau danh sach lien ket co 5 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be610
+Node destructor called for node has data address = 0x214137be5f0 at address 0x214137be610
+Danh sach lien ket con 4 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be790
+Node destructor called for node has data address = 0x214137be770 at address 0x214137be790
+Danh sach lien ket con 3 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be710
+Node destructor called for node has data address = 0x214137be750 at address 0x214137be710
+Danh sach lien ket con 2 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be690
+Node destructor called for node has data address = 0x214137be670 at address 0x214137be690
+Danh sach lien ket con 1 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be6d0
+Node destructor called for node has data address = 0x214137be6b0 at address 0x214137be6d0
+Danh sach lien ket con 0 phan tu.
+Da huy xong toan bo danh sach phan so.
+Em xin dung ham in danh sach phan so de cho thay thay danh sach hien gio la rong.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu Fraction.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Empty list!
+
+Singly Linked List destructor called.
+
+
+Da em chao thay, sau day em xin demo danh sach lien ket dung cho kieu du lieu std::string
+Trong qua trinh demo cac thao tac, se co mot so thao tac duoc su dung lai nhieu lan do dac thu cua chuong trinh.
+Vi thao tac thu 3 la thao tac xoa toan bo danh sach lien ket nen em xin phep demo cuoi cung.
+Thao tac 1: Xay dung danh sach lien ket  dung kieu du lieu std::string.
+Moi thay nhap danh sach cac chuoi ky tu.
+Dinh dang nhap nhu binh thuong, ket thuc boi dau xuong dong.
+Vi du: Em chao thay Thinh.
+De dung viec nhap danh sach string, thay vui long nhap xau rong roi enter.
+Moi thay nhap chuoi: Thao tac 4: them phan tu vao cuoi danh sach.
+Danh sach lien ket hien tai dang rong nen thao tac 4 se goi thao tac 0 den them phan tu moi vao dau danh sach.
+Thao tac 0: them phan tu vao dau danh sach.
+Moi thay nhap chuoi: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap chuoi: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap chuoi: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap chuoi: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap chuoi: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap chuoi: Thao tac 4: them phan tu vao cuoi danh sach.
+Moi thay nhap chuoi: Da thuc hien xong thao tac 1.
+
+Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137b6250, address = 0x214137be6d0, pNext = 0x214137be690, data = xin chao
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137be610, data = abc xyz
+Current node: address of data = 0x214137be7f0, address = 0x214137be610, pNext = 0x214137be650, data = java is great
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0, data = 22CNTN
+Da thuc hien xong thao tac 2.
+
+Moi thay nhap chuoi de phuc vu cho thao tac tiep theo.
+Moi thay nhap chuoi: Thao tac 4: them phan tu vao cuoi danh sach.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137b6250, address = 0x214137be6d0, pNext = 0x214137be690, data = xin chao
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137be610, data = abc xyz
+Current node: address of data = 0x214137be7f0, address = 0x214137be610, pNext = 0x214137be650, data = java is great
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0x214137be950, data = 22CNTN
+Current node: address of data = 0x214137be920, address = 0x214137be950, pNext = 0, data = bai tap tuan 8
+Da thuc hien xong thao tac 2.
+
+Bay gio em se demo thao tac so 5 bang cach lay ngau nhien mot node nao do de chen string moi vao sau no.
+Node duoc insertAfter co dia chi la 0x214137be610 chua du lieu la string java is great
+Moi thay nhap chuoi: Thao tac 5: them phan tu vao sau mot phan tu nao do trong danh sach.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137b6250, address = 0x214137be6d0, pNext = 0x214137be690, data = xin chao
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137be610, data = abc xyz
+Current node: address of data = 0x214137be7f0, address = 0x214137be610, pNext = 0x214137be9a0, data = java is great
+Current node: address of data = 0x214137be970, address = 0x214137be9a0, pNext = 0x214137be650, data = vi tich phan 2b
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0x214137be950, data = 22CNTN
+Current node: address of data = 0x214137be920, address = 0x214137be950, pNext = 0, data = bai tap tuan 8
+Da thuc hien xong thao tac 2.
+
+Bay gio em se demo thao tac so 6 bang cach lay ngau nhien mot node nao do de chen string moi vao truoc no.
+Node duoc insertBefore co dia chi la 0x214137be690 chua du lieu la string java is great
+Moi thay nhap chuoi: Thao tac 6: Them phan tu vao truoc phan tu nao do trong danh sach.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137b6250, address = 0x214137be6d0, pNext = 0x214137be690, data = xin chao
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137bea20, data = abc xyz
+Current node: address of data = 0x214137be9c0, address = 0x214137bea20, pNext = 0x214137be610, data = Nguyen Thi Xuan Huong
+Current node: address of data = 0x214137be7f0, address = 0x214137be610, pNext = 0x214137be9a0, data = java is great
+Current node: address of data = 0x214137be970, address = 0x214137be9a0, pNext = 0x214137be650, data = vi tich phan 2b
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0x214137be950, data = 22CNTN
+Current node: address of data = 0x214137be920, address = 0x214137be950, pNext = 0, data = bai tap tuan 8
+Da thuc hien xong thao tac 2.
+
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be6d0
+Node destructor called for node has data address = 0x214137b6250 at address 0x214137be6d0
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137bea20, data = abc xyz
+Current node: address of data = 0x214137be9c0, address = 0x214137bea20, pNext = 0x214137be610, data = Nguyen Thi Xuan Huong
+Current node: address of data = 0x214137be7f0, address = 0x214137be610, pNext = 0x214137be9a0, data = java is great
+Current node: address of data = 0x214137be970, address = 0x214137be9a0, pNext = 0x214137be650, data = vi tich phan 2b
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0x214137be950, data = 22CNTN
+Current node: address of data = 0x214137be920, address = 0x214137be950, pNext = 0, data = bai tap tuan 8
+Da thuc hien xong thao tac 2.
+
+Thao tac 8: Xoa phan tu cuoi danh sach lien ket.
+Node destructor called for node has data address = 0x214137be920 at address 0x214137be950
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137bea20, data = abc xyz
+Current node: address of data = 0x214137be9c0, address = 0x214137bea20, pNext = 0x214137be610, data = Nguyen Thi Xuan Huong
+Current node: address of data = 0x214137be7f0, address = 0x214137be610, pNext = 0x214137be9a0, data = java is great
+Current node: address of data = 0x214137be970, address = 0x214137be9a0, pNext = 0x214137be650, data = vi tich phan 2b
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0, data = 22CNTN
+Da thuc hien xong thao tac 2.
+
+Bay gio em se demo thao tac so 9 bang cach lay ngau nhien mot node nao do de xoa.
+Node duoc deleteMiddle co dia chi la 0x214137be610 chua du lieu la string java is great
+Thao tac 9: Xoa phan tu giua trong danh sach lien ket.
+Node destructor called for node has data address = 0x214137be7f0 at address 0x214137be610
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137bea20, data = abc xyz
+Current node: address of data = 0x214137be9c0, address = 0x214137bea20, pNext = 0x214137be9a0, data = Nguyen Thi Xuan Huong
+Current node: address of data = 0x214137be970, address = 0x214137be9a0, pNext = 0x214137be650, data = vi tich phan 2b
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0, data = 22CNTN
+Da thuc hien xong thao tac 2.
+
+Thao tac so 10: Dem so phan tu cua danh sach lien ket.
+So phan tu cua danh sach lien ket hien tai: 7
+
+Thao tac 11: Chen phan tu vao vi tri xac dinh trong danh sach lien ket.
+Moi thay nhap vi tri can chen: Moi thay nhap chuoi de phuc vu cho thao tac tiep theo.
+Moi thay nhap chuoi: Vi tri thay vua nhap nam o giua danh sach lien ket nen ta goi thao tac 6.
+Thao tac 6: Them phan tu vao truoc phan tu nao do trong danh sach.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137bea20, data = abc xyz
+Current node: address of data = 0x214137be9c0, address = 0x214137bea20, pNext = 0x214137be9a0, data = Nguyen Thi Xuan Huong
+Current node: address of data = 0x214137be970, address = 0x214137be9a0, pNext = 0x214137be610, data = vi tich phan 2b
+Current node: address of data = 0x214137bea40, address = 0x214137be610, pNext = 0x214137be650, data = Truong Toan Thinh
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0, data = 22CNTN
+Da thuc hien xong thao tac 2.
+
+Thao tac so 12: Xoa phan tu tai vi tri xac dinh trong danh sach lien ket.
+Moi thay nhap vi tri can xoa: Node destructor called for node has data address = 0x214137be970 at address 0x214137be9a0
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Current node: address of data = 0x214137be790, address = 0x214137be690, pNext = 0x214137be710, data = hello world
+Current node: address of data = 0x214137be7c0, address = 0x214137be710, pNext = 0x214137bea20, data = abc xyz
+Current node: address of data = 0x214137be9c0, address = 0x214137bea20, pNext = 0x214137be610, data = Nguyen Thi Xuan Huong
+Current node: address of data = 0x214137bea40, address = 0x214137be610, pNext = 0x214137be650, data = Truong Toan Thinh
+Current node: address of data = 0x214137be820, address = 0x214137be650, pNext = 0x214137be8b0, data = classes are painful
+Current node: address of data = 0x214137be880, address = 0x214137be8b0, pNext = 0x214137be900, data = 22KDL
+Current node: address of data = 0x214137be8d0, address = 0x214137be900, pNext = 0, data = 22CNTN
+Da thuc hien xong thao tac 2.
+
+Thao tac 3: Thao tac huy toan bo danh sach lien ket don.
+SLL::deleteAllNode function called.
+Ban dau danh sach lien ket co 7 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be690
+Node destructor called for node has data address = 0x214137be790 at address 0x214137be690
+Danh sach lien ket con 6 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be710
+Node destructor called for node has data address = 0x214137be7c0 at address 0x214137be710
+Danh sach lien ket con 5 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137bea20
+Node destructor called for node has data address = 0x214137be9c0 at address 0x214137bea20
+Danh sach lien ket con 4 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be610
+Node destructor called for node has data address = 0x214137bea40 at address 0x214137be610
+Danh sach lien ket con 3 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be650
+Node destructor called for node has data address = 0x214137be820 at address 0x214137be650
+Danh sach lien ket con 2 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be8b0
+Node destructor called for node has data address = 0x214137be880 at address 0x214137be8b0
+Danh sach lien ket con 1 phan tu.
+Thao tac 7: Xoa phan tu dau danh sach lien ket.
+Phan tu bi xoa co dia chi 0x214137be900
+Node destructor called for node has data address = 0x214137be8d0 at address 0x214137be900
+Danh sach lien ket con 0 phan tu.
+Da huy xong toan bo danh sach phan so.
+Em xin dung ham in danh sach phan so de cho thay thay danh sach hien gio la rong.
+Danh sach sau khi da hoan thanh xong thao tac vua roi.Thao tac so 2: In danh sach lien ket.
+Danh sach lien ket chua kieu du lieu std::string.
+Danh sach lien ket duoc in theo thu tu tu head den tail.
+Empty list!
+Da thuc hien xong thao tac 2.
+Singly Linked List destructor called.
