@@ -1,0 +1,60 @@
+Da em chao thay, em la Thanh Danh, MSSV 22120049.
+Hom nay em xin demo cac ham phuc vu cho viec sap xep.
+
+Bai toan 1: Sap xep mang so nguyen theo thu tu giam dan.
+Moi thay nhap kich co mang n = Moi thay nhap mang so nguyen arr.Moi thay nhap arr[0] = Moi thay nhap arr[1] = Moi thay nhap arr[2] = Moi thay nhap arr[3] = Moi thay nhap arr[4] = Moi thay nhap arr[5] = Moi thay nhap arr[6] = Moi thay nhap arr[7] = Moi thay nhap arr[8] = Moi thay nhap arr[9] = 
+Mang so nguyen truoc khi sap xep.
+Mang arr co kich co n = 10
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+100 37 49 12 14 55 41 43 42 41
+Mang so nguyen sau khi duoc sap xep theo yeu cau bai toan.
+Mang arr co kich co n = 10
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+100 55 49 43 42 41 41 37 14 12
+
+Bai toan 2: Sap xep phan tu chan trong mang so nguyen theo thu tu giam dan.
+Moi thay nhap kich co mang n = Moi thay nhap mang so nguyen arr.Moi thay nhap arr[0] = Moi thay nhap arr[1] = Moi thay nhap arr[2] = Moi thay nhap arr[3] = Moi thay nhap arr[4] = Moi thay nhap arr[5] = Moi thay nhap arr[6] = Moi thay nhap arr[7] = Moi thay nhap arr[8] = Moi thay nhap arr[9] = Moi thay nhap arr[10] = Moi thay nhap arr[11] = Moi thay nhap arr[12] = Moi thay nhap arr[13] = Moi thay nhap arr[14] = Moi thay nhap arr[15] = 
+Mang so nguyen truoc khi sap xep.
+Mang arr co kich co n = 16
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+101 103 55 17 14 16 20 22 28 43 51 32 33 104 200 97
+Mang so nguyen sau khi duoc sap xep theo yeu cau bai toan.
+Mang arr co kich co n = 16
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+200 104 32 28 22 20 16 14 101 103 55 17 43 51 33 97
+
+Bai toan 3: Sap xep phan tu am thi tang con phan tu duong thi giam trong mang so thuc.
+Moi thay nhap kich co mang n = Moi thay nhap mang so thuc arr.Moi thay nhap arr[0] = Moi thay nhap arr[1] = Moi thay nhap arr[2] = Moi thay nhap arr[3] = Moi thay nhap arr[4] = Moi thay nhap arr[5] = Moi thay nhap arr[6] = Moi thay nhap arr[7] = Moi thay nhap arr[8] = Moi thay nhap arr[9] = Moi thay nhap arr[10] = Moi thay nhap arr[11] = Moi thay nhap arr[12] = Moi thay nhap arr[13] = Moi thay nhap arr[14] = Moi thay nhap arr[15] = Moi thay nhap arr[16] = Moi thay nhap arr[17] = Moi thay nhap arr[18] = Moi thay nhap arr[19] = 
+Mang so thuc truoc khi sap xep.
+Mang so thuc arr co kich co n = 20
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+1.37 2.49 3.56 4.78 5.99 6.11 7.9 8 0 0 0 0 -1 -2 -3 -4 -5 -6 -7 -8
+Mang so thuc sau khi duoc sap xep theo yeu cau bai toan.
+Mang so thuc arr co kich co n = 20
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+-8 -7 -6 -5 -4 -3 -2 -1 0 0 0 0 8 7.9 6.11 5.99 4.78 3.56 2.49 1.37
+
+Bai toan 4: Sap xep phan tu nguyen to trong mang so nguyen theo thu tu tang dan.
+Moi thay nhap kich co mang n = Moi thay nhap mang so nguyen arr.Moi thay nhap arr[0] = Moi thay nhap arr[1] = Moi thay nhap arr[2] = Moi thay nhap arr[3] = Moi thay nhap arr[4] = Moi thay nhap arr[5] = Moi thay nhap arr[6] = Moi thay nhap arr[7] = Moi thay nhap arr[8] = Moi thay nhap arr[9] = Moi thay nhap arr[10] = Moi thay nhap arr[11] = Moi thay nhap arr[12] = Moi thay nhap arr[13] = Moi thay nhap arr[14] = Moi thay nhap arr[15] = Moi thay nhap arr[16] = Moi thay nhap arr[17] = Moi thay nhap arr[18] = Moi thay nhap arr[19] = Moi thay nhap arr[20] = Moi thay nhap arr[21] = Moi thay nhap arr[22] = Moi thay nhap arr[23] = Moi thay nhap arr[24] = 
+Mang so nguyen truoc khi sap xep.
+Mang arr co kich co n = 25
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+1 0 43 100 41 50 37 75 31 18 29 24 23 33 19 35 17 101 13 105 11 2 3 5 7
+Mang so nguyen sau khi duoc sap xep theo yeu cau bai toan.
+Mang arr co kich co n = 25
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 101 1 0 100 50 75 18 24 33 35 105
+
+Bai toan 5: Sap xep mang mot chieu cac so nguyen theo yeu cau sau:
++ Tat ca so chan don ve phia trai cua mang theo thu tu tang dan.
++ Tat ca so le don ve phia phai cua mang theo thu tu giam dan.
+Moi thay nhap kich co mang n = Moi thay nhap mang so nguyen arr.Moi thay nhap arr[0] = Moi thay nhap arr[1] = Moi thay nhap arr[2] = Moi thay nhap arr[3] = Moi thay nhap arr[4] = Moi thay nhap arr[5] = Moi thay nhap arr[6] = Moi thay nhap arr[7] = Moi thay nhap arr[8] = Moi thay nhap arr[9] = Moi thay nhap arr[10] = Moi thay nhap arr[11] = Moi thay nhap arr[12] = Moi thay nhap arr[13] = Moi thay nhap arr[14] = Moi thay nhap arr[15] = Moi thay nhap arr[16] = Moi thay nhap arr[17] = Moi thay nhap arr[18] = Moi thay nhap arr[19] = 
+Mang so nguyen truoc khi sap xep.
+Mang arr co kich co n = 20
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+Mang so nguyen sau khi duoc sap xep theo yeu cau bai toan.
+Mang arr co kich co n = 20
+Cac phan tu trong mang (ngan cach nhau boi khoang trang):
+2 4 6 8 10 12 14 16 18 20 19 17 15 13 11 9 7 5 3 1
+
