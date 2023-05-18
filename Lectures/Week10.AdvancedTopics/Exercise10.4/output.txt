@@ -1,0 +1,2002 @@
+Nhap so nguyen N = So nguyen 0 bieu dien duoi dang tong cac so nguyen to:
+Khong ton tai cach bieu dien cho N = 0
+So nguyen 1 bieu dien duoi dang tong cac so nguyen to:
+Khong ton tai cach bieu dien cho N = 1
+So nguyen 2 bieu dien duoi dang tong cac so nguyen to:
+2 = 2
+So nguyen 3 bieu dien duoi dang tong cac so nguyen to:
+3 = 3
+So nguyen 4 bieu dien duoi dang tong cac so nguyen to:
+4 = 2 + 2
+So nguyen 5 bieu dien duoi dang tong cac so nguyen to:
+5 = 5
+So nguyen 6 bieu dien duoi dang tong cac so nguyen to:
+6 = 3 + 3
+So nguyen 7 bieu dien duoi dang tong cac so nguyen to:
+7 = 7
+So nguyen 8 bieu dien duoi dang tong cac so nguyen to:
+8 = 3 + 5
+So nguyen 9 bieu dien duoi dang tong cac so nguyen to:
+9 = 2 + 7
+So nguyen 10 bieu dien duoi dang tong cac so nguyen to:
+10 = 3 + 7
+So nguyen 11 bieu dien duoi dang tong cac so nguyen to:
+11 = 11
+So nguyen 12 bieu dien duoi dang tong cac so nguyen to:
+12 = 5 + 7
+So nguyen 13 bieu dien duoi dang tong cac so nguyen to:
+13 = 13
+So nguyen 14 bieu dien duoi dang tong cac so nguyen to:
+14 = 3 + 11
+So nguyen 15 bieu dien duoi dang tong cac so nguyen to:
+15 = 2 + 13
+So nguyen 16 bieu dien duoi dang tong cac so nguyen to:
+16 = 3 + 13
+So nguyen 17 bieu dien duoi dang tong cac so nguyen to:
+17 = 17
+So nguyen 18 bieu dien duoi dang tong cac so nguyen to:
+18 = 5 + 13
+So nguyen 19 bieu dien duoi dang tong cac so nguyen to:
+19 = 19
+So nguyen 20 bieu dien duoi dang tong cac so nguyen to:
+20 = 3 + 17
+So nguyen 21 bieu dien duoi dang tong cac so nguyen to:
+21 = 2 + 19
+So nguyen 22 bieu dien duoi dang tong cac so nguyen to:
+22 = 3 + 19
+So nguyen 23 bieu dien duoi dang tong cac so nguyen to:
+23 = 23
+So nguyen 24 bieu dien duoi dang tong cac so nguyen to:
+24 = 5 + 19
+So nguyen 25 bieu dien duoi dang tong cac so nguyen to:
+25 = 2 + 23
+So nguyen 26 bieu dien duoi dang tong cac so nguyen to:
+26 = 3 + 23
+So nguyen 27 bieu dien duoi dang tong cac so nguyen to:
+27 = 2 + 2 + 23
+So nguyen 28 bieu dien duoi dang tong cac so nguyen to:
+28 = 5 + 23
+So nguyen 29 bieu dien duoi dang tong cac so nguyen to:
+29 = 29
+So nguyen 30 bieu dien duoi dang tong cac so nguyen to:
+30 = 7 + 23
+So nguyen 31 bieu dien duoi dang tong cac so nguyen to:
+31 = 31
+So nguyen 32 bieu dien duoi dang tong cac so nguyen to:
+32 = 3 + 29
+So nguyen 33 bieu dien duoi dang tong cac so nguyen to:
+33 = 2 + 31
+So nguyen 34 bieu dien duoi dang tong cac so nguyen to:
+34 = 3 + 31
+So nguyen 35 bieu dien duoi dang tong cac so nguyen to:
+35 = 2 + 2 + 31
+So nguyen 36 bieu dien duoi dang tong cac so nguyen to:
+36 = 5 + 31
+So nguyen 37 bieu dien duoi dang tong cac so nguyen to:
+37 = 37
+So nguyen 38 bieu dien duoi dang tong cac so nguyen to:
+38 = 7 + 31
+So nguyen 39 bieu dien duoi dang tong cac so nguyen to:
+39 = 2 + 37
+So nguyen 40 bieu dien duoi dang tong cac so nguyen to:
+40 = 3 + 37
+So nguyen 41 bieu dien duoi dang tong cac so nguyen to:
+41 = 41
+So nguyen 42 bieu dien duoi dang tong cac so nguyen to:
+42 = 5 + 37
+So nguyen 43 bieu dien duoi dang tong cac so nguyen to:
+43 = 43
+So nguyen 44 bieu dien duoi dang tong cac so nguyen to:
+44 = 3 + 41
+So nguyen 45 bieu dien duoi dang tong cac so nguyen to:
+45 = 2 + 43
+So nguyen 46 bieu dien duoi dang tong cac so nguyen to:
+46 = 3 + 43
+So nguyen 47 bieu dien duoi dang tong cac so nguyen to:
+47 = 47
+So nguyen 48 bieu dien duoi dang tong cac so nguyen to:
+48 = 5 + 43
+So nguyen 49 bieu dien duoi dang tong cac so nguyen to:
+49 = 2 + 47
+So nguyen 50 bieu dien duoi dang tong cac so nguyen to:
+50 = 3 + 47
+So nguyen 51 bieu dien duoi dang tong cac so nguyen to:
+51 = 2 + 2 + 47
+So nguyen 52 bieu dien duoi dang tong cac so nguyen to:
+52 = 5 + 47
+So nguyen 53 bieu dien duoi dang tong cac so nguyen to:
+53 = 53
+So nguyen 54 bieu dien duoi dang tong cac so nguyen to:
+54 = 7 + 47
+So nguyen 55 bieu dien duoi dang tong cac so nguyen to:
+55 = 2 + 53
+So nguyen 56 bieu dien duoi dang tong cac so nguyen to:
+56 = 3 + 53
+So nguyen 57 bieu dien duoi dang tong cac so nguyen to:
+57 = 2 + 2 + 53
+So nguyen 58 bieu dien duoi dang tong cac so nguyen to:
+58 = 5 + 53
+So nguyen 59 bieu dien duoi dang tong cac so nguyen to:
+59 = 59
+So nguyen 60 bieu dien duoi dang tong cac so nguyen to:
+60 = 7 + 53
+So nguyen 61 bieu dien duoi dang tong cac so nguyen to:
+61 = 61
+So nguyen 62 bieu dien duoi dang tong cac so nguyen to:
+62 = 3 + 59
+So nguyen 63 bieu dien duoi dang tong cac so nguyen to:
+63 = 2 + 61
+So nguyen 64 bieu dien duoi dang tong cac so nguyen to:
+64 = 3 + 61
+So nguyen 65 bieu dien duoi dang tong cac so nguyen to:
+65 = 2 + 2 + 61
+So nguyen 66 bieu dien duoi dang tong cac so nguyen to:
+66 = 5 + 61
+So nguyen 67 bieu dien duoi dang tong cac so nguyen to:
+67 = 67
+So nguyen 68 bieu dien duoi dang tong cac so nguyen to:
+68 = 7 + 61
+So nguyen 69 bieu dien duoi dang tong cac so nguyen to:
+69 = 2 + 67
+So nguyen 70 bieu dien duoi dang tong cac so nguyen to:
+70 = 3 + 67
+So nguyen 71 bieu dien duoi dang tong cac so nguyen to:
+71 = 71
+So nguyen 72 bieu dien duoi dang tong cac so nguyen to:
+72 = 5 + 67
+So nguyen 73 bieu dien duoi dang tong cac so nguyen to:
+73 = 73
+So nguyen 74 bieu dien duoi dang tong cac so nguyen to:
+74 = 3 + 71
+So nguyen 75 bieu dien duoi dang tong cac so nguyen to:
+75 = 2 + 73
+So nguyen 76 bieu dien duoi dang tong cac so nguyen to:
+76 = 3 + 73
+So nguyen 77 bieu dien duoi dang tong cac so nguyen to:
+77 = 2 + 2 + 73
+So nguyen 78 bieu dien duoi dang tong cac so nguyen to:
+78 = 5 + 73
+So nguyen 79 bieu dien duoi dang tong cac so nguyen to:
+79 = 79
+So nguyen 80 bieu dien duoi dang tong cac so nguyen to:
+80 = 7 + 73
+So nguyen 81 bieu dien duoi dang tong cac so nguyen to:
+81 = 2 + 79
+So nguyen 82 bieu dien duoi dang tong cac so nguyen to:
+82 = 3 + 79
+So nguyen 83 bieu dien duoi dang tong cac so nguyen to:
+83 = 83
+So nguyen 84 bieu dien duoi dang tong cac so nguyen to:
+84 = 5 + 79
+So nguyen 85 bieu dien duoi dang tong cac so nguyen to:
+85 = 2 + 83
+So nguyen 86 bieu dien duoi dang tong cac so nguyen to:
+86 = 3 + 83
+So nguyen 87 bieu dien duoi dang tong cac so nguyen to:
+87 = 2 + 2 + 83
+So nguyen 88 bieu dien duoi dang tong cac so nguyen to:
+88 = 5 + 83
+So nguyen 89 bieu dien duoi dang tong cac so nguyen to:
+89 = 89
+So nguyen 90 bieu dien duoi dang tong cac so nguyen to:
+90 = 7 + 83
+So nguyen 91 bieu dien duoi dang tong cac so nguyen to:
+91 = 2 + 89
+So nguyen 92 bieu dien duoi dang tong cac so nguyen to:
+92 = 3 + 89
+So nguyen 93 bieu dien duoi dang tong cac so nguyen to:
+93 = 2 + 2 + 89
+So nguyen 94 bieu dien duoi dang tong cac so nguyen to:
+94 = 5 + 89
+So nguyen 95 bieu dien duoi dang tong cac so nguyen to:
+95 = 3 + 3 + 89
+So nguyen 96 bieu dien duoi dang tong cac so nguyen to:
+96 = 7 + 89
+So nguyen 97 bieu dien duoi dang tong cac so nguyen to:
+97 = 97
+So nguyen 98 bieu dien duoi dang tong cac so nguyen to:
+98 = 19 + 79
+So nguyen 99 bieu dien duoi dang tong cac so nguyen to:
+99 = 2 + 97
+So nguyen 100 bieu dien duoi dang tong cac so nguyen to:
+100 = 3 + 97
+So nguyen 101 bieu dien duoi dang tong cac so nguyen to:
+101 = 101
+So nguyen 102 bieu dien duoi dang tong cac so nguyen to:
+102 = 5 + 97
+So nguyen 103 bieu dien duoi dang tong cac so nguyen to:
+103 = 103
+So nguyen 104 bieu dien duoi dang tong cac so nguyen to:
+104 = 3 + 101
+So nguyen 105 bieu dien duoi dang tong cac so nguyen to:
+105 = 2 + 103
+So nguyen 106 bieu dien duoi dang tong cac so nguyen to:
+106 = 3 + 103
+So nguyen 107 bieu dien duoi dang tong cac so nguyen to:
+107 = 107
+So nguyen 108 bieu dien duoi dang tong cac so nguyen to:
+108 = 5 + 103
+So nguyen 109 bieu dien duoi dang tong cac so nguyen to:
+109 = 109
+So nguyen 110 bieu dien duoi dang tong cac so nguyen to:
+110 = 3 + 107
+So nguyen 111 bieu dien duoi dang tong cac so nguyen to:
+111 = 2 + 109
+So nguyen 112 bieu dien duoi dang tong cac so nguyen to:
+112 = 3 + 109
+So nguyen 113 bieu dien duoi dang tong cac so nguyen to:
+113 = 113
+So nguyen 114 bieu dien duoi dang tong cac so nguyen to:
+114 = 5 + 109
+So nguyen 115 bieu dien duoi dang tong cac so nguyen to:
+115 = 2 + 113
+So nguyen 116 bieu dien duoi dang tong cac so nguyen to:
+116 = 3 + 113
+So nguyen 117 bieu dien duoi dang tong cac so nguyen to:
+117 = 2 + 2 + 113
+So nguyen 118 bieu dien duoi dang tong cac so nguyen to:
+118 = 5 + 113
+So nguyen 119 bieu dien duoi dang tong cac so nguyen to:
+119 = 3 + 3 + 113
+So nguyen 120 bieu dien duoi dang tong cac so nguyen to:
+120 = 7 + 113
+So nguyen 121 bieu dien duoi dang tong cac so nguyen to:
+121 = 3 + 5 + 113
+So nguyen 122 bieu dien duoi dang tong cac so nguyen to:
+122 = 13 + 109
+So nguyen 123 bieu dien duoi dang tong cac so nguyen to:
+123 = 3 + 7 + 113
+So nguyen 124 bieu dien duoi dang tong cac so nguyen to:
+124 = 11 + 113
+So nguyen 125 bieu dien duoi dang tong cac so nguyen to:
+125 = 3 + 13 + 109
+So nguyen 126 bieu dien duoi dang tong cac so nguyen to:
+126 = 13 + 113
+So nguyen 127 bieu dien duoi dang tong cac so nguyen to:
+127 = 127
+So nguyen 128 bieu dien duoi dang tong cac so nguyen to:
+128 = 19 + 109
+So nguyen 129 bieu dien duoi dang tong cac so nguyen to:
+129 = 2 + 127
+So nguyen 130 bieu dien duoi dang tong cac so nguyen to:
+130 = 3 + 127
+So nguyen 131 bieu dien duoi dang tong cac so nguyen to:
+131 = 131
+So nguyen 132 bieu dien duoi dang tong cac so nguyen to:
+132 = 5 + 127
+So nguyen 133 bieu dien duoi dang tong cac so nguyen to:
+133 = 2 + 131
+So nguyen 134 bieu dien duoi dang tong cac so nguyen to:
+134 = 3 + 131
+So nguyen 135 bieu dien duoi dang tong cac so nguyen to:
+135 = 2 + 2 + 131
+So nguyen 136 bieu dien duoi dang tong cac so nguyen to:
+136 = 5 + 131
+So nguyen 137 bieu dien duoi dang tong cac so nguyen to:
+137 = 137
+So nguyen 138 bieu dien duoi dang tong cac so nguyen to:
+138 = 7 + 131
+So nguyen 139 bieu dien duoi dang tong cac so nguyen to:
+139 = 139
+So nguyen 140 bieu dien duoi dang tong cac so nguyen to:
+140 = 3 + 137
+So nguyen 141 bieu dien duoi dang tong cac so nguyen to:
+141 = 2 + 139
+So nguyen 142 bieu dien duoi dang tong cac so nguyen to:
+142 = 3 + 139
+So nguyen 143 bieu dien duoi dang tong cac so nguyen to:
+143 = 2 + 2 + 139
+So nguyen 144 bieu dien duoi dang tong cac so nguyen to:
+144 = 5 + 139
+So nguyen 145 bieu dien duoi dang tong cac so nguyen to:
+145 = 3 + 3 + 139
+So nguyen 146 bieu dien duoi dang tong cac so nguyen to:
+146 = 7 + 139
+So nguyen 147 bieu dien duoi dang tong cac so nguyen to:
+147 = 3 + 5 + 139
+So nguyen 148 bieu dien duoi dang tong cac so nguyen to:
+148 = 11 + 137
+So nguyen 149 bieu dien duoi dang tong cac so nguyen to:
+149 = 149
+So nguyen 150 bieu dien duoi dang tong cac so nguyen to:
+150 = 11 + 139
+So nguyen 151 bieu dien duoi dang tong cac so nguyen to:
+151 = 151
+So nguyen 152 bieu dien duoi dang tong cac so nguyen to:
+152 = 3 + 149
+So nguyen 153 bieu dien duoi dang tong cac so nguyen to:
+153 = 2 + 151
+So nguyen 154 bieu dien duoi dang tong cac so nguyen to:
+154 = 3 + 151
+So nguyen 155 bieu dien duoi dang tong cac so nguyen to:
+155 = 2 + 2 + 151
+So nguyen 156 bieu dien duoi dang tong cac so nguyen to:
+156 = 5 + 151
+So nguyen 157 bieu dien duoi dang tong cac so nguyen to:
+157 = 157
+So nguyen 158 bieu dien duoi dang tong cac so nguyen to:
+158 = 7 + 151
+So nguyen 159 bieu dien duoi dang tong cac so nguyen to:
+159 = 2 + 157
+So nguyen 160 bieu dien duoi dang tong cac so nguyen to:
+160 = 3 + 157
+So nguyen 161 bieu dien duoi dang tong cac so nguyen to:
+161 = 2 + 2 + 157
+So nguyen 162 bieu dien duoi dang tong cac so nguyen to:
+162 = 5 + 157
+So nguyen 163 bieu dien duoi dang tong cac so nguyen to:
+163 = 163
+So nguyen 164 bieu dien duoi dang tong cac so nguyen to:
+164 = 7 + 157
+So nguyen 165 bieu dien duoi dang tong cac so nguyen to:
+165 = 2 + 163
+So nguyen 166 bieu dien duoi dang tong cac so nguyen to:
+166 = 3 + 163
+So nguyen 167 bieu dien duoi dang tong cac so nguyen to:
+167 = 167
+So nguyen 168 bieu dien duoi dang tong cac so nguyen to:
+168 = 5 + 163
+So nguyen 169 bieu dien duoi dang tong cac so nguyen to:
+169 = 2 + 167
+So nguyen 170 bieu dien duoi dang tong cac so nguyen to:
+170 = 3 + 167
+So nguyen 171 bieu dien duoi dang tong cac so nguyen to:
+171 = 2 + 2 + 167
+So nguyen 172 bieu dien duoi dang tong cac so nguyen to:
+172 = 5 + 167
+So nguyen 173 bieu dien duoi dang tong cac so nguyen to:
+173 = 173
+So nguyen 174 bieu dien duoi dang tong cac so nguyen to:
+174 = 7 + 167
+So nguyen 175 bieu dien duoi dang tong cac so nguyen to:
+175 = 2 + 173
+So nguyen 176 bieu dien duoi dang tong cac so nguyen to:
+176 = 3 + 173
+So nguyen 177 bieu dien duoi dang tong cac so nguyen to:
+177 = 2 + 2 + 173
+So nguyen 178 bieu dien duoi dang tong cac so nguyen to:
+178 = 5 + 173
+So nguyen 179 bieu dien duoi dang tong cac so nguyen to:
+179 = 179
+So nguyen 180 bieu dien duoi dang tong cac so nguyen to:
+180 = 7 + 173
+So nguyen 181 bieu dien duoi dang tong cac so nguyen to:
+181 = 181
+So nguyen 182 bieu dien duoi dang tong cac so nguyen to:
+182 = 3 + 179
+So nguyen 183 bieu dien duoi dang tong cac so nguyen to:
+183 = 2 + 181
+So nguyen 184 bieu dien duoi dang tong cac so nguyen to:
+184 = 3 + 181
+So nguyen 185 bieu dien duoi dang tong cac so nguyen to:
+185 = 2 + 2 + 181
+So nguyen 186 bieu dien duoi dang tong cac so nguyen to:
+186 = 5 + 181
+So nguyen 187 bieu dien duoi dang tong cac so nguyen to:
+187 = 3 + 3 + 181
+So nguyen 188 bieu dien duoi dang tong cac so nguyen to:
+188 = 7 + 181
+So nguyen 189 bieu dien duoi dang tong cac so nguyen to:
+189 = 3 + 5 + 181
+So nguyen 190 bieu dien duoi dang tong cac so nguyen to:
+190 = 11 + 179
+So nguyen 191 bieu dien duoi dang tong cac so nguyen to:
+191 = 191
+So nguyen 192 bieu dien duoi dang tong cac so nguyen to:
+192 = 11 + 181
+So nguyen 193 bieu dien duoi dang tong cac so nguyen to:
+193 = 193
+So nguyen 194 bieu dien duoi dang tong cac so nguyen to:
+194 = 3 + 191
+So nguyen 195 bieu dien duoi dang tong cac so nguyen to:
+195 = 2 + 193
+So nguyen 196 bieu dien duoi dang tong cac so nguyen to:
+196 = 3 + 193
+So nguyen 197 bieu dien duoi dang tong cac so nguyen to:
+197 = 197
+So nguyen 198 bieu dien duoi dang tong cac so nguyen to:
+198 = 5 + 193
+So nguyen 199 bieu dien duoi dang tong cac so nguyen to:
+199 = 199
+So nguyen 200 bieu dien duoi dang tong cac so nguyen to:
+200 = 3 + 197
+So nguyen 201 bieu dien duoi dang tong cac so nguyen to:
+201 = 2 + 199
+So nguyen 202 bieu dien duoi dang tong cac so nguyen to:
+202 = 3 + 199
+So nguyen 203 bieu dien duoi dang tong cac so nguyen to:
+203 = 2 + 2 + 199
+So nguyen 204 bieu dien duoi dang tong cac so nguyen to:
+204 = 5 + 199
+So nguyen 205 bieu dien duoi dang tong cac so nguyen to:
+205 = 3 + 3 + 199
+So nguyen 206 bieu dien duoi dang tong cac so nguyen to:
+206 = 7 + 199
+So nguyen 207 bieu dien duoi dang tong cac so nguyen to:
+207 = 3 + 5 + 199
+So nguyen 208 bieu dien duoi dang tong cac so nguyen to:
+208 = 11 + 197
+So nguyen 209 bieu dien duoi dang tong cac so nguyen to:
+209 = 3 + 7 + 199
+So nguyen 210 bieu dien duoi dang tong cac so nguyen to:
+210 = 11 + 199
+So nguyen 211 bieu dien duoi dang tong cac so nguyen to:
+211 = 211
+So nguyen 212 bieu dien duoi dang tong cac so nguyen to:
+212 = 13 + 199
+So nguyen 213 bieu dien duoi dang tong cac so nguyen to:
+213 = 2 + 211
+So nguyen 214 bieu dien duoi dang tong cac so nguyen to:
+214 = 3 + 211
+So nguyen 215 bieu dien duoi dang tong cac so nguyen to:
+215 = 2 + 2 + 211
+So nguyen 216 bieu dien duoi dang tong cac so nguyen to:
+216 = 5 + 211
+So nguyen 217 bieu dien duoi dang tong cac so nguyen to:
+217 = 3 + 3 + 211
+So nguyen 218 bieu dien duoi dang tong cac so nguyen to:
+218 = 7 + 211
+So nguyen 219 bieu dien duoi dang tong cac so nguyen to:
+219 = 3 + 5 + 211
+So nguyen 220 bieu dien duoi dang tong cac so nguyen to:
+220 = 23 + 197
+So nguyen 221 bieu dien duoi dang tong cac so nguyen to:
+221 = 3 + 7 + 211
+So nguyen 222 bieu dien duoi dang tong cac so nguyen to:
+222 = 11 + 211
+So nguyen 223 bieu dien duoi dang tong cac so nguyen to:
+223 = 223
+So nguyen 224 bieu dien duoi dang tong cac so nguyen to:
+224 = 13 + 211
+So nguyen 225 bieu dien duoi dang tong cac so nguyen to:
+225 = 2 + 223
+So nguyen 226 bieu dien duoi dang tong cac so nguyen to:
+226 = 3 + 223
+So nguyen 227 bieu dien duoi dang tong cac so nguyen to:
+227 = 227
+So nguyen 228 bieu dien duoi dang tong cac so nguyen to:
+228 = 5 + 223
+So nguyen 229 bieu dien duoi dang tong cac so nguyen to:
+229 = 229
+So nguyen 230 bieu dien duoi dang tong cac so nguyen to:
+230 = 3 + 227
+So nguyen 231 bieu dien duoi dang tong cac so nguyen to:
+231 = 2 + 229
+So nguyen 232 bieu dien duoi dang tong cac so nguyen to:
+232 = 3 + 229
+So nguyen 233 bieu dien duoi dang tong cac so nguyen to:
+233 = 233
+So nguyen 234 bieu dien duoi dang tong cac so nguyen to:
+234 = 5 + 229
+So nguyen 235 bieu dien duoi dang tong cac so nguyen to:
+235 = 2 + 233
+So nguyen 236 bieu dien duoi dang tong cac so nguyen to:
+236 = 3 + 233
+So nguyen 237 bieu dien duoi dang tong cac so nguyen to:
+237 = 2 + 2 + 233
+So nguyen 238 bieu dien duoi dang tong cac so nguyen to:
+238 = 5 + 233
+So nguyen 239 bieu dien duoi dang tong cac so nguyen to:
+239 = 239
+So nguyen 240 bieu dien duoi dang tong cac so nguyen to:
+240 = 7 + 233
+So nguyen 241 bieu dien duoi dang tong cac so nguyen to:
+241 = 241
+So nguyen 242 bieu dien duoi dang tong cac so nguyen to:
+242 = 3 + 239
+So nguyen 243 bieu dien duoi dang tong cac so nguyen to:
+243 = 2 + 241
+So nguyen 244 bieu dien duoi dang tong cac so nguyen to:
+244 = 3 + 241
+So nguyen 245 bieu dien duoi dang tong cac so nguyen to:
+245 = 2 + 2 + 241
+So nguyen 246 bieu dien duoi dang tong cac so nguyen to:
+246 = 5 + 241
+So nguyen 247 bieu dien duoi dang tong cac so nguyen to:
+247 = 3 + 3 + 241
+So nguyen 248 bieu dien duoi dang tong cac so nguyen to:
+248 = 7 + 241
+So nguyen 249 bieu dien duoi dang tong cac so nguyen to:
+249 = 3 + 5 + 241
+So nguyen 250 bieu dien duoi dang tong cac so nguyen to:
+250 = 11 + 239
+So nguyen 251 bieu dien duoi dang tong cac so nguyen to:
+251 = 251
+So nguyen 252 bieu dien duoi dang tong cac so nguyen to:
+252 = 11 + 241
+So nguyen 253 bieu dien duoi dang tong cac so nguyen to:
+253 = 2 + 251
+So nguyen 254 bieu dien duoi dang tong cac so nguyen to:
+254 = 3 + 251
+So nguyen 255 bieu dien duoi dang tong cac so nguyen to:
+255 = 2 + 2 + 251
+So nguyen 256 bieu dien duoi dang tong cac so nguyen to:
+256 = 5 + 251
+So nguyen 257 bieu dien duoi dang tong cac so nguyen to:
+257 = 257
+So nguyen 258 bieu dien duoi dang tong cac so nguyen to:
+258 = 7 + 251
+So nguyen 259 bieu dien duoi dang tong cac so nguyen to:
+259 = 2 + 257
+So nguyen 260 bieu dien duoi dang tong cac so nguyen to:
+260 = 3 + 257
+So nguyen 261 bieu dien duoi dang tong cac so nguyen to:
+261 = 2 + 2 + 257
+So nguyen 262 bieu dien duoi dang tong cac so nguyen to:
+262 = 5 + 257
+So nguyen 263 bieu dien duoi dang tong cac so nguyen to:
+263 = 263
+So nguyen 264 bieu dien duoi dang tong cac so nguyen to:
+264 = 7 + 257
+So nguyen 265 bieu dien duoi dang tong cac so nguyen to:
+265 = 2 + 263
+So nguyen 266 bieu dien duoi dang tong cac so nguyen to:
+266 = 3 + 263
+So nguyen 267 bieu dien duoi dang tong cac so nguyen to:
+267 = 2 + 2 + 263
+So nguyen 268 bieu dien duoi dang tong cac so nguyen to:
+268 = 5 + 263
+So nguyen 269 bieu dien duoi dang tong cac so nguyen to:
+269 = 269
+So nguyen 270 bieu dien duoi dang tong cac so nguyen to:
+270 = 7 + 263
+So nguyen 271 bieu dien duoi dang tong cac so nguyen to:
+271 = 271
+So nguyen 272 bieu dien duoi dang tong cac so nguyen to:
+272 = 3 + 269
+So nguyen 273 bieu dien duoi dang tong cac so nguyen to:
+273 = 2 + 271
+So nguyen 274 bieu dien duoi dang tong cac so nguyen to:
+274 = 3 + 271
+So nguyen 275 bieu dien duoi dang tong cac so nguyen to:
+275 = 2 + 2 + 271
+So nguyen 276 bieu dien duoi dang tong cac so nguyen to:
+276 = 5 + 271
+So nguyen 277 bieu dien duoi dang tong cac so nguyen to:
+277 = 277
+So nguyen 278 bieu dien duoi dang tong cac so nguyen to:
+278 = 7 + 271
+So nguyen 279 bieu dien duoi dang tong cac so nguyen to:
+279 = 2 + 277
+So nguyen 280 bieu dien duoi dang tong cac so nguyen to:
+280 = 3 + 277
+So nguyen 281 bieu dien duoi dang tong cac so nguyen to:
+281 = 281
+So nguyen 282 bieu dien duoi dang tong cac so nguyen to:
+282 = 5 + 277
+So nguyen 283 bieu dien duoi dang tong cac so nguyen to:
+283 = 283
+So nguyen 284 bieu dien duoi dang tong cac so nguyen to:
+284 = 3 + 281
+So nguyen 285 bieu dien duoi dang tong cac so nguyen to:
+285 = 2 + 283
+So nguyen 286 bieu dien duoi dang tong cac so nguyen to:
+286 = 3 + 283
+So nguyen 287 bieu dien duoi dang tong cac so nguyen to:
+287 = 2 + 2 + 283
+So nguyen 288 bieu dien duoi dang tong cac so nguyen to:
+288 = 5 + 283
+So nguyen 289 bieu dien duoi dang tong cac so nguyen to:
+289 = 3 + 3 + 283
+So nguyen 290 bieu dien duoi dang tong cac so nguyen to:
+290 = 7 + 283
+So nguyen 291 bieu dien duoi dang tong cac so nguyen to:
+291 = 3 + 5 + 283
+So nguyen 292 bieu dien duoi dang tong cac so nguyen to:
+292 = 11 + 281
+So nguyen 293 bieu dien duoi dang tong cac so nguyen to:
+293 = 293
+So nguyen 294 bieu dien duoi dang tong cac so nguyen to:
+294 = 11 + 283
+So nguyen 295 bieu dien duoi dang tong cac so nguyen to:
+295 = 2 + 293
+So nguyen 296 bieu dien duoi dang tong cac so nguyen to:
+296 = 3 + 293
+So nguyen 297 bieu dien duoi dang tong cac so nguyen to:
+297 = 2 + 2 + 293
+So nguyen 298 bieu dien duoi dang tong cac so nguyen to:
+298 = 5 + 293
+So nguyen 299 bieu dien duoi dang tong cac so nguyen to:
+299 = 3 + 3 + 293
+So nguyen 300 bieu dien duoi dang tong cac so nguyen to:
+300 = 7 + 293
+So nguyen 301 bieu dien duoi dang tong cac so nguyen to:
+301 = 3 + 5 + 293
+So nguyen 302 bieu dien duoi dang tong cac so nguyen to:
+302 = 19 + 283
+So nguyen 303 bieu dien duoi dang tong cac so nguyen to:
+303 = 3 + 7 + 293
+So nguyen 304 bieu dien duoi dang tong cac so nguyen to:
+304 = 11 + 293
+So nguyen 305 bieu dien duoi dang tong cac so nguyen to:
+305 = 3 + 19 + 283
+So nguyen 306 bieu dien duoi dang tong cac so nguyen to:
+306 = 13 + 293
+So nguyen 307 bieu dien duoi dang tong cac so nguyen to:
+307 = 307
+So nguyen 308 bieu dien duoi dang tong cac so nguyen to:
+308 = 31 + 277
+So nguyen 309 bieu dien duoi dang tong cac so nguyen to:
+309 = 2 + 307
+So nguyen 310 bieu dien duoi dang tong cac so nguyen to:
+310 = 3 + 307
+So nguyen 311 bieu dien duoi dang tong cac so nguyen to:
+311 = 311
+So nguyen 312 bieu dien duoi dang tong cac so nguyen to:
+312 = 5 + 307
+So nguyen 313 bieu dien duoi dang tong cac so nguyen to:
+313 = 313
+So nguyen 314 bieu dien duoi dang tong cac so nguyen to:
+314 = 3 + 311
+So nguyen 315 bieu dien duoi dang tong cac so nguyen to:
+315 = 2 + 313
+So nguyen 316 bieu dien duoi dang tong cac so nguyen to:
+316 = 3 + 313
+So nguyen 317 bieu dien duoi dang tong cac so nguyen to:
+317 = 317
+So nguyen 318 bieu dien duoi dang tong cac so nguyen to:
+318 = 5 + 313
+So nguyen 319 bieu dien duoi dang tong cac so nguyen to:
+319 = 2 + 317
+So nguyen 320 bieu dien duoi dang tong cac so nguyen to:
+320 = 3 + 317
+So nguyen 321 bieu dien duoi dang tong cac so nguyen to:
+321 = 2 + 2 + 317
+So nguyen 322 bieu dien duoi dang tong cac so nguyen to:
+322 = 5 + 317
+So nguyen 323 bieu dien duoi dang tong cac so nguyen to:
+323 = 3 + 3 + 317
+So nguyen 324 bieu dien duoi dang tong cac so nguyen to:
+324 = 7 + 317
+So nguyen 325 bieu dien duoi dang tong cac so nguyen to:
+325 = 3 + 5 + 317
+So nguyen 326 bieu dien duoi dang tong cac so nguyen to:
+326 = 13 + 313
+So nguyen 327 bieu dien duoi dang tong cac so nguyen to:
+327 = 3 + 7 + 317
+So nguyen 328 bieu dien duoi dang tong cac so nguyen to:
+328 = 11 + 317
+So nguyen 329 bieu dien duoi dang tong cac so nguyen to:
+329 = 3 + 13 + 313
+So nguyen 330 bieu dien duoi dang tong cac so nguyen to:
+330 = 13 + 317
+So nguyen 331 bieu dien duoi dang tong cac so nguyen to:
+331 = 331
+So nguyen 332 bieu dien duoi dang tong cac so nguyen to:
+332 = 19 + 313
+So nguyen 333 bieu dien duoi dang tong cac so nguyen to:
+333 = 2 + 331
+So nguyen 334 bieu dien duoi dang tong cac so nguyen to:
+334 = 3 + 331
+So nguyen 335 bieu dien duoi dang tong cac so nguyen to:
+335 = 2 + 2 + 331
+So nguyen 336 bieu dien duoi dang tong cac so nguyen to:
+336 = 5 + 331
+So nguyen 337 bieu dien duoi dang tong cac so nguyen to:
+337 = 337
+So nguyen 338 bieu dien duoi dang tong cac so nguyen to:
+338 = 7 + 331
+So nguyen 339 bieu dien duoi dang tong cac so nguyen to:
+339 = 2 + 337
+So nguyen 340 bieu dien duoi dang tong cac so nguyen to:
+340 = 3 + 337
+So nguyen 341 bieu dien duoi dang tong cac so nguyen to:
+341 = 2 + 2 + 337
+So nguyen 342 bieu dien duoi dang tong cac so nguyen to:
+342 = 5 + 337
+So nguyen 343 bieu dien duoi dang tong cac so nguyen to:
+343 = 3 + 3 + 337
+So nguyen 344 bieu dien duoi dang tong cac so nguyen to:
+344 = 7 + 337
+So nguyen 345 bieu dien duoi dang tong cac so nguyen to:
+345 = 3 + 5 + 337
+So nguyen 346 bieu dien duoi dang tong cac so nguyen to:
+346 = 29 + 317
+So nguyen 347 bieu dien duoi dang tong cac so nguyen to:
+347 = 347
+So nguyen 348 bieu dien duoi dang tong cac so nguyen to:
+348 = 11 + 337
+So nguyen 349 bieu dien duoi dang tong cac so nguyen to:
+349 = 349
+So nguyen 350 bieu dien duoi dang tong cac so nguyen to:
+350 = 3 + 347
+So nguyen 351 bieu dien duoi dang tong cac so nguyen to:
+351 = 2 + 349
+So nguyen 352 bieu dien duoi dang tong cac so nguyen to:
+352 = 3 + 349
+So nguyen 353 bieu dien duoi dang tong cac so nguyen to:
+353 = 353
+So nguyen 354 bieu dien duoi dang tong cac so nguyen to:
+354 = 5 + 349
+So nguyen 355 bieu dien duoi dang tong cac so nguyen to:
+355 = 2 + 353
+So nguyen 356 bieu dien duoi dang tong cac so nguyen to:
+356 = 3 + 353
+So nguyen 357 bieu dien duoi dang tong cac so nguyen to:
+357 = 2 + 2 + 353
+So nguyen 358 bieu dien duoi dang tong cac so nguyen to:
+358 = 5 + 353
+So nguyen 359 bieu dien duoi dang tong cac so nguyen to:
+359 = 359
+So nguyen 360 bieu dien duoi dang tong cac so nguyen to:
+360 = 7 + 353
+So nguyen 361 bieu dien duoi dang tong cac so nguyen to:
+361 = 2 + 359
+So nguyen 362 bieu dien duoi dang tong cac so nguyen to:
+362 = 3 + 359
+So nguyen 363 bieu dien duoi dang tong cac so nguyen to:
+363 = 2 + 2 + 359
+So nguyen 364 bieu dien duoi dang tong cac so nguyen to:
+364 = 5 + 359
+So nguyen 365 bieu dien duoi dang tong cac so nguyen to:
+365 = 3 + 3 + 359
+So nguyen 366 bieu dien duoi dang tong cac so nguyen to:
+366 = 7 + 359
+So nguyen 367 bieu dien duoi dang tong cac so nguyen to:
+367 = 367
+So nguyen 368 bieu dien duoi dang tong cac so nguyen to:
+368 = 19 + 349
+So nguyen 369 bieu dien duoi dang tong cac so nguyen to:
+369 = 2 + 367
+So nguyen 370 bieu dien duoi dang tong cac so nguyen to:
+370 = 3 + 367
+So nguyen 371 bieu dien duoi dang tong cac so nguyen to:
+371 = 2 + 2 + 367
+So nguyen 372 bieu dien duoi dang tong cac so nguyen to:
+372 = 5 + 367
+So nguyen 373 bieu dien duoi dang tong cac so nguyen to:
+373 = 373
+So nguyen 374 bieu dien duoi dang tong cac so nguyen to:
+374 = 7 + 367
+So nguyen 375 bieu dien duoi dang tong cac so nguyen to:
+375 = 2 + 373
+So nguyen 376 bieu dien duoi dang tong cac so nguyen to:
+376 = 3 + 373
+So nguyen 377 bieu dien duoi dang tong cac so nguyen to:
+377 = 2 + 2 + 373
+So nguyen 378 bieu dien duoi dang tong cac so nguyen to:
+378 = 5 + 373
+So nguyen 379 bieu dien duoi dang tong cac so nguyen to:
+379 = 379
+So nguyen 380 bieu dien duoi dang tong cac so nguyen to:
+380 = 7 + 373
+So nguyen 381 bieu dien duoi dang tong cac so nguyen to:
+381 = 2 + 379
+So nguyen 382 bieu dien duoi dang tong cac so nguyen to:
+382 = 3 + 379
+So nguyen 383 bieu dien duoi dang tong cac so nguyen to:
+383 = 383
+So nguyen 384 bieu dien duoi dang tong cac so nguyen to:
+384 = 5 + 379
+So nguyen 385 bieu dien duoi dang tong cac so nguyen to:
+385 = 2 + 383
+So nguyen 386 bieu dien duoi dang tong cac so nguyen to:
+386 = 3 + 383
+So nguyen 387 bieu dien duoi dang tong cac so nguyen to:
+387 = 2 + 2 + 383
+So nguyen 388 bieu dien duoi dang tong cac so nguyen to:
+388 = 5 + 383
+So nguyen 389 bieu dien duoi dang tong cac so nguyen to:
+389 = 389
+So nguyen 390 bieu dien duoi dang tong cac so nguyen to:
+390 = 7 + 383
+So nguyen 391 bieu dien duoi dang tong cac so nguyen to:
+391 = 2 + 389
+So nguyen 392 bieu dien duoi dang tong cac so nguyen to:
+392 = 3 + 389
+So nguyen 393 bieu dien duoi dang tong cac so nguyen to:
+393 = 2 + 2 + 389
+So nguyen 394 bieu dien duoi dang tong cac so nguyen to:
+394 = 5 + 389
+So nguyen 395 bieu dien duoi dang tong cac so nguyen to:
+395 = 3 + 3 + 389
+So nguyen 396 bieu dien duoi dang tong cac so nguyen to:
+396 = 7 + 389
+So nguyen 397 bieu dien duoi dang tong cac so nguyen to:
+397 = 397
+So nguyen 398 bieu dien duoi dang tong cac so nguyen to:
+398 = 19 + 379
+So nguyen 399 bieu dien duoi dang tong cac so nguyen to:
+399 = 2 + 397
+So nguyen 400 bieu dien duoi dang tong cac so nguyen to:
+400 = 3 + 397
+So nguyen 401 bieu dien duoi dang tong cac so nguyen to:
+401 = 401
+So nguyen 402 bieu dien duoi dang tong cac so nguyen to:
+402 = 5 + 397
+So nguyen 403 bieu dien duoi dang tong cac so nguyen to:
+403 = 2 + 401
+So nguyen 404 bieu dien duoi dang tong cac so nguyen to:
+404 = 3 + 401
+So nguyen 405 bieu dien duoi dang tong cac so nguyen to:
+405 = 2 + 2 + 401
+So nguyen 406 bieu dien duoi dang tong cac so nguyen to:
+406 = 5 + 401
+So nguyen 407 bieu dien duoi dang tong cac so nguyen to:
+407 = 3 + 3 + 401
+So nguyen 408 bieu dien duoi dang tong cac so nguyen to:
+408 = 7 + 401
+So nguyen 409 bieu dien duoi dang tong cac so nguyen to:
+409 = 409
+So nguyen 410 bieu dien duoi dang tong cac so nguyen to:
+410 = 13 + 397
+So nguyen 411 bieu dien duoi dang tong cac so nguyen to:
+411 = 2 + 409
+So nguyen 412 bieu dien duoi dang tong cac so nguyen to:
+412 = 3 + 409
+So nguyen 413 bieu dien duoi dang tong cac so nguyen to:
+413 = 2 + 2 + 409
+So nguyen 414 bieu dien duoi dang tong cac so nguyen to:
+414 = 5 + 409
+So nguyen 415 bieu dien duoi dang tong cac so nguyen to:
+415 = 3 + 3 + 409
+So nguyen 416 bieu dien duoi dang tong cac so nguyen to:
+416 = 7 + 409
+So nguyen 417 bieu dien duoi dang tong cac so nguyen to:
+417 = 3 + 5 + 409
+So nguyen 418 bieu dien duoi dang tong cac so nguyen to:
+418 = 17 + 401
+So nguyen 419 bieu dien duoi dang tong cac so nguyen to:
+419 = 419
+So nguyen 420 bieu dien duoi dang tong cac so nguyen to:
+420 = 11 + 409
+So nguyen 421 bieu dien duoi dang tong cac so nguyen to:
+421 = 421
+So nguyen 422 bieu dien duoi dang tong cac so nguyen to:
+422 = 3 + 419
+So nguyen 423 bieu dien duoi dang tong cac so nguyen to:
+423 = 2 + 421
+So nguyen 424 bieu dien duoi dang tong cac so nguyen to:
+424 = 3 + 421
+So nguyen 425 bieu dien duoi dang tong cac so nguyen to:
+425 = 2 + 2 + 421
+So nguyen 426 bieu dien duoi dang tong cac so nguyen to:
+426 = 5 + 421
+So nguyen 427 bieu dien duoi dang tong cac so nguyen to:
+427 = 3 + 3 + 421
+So nguyen 428 bieu dien duoi dang tong cac so nguyen to:
+428 = 7 + 421
+So nguyen 429 bieu dien duoi dang tong cac so nguyen to:
+429 = 3 + 5 + 421
+So nguyen 430 bieu dien duoi dang tong cac so nguyen to:
+430 = 11 + 419
+So nguyen 431 bieu dien duoi dang tong cac so nguyen to:
+431 = 431
+So nguyen 432 bieu dien duoi dang tong cac so nguyen to:
+432 = 11 + 421
+So nguyen 433 bieu dien duoi dang tong cac so nguyen to:
+433 = 433
+So nguyen 434 bieu dien duoi dang tong cac so nguyen to:
+434 = 3 + 431
+So nguyen 435 bieu dien duoi dang tong cac so nguyen to:
+435 = 2 + 433
+So nguyen 436 bieu dien duoi dang tong cac so nguyen to:
+436 = 3 + 433
+So nguyen 437 bieu dien duoi dang tong cac so nguyen to:
+437 = 2 + 2 + 433
+So nguyen 438 bieu dien duoi dang tong cac so nguyen to:
+438 = 5 + 433
+So nguyen 439 bieu dien duoi dang tong cac so nguyen to:
+439 = 439
+So nguyen 440 bieu dien duoi dang tong cac so nguyen to:
+440 = 7 + 433
+So nguyen 441 bieu dien duoi dang tong cac so nguyen to:
+441 = 2 + 439
+So nguyen 442 bieu dien duoi dang tong cac so nguyen to:
+442 = 3 + 439
+So nguyen 443 bieu dien duoi dang tong cac so nguyen to:
+443 = 443
+So nguyen 444 bieu dien duoi dang tong cac so nguyen to:
+444 = 5 + 439
+So nguyen 445 bieu dien duoi dang tong cac so nguyen to:
+445 = 2 + 443
+So nguyen 446 bieu dien duoi dang tong cac so nguyen to:
+446 = 3 + 443
+So nguyen 447 bieu dien duoi dang tong cac so nguyen to:
+447 = 2 + 2 + 443
+So nguyen 448 bieu dien duoi dang tong cac so nguyen to:
+448 = 5 + 443
+So nguyen 449 bieu dien duoi dang tong cac so nguyen to:
+449 = 449
+So nguyen 450 bieu dien duoi dang tong cac so nguyen to:
+450 = 7 + 443
+So nguyen 451 bieu dien duoi dang tong cac so nguyen to:
+451 = 2 + 449
+So nguyen 452 bieu dien duoi dang tong cac so nguyen to:
+452 = 3 + 449
+So nguyen 453 bieu dien duoi dang tong cac so nguyen to:
+453 = 2 + 2 + 449
+So nguyen 454 bieu dien duoi dang tong cac so nguyen to:
+454 = 5 + 449
+So nguyen 455 bieu dien duoi dang tong cac so nguyen to:
+455 = 3 + 3 + 449
+So nguyen 456 bieu dien duoi dang tong cac so nguyen to:
+456 = 7 + 449
+So nguyen 457 bieu dien duoi dang tong cac so nguyen to:
+457 = 457
+So nguyen 458 bieu dien duoi dang tong cac so nguyen to:
+458 = 19 + 439
+So nguyen 459 bieu dien duoi dang tong cac so nguyen to:
+459 = 2 + 457
+So nguyen 460 bieu dien duoi dang tong cac so nguyen to:
+460 = 3 + 457
+So nguyen 461 bieu dien duoi dang tong cac so nguyen to:
+461 = 461
+So nguyen 462 bieu dien duoi dang tong cac so nguyen to:
+462 = 5 + 457
+So nguyen 463 bieu dien duoi dang tong cac so nguyen to:
+463 = 463
+So nguyen 464 bieu dien duoi dang tong cac so nguyen to:
+464 = 3 + 461
+So nguyen 465 bieu dien duoi dang tong cac so nguyen to:
+465 = 2 + 463
+So nguyen 466 bieu dien duoi dang tong cac so nguyen to:
+466 = 3 + 463
+So nguyen 467 bieu dien duoi dang tong cac so nguyen to:
+467 = 467
+So nguyen 468 bieu dien duoi dang tong cac so nguyen to:
+468 = 5 + 463
+So nguyen 469 bieu dien duoi dang tong cac so nguyen to:
+469 = 2 + 467
+So nguyen 470 bieu dien duoi dang tong cac so nguyen to:
+470 = 3 + 467
+So nguyen 471 bieu dien duoi dang tong cac so nguyen to:
+471 = 2 + 2 + 467
+So nguyen 472 bieu dien duoi dang tong cac so nguyen to:
+472 = 5 + 467
+So nguyen 473 bieu dien duoi dang tong cac so nguyen to:
+473 = 3 + 3 + 467
+So nguyen 474 bieu dien duoi dang tong cac so nguyen to:
+474 = 7 + 467
+So nguyen 475 bieu dien duoi dang tong cac so nguyen to:
+475 = 3 + 5 + 467
+So nguyen 476 bieu dien duoi dang tong cac so nguyen to:
+476 = 13 + 463
+So nguyen 477 bieu dien duoi dang tong cac so nguyen to:
+477 = 3 + 7 + 467
+So nguyen 478 bieu dien duoi dang tong cac so nguyen to:
+478 = 11 + 467
+So nguyen 479 bieu dien duoi dang tong cac so nguyen to:
+479 = 479
+So nguyen 480 bieu dien duoi dang tong cac so nguyen to:
+480 = 13 + 467
+So nguyen 481 bieu dien duoi dang tong cac so nguyen to:
+481 = 2 + 479
+So nguyen 482 bieu dien duoi dang tong cac so nguyen to:
+482 = 3 + 479
+So nguyen 483 bieu dien duoi dang tong cac so nguyen to:
+483 = 2 + 2 + 479
+So nguyen 484 bieu dien duoi dang tong cac so nguyen to:
+484 = 5 + 479
+So nguyen 485 bieu dien duoi dang tong cac so nguyen to:
+485 = 3 + 3 + 479
+So nguyen 486 bieu dien duoi dang tong cac so nguyen to:
+486 = 7 + 479
+So nguyen 487 bieu dien duoi dang tong cac so nguyen to:
+487 = 487
+So nguyen 488 bieu dien duoi dang tong cac so nguyen to:
+488 = 31 + 457
+So nguyen 489 bieu dien duoi dang tong cac so nguyen to:
+489 = 2 + 487
+So nguyen 490 bieu dien duoi dang tong cac so nguyen to:
+490 = 3 + 487
+So nguyen 491 bieu dien duoi dang tong cac so nguyen to:
+491 = 491
+So nguyen 492 bieu dien duoi dang tong cac so nguyen to:
+492 = 5 + 487
+So nguyen 493 bieu dien duoi dang tong cac so nguyen to:
+493 = 2 + 491
+So nguyen 494 bieu dien duoi dang tong cac so nguyen to:
+494 = 3 + 491
+So nguyen 495 bieu dien duoi dang tong cac so nguyen to:
+495 = 2 + 2 + 491
+So nguyen 496 bieu dien duoi dang tong cac so nguyen to:
+496 = 5 + 491
+So nguyen 497 bieu dien duoi dang tong cac so nguyen to:
+497 = 3 + 3 + 491
+So nguyen 498 bieu dien duoi dang tong cac so nguyen to:
+498 = 7 + 491
+So nguyen 499 bieu dien duoi dang tong cac so nguyen to:
+499 = 499
+So nguyen 500 bieu dien duoi dang tong cac so nguyen to:
+500 = 13 + 487
+So nguyen 501 bieu dien duoi dang tong cac so nguyen to:
+501 = 2 + 499
+So nguyen 502 bieu dien duoi dang tong cac so nguyen to:
+502 = 3 + 499
+So nguyen 503 bieu dien duoi dang tong cac so nguyen to:
+503 = 503
+So nguyen 504 bieu dien duoi dang tong cac so nguyen to:
+504 = 5 + 499
+So nguyen 505 bieu dien duoi dang tong cac so nguyen to:
+505 = 2 + 503
+So nguyen 506 bieu dien duoi dang tong cac so nguyen to:
+506 = 3 + 503
+So nguyen 507 bieu dien duoi dang tong cac so nguyen to:
+507 = 2 + 2 + 503
+So nguyen 508 bieu dien duoi dang tong cac so nguyen to:
+508 = 5 + 503
+So nguyen 509 bieu dien duoi dang tong cac so nguyen to:
+509 = 509
+So nguyen 510 bieu dien duoi dang tong cac so nguyen to:
+510 = 7 + 503
+So nguyen 511 bieu dien duoi dang tong cac so nguyen to:
+511 = 2 + 509
+So nguyen 512 bieu dien duoi dang tong cac so nguyen to:
+512 = 3 + 509
+So nguyen 513 bieu dien duoi dang tong cac so nguyen to:
+513 = 2 + 2 + 509
+So nguyen 514 bieu dien duoi dang tong cac so nguyen to:
+514 = 5 + 509
+So nguyen 515 bieu dien duoi dang tong cac so nguyen to:
+515 = 3 + 3 + 509
+So nguyen 516 bieu dien duoi dang tong cac so nguyen to:
+516 = 7 + 509
+So nguyen 517 bieu dien duoi dang tong cac so nguyen to:
+517 = 3 + 5 + 509
+So nguyen 518 bieu dien duoi dang tong cac so nguyen to:
+518 = 19 + 499
+So nguyen 519 bieu dien duoi dang tong cac so nguyen to:
+519 = 3 + 7 + 509
+So nguyen 520 bieu dien duoi dang tong cac so nguyen to:
+520 = 11 + 509
+So nguyen 521 bieu dien duoi dang tong cac so nguyen to:
+521 = 521
+So nguyen 522 bieu dien duoi dang tong cac so nguyen to:
+522 = 13 + 509
+So nguyen 523 bieu dien duoi dang tong cac so nguyen to:
+523 = 523
+So nguyen 524 bieu dien duoi dang tong cac so nguyen to:
+524 = 3 + 521
+So nguyen 525 bieu dien duoi dang tong cac so nguyen to:
+525 = 2 + 523
+So nguyen 526 bieu dien duoi dang tong cac so nguyen to:
+526 = 3 + 523
+So nguyen 527 bieu dien duoi dang tong cac so nguyen to:
+527 = 2 + 2 + 523
+So nguyen 528 bieu dien duoi dang tong cac so nguyen to:
+528 = 5 + 523
+So nguyen 529 bieu dien duoi dang tong cac so nguyen to:
+529 = 3 + 3 + 523
+So nguyen 530 bieu dien duoi dang tong cac so nguyen to:
+530 = 7 + 523
+So nguyen 531 bieu dien duoi dang tong cac so nguyen to:
+531 = 3 + 5 + 523
+So nguyen 532 bieu dien duoi dang tong cac so nguyen to:
+532 = 11 + 521
+So nguyen 533 bieu dien duoi dang tong cac so nguyen to:
+533 = 3 + 7 + 523
+So nguyen 534 bieu dien duoi dang tong cac so nguyen to:
+534 = 11 + 523
+So nguyen 535 bieu dien duoi dang tong cac so nguyen to:
+535 = 3 + 11 + 521
+So nguyen 536 bieu dien duoi dang tong cac so nguyen to:
+536 = 13 + 523
+So nguyen 537 bieu dien duoi dang tong cac so nguyen to:
+537 = 3 + 11 + 523
+So nguyen 538 bieu dien duoi dang tong cac so nguyen to:
+538 = 17 + 521
+So nguyen 539 bieu dien duoi dang tong cac so nguyen to:
+539 = 3 + 13 + 523
+So nguyen 540 bieu dien duoi dang tong cac so nguyen to:
+540 = 17 + 523
+So nguyen 541 bieu dien duoi dang tong cac so nguyen to:
+541 = 541
+So nguyen 542 bieu dien duoi dang tong cac so nguyen to:
+542 = 19 + 523
+So nguyen 543 bieu dien duoi dang tong cac so nguyen to:
+543 = 2 + 541
+So nguyen 544 bieu dien duoi dang tong cac so nguyen to:
+544 = 3 + 541
+So nguyen 545 bieu dien duoi dang tong cac so nguyen to:
+545 = 2 + 2 + 541
+So nguyen 546 bieu dien duoi dang tong cac so nguyen to:
+546 = 5 + 541
+So nguyen 547 bieu dien duoi dang tong cac so nguyen to:
+547 = 547
+So nguyen 548 bieu dien duoi dang tong cac so nguyen to:
+548 = 7 + 541
+So nguyen 549 bieu dien duoi dang tong cac so nguyen to:
+549 = 2 + 547
+So nguyen 550 bieu dien duoi dang tong cac so nguyen to:
+550 = 3 + 547
+So nguyen 551 bieu dien duoi dang tong cac so nguyen to:
+551 = 2 + 2 + 547
+So nguyen 552 bieu dien duoi dang tong cac so nguyen to:
+552 = 5 + 547
+So nguyen 553 bieu dien duoi dang tong cac so nguyen to:
+553 = 3 + 3 + 547
+So nguyen 554 bieu dien duoi dang tong cac so nguyen to:
+554 = 7 + 547
+So nguyen 555 bieu dien duoi dang tong cac so nguyen to:
+555 = 3 + 5 + 547
+So nguyen 556 bieu dien duoi dang tong cac so nguyen to:
+556 = 47 + 509
+So nguyen 557 bieu dien duoi dang tong cac so nguyen to:
+557 = 557
+So nguyen 558 bieu dien duoi dang tong cac so nguyen to:
+558 = 11 + 547
+So nguyen 559 bieu dien duoi dang tong cac so nguyen to:
+559 = 2 + 557
+So nguyen 560 bieu dien duoi dang tong cac so nguyen to:
+560 = 3 + 557
+So nguyen 561 bieu dien duoi dang tong cac so nguyen to:
+561 = 2 + 2 + 557
+So nguyen 562 bieu dien duoi dang tong cac so nguyen to:
+562 = 5 + 557
+So nguyen 563 bieu dien duoi dang tong cac so nguyen to:
+563 = 563
+So nguyen 564 bieu dien duoi dang tong cac so nguyen to:
+564 = 7 + 557
+So nguyen 565 bieu dien duoi dang tong cac so nguyen to:
+565 = 2 + 563
+So nguyen 566 bieu dien duoi dang tong cac so nguyen to:
+566 = 3 + 563
+So nguyen 567 bieu dien duoi dang tong cac so nguyen to:
+567 = 2 + 2 + 563
+So nguyen 568 bieu dien duoi dang tong cac so nguyen to:
+568 = 5 + 563
+So nguyen 569 bieu dien duoi dang tong cac so nguyen to:
+569 = 569
+So nguyen 570 bieu dien duoi dang tong cac so nguyen to:
+570 = 7 + 563
+So nguyen 571 bieu dien duoi dang tong cac so nguyen to:
+571 = 571
+So nguyen 572 bieu dien duoi dang tong cac so nguyen to:
+572 = 3 + 569
+So nguyen 573 bieu dien duoi dang tong cac so nguyen to:
+573 = 2 + 571
+So nguyen 574 bieu dien duoi dang tong cac so nguyen to:
+574 = 3 + 571
+So nguyen 575 bieu dien duoi dang tong cac so nguyen to:
+575 = 2 + 2 + 571
+So nguyen 576 bieu dien duoi dang tong cac so nguyen to:
+576 = 5 + 571
+So nguyen 577 bieu dien duoi dang tong cac so nguyen to:
+577 = 577
+So nguyen 578 bieu dien duoi dang tong cac so nguyen to:
+578 = 7 + 571
+So nguyen 579 bieu dien duoi dang tong cac so nguyen to:
+579 = 2 + 577
+So nguyen 580 bieu dien duoi dang tong cac so nguyen to:
+580 = 3 + 577
+So nguyen 581 bieu dien duoi dang tong cac so nguyen to:
+581 = 2 + 2 + 577
+So nguyen 582 bieu dien duoi dang tong cac so nguyen to:
+582 = 5 + 577
+So nguyen 583 bieu dien duoi dang tong cac so nguyen to:
+583 = 3 + 3 + 577
+So nguyen 584 bieu dien duoi dang tong cac so nguyen to:
+584 = 7 + 577
+So nguyen 585 bieu dien duoi dang tong cac so nguyen to:
+585 = 3 + 5 + 577
+So nguyen 586 bieu dien duoi dang tong cac so nguyen to:
+586 = 17 + 569
+So nguyen 587 bieu dien duoi dang tong cac so nguyen to:
+587 = 587
+So nguyen 588 bieu dien duoi dang tong cac so nguyen to:
+588 = 11 + 577
+So nguyen 589 bieu dien duoi dang tong cac so nguyen to:
+589 = 2 + 587
+So nguyen 590 bieu dien duoi dang tong cac so nguyen to:
+590 = 3 + 587
+So nguyen 591 bieu dien duoi dang tong cac so nguyen to:
+591 = 2 + 2 + 587
+So nguyen 592 bieu dien duoi dang tong cac so nguyen to:
+592 = 5 + 587
+So nguyen 593 bieu dien duoi dang tong cac so nguyen to:
+593 = 593
+So nguyen 594 bieu dien duoi dang tong cac so nguyen to:
+594 = 7 + 587
+So nguyen 595 bieu dien duoi dang tong cac so nguyen to:
+595 = 2 + 593
+So nguyen 596 bieu dien duoi dang tong cac so nguyen to:
+596 = 3 + 593
+So nguyen 597 bieu dien duoi dang tong cac so nguyen to:
+597 = 2 + 2 + 593
+So nguyen 598 bieu dien duoi dang tong cac so nguyen to:
+598 = 5 + 593
+So nguyen 599 bieu dien duoi dang tong cac so nguyen to:
+599 = 599
+So nguyen 600 bieu dien duoi dang tong cac so nguyen to:
+600 = 7 + 593
+So nguyen 601 bieu dien duoi dang tong cac so nguyen to:
+601 = 601
+So nguyen 602 bieu dien duoi dang tong cac so nguyen to:
+602 = 3 + 599
+So nguyen 603 bieu dien duoi dang tong cac so nguyen to:
+603 = 2 + 601
+So nguyen 604 bieu dien duoi dang tong cac so nguyen to:
+604 = 3 + 601
+So nguyen 605 bieu dien duoi dang tong cac so nguyen to:
+605 = 2 + 2 + 601
+So nguyen 606 bieu dien duoi dang tong cac so nguyen to:
+606 = 5 + 601
+So nguyen 607 bieu dien duoi dang tong cac so nguyen to:
+607 = 607
+So nguyen 608 bieu dien duoi dang tong cac so nguyen to:
+608 = 7 + 601
+So nguyen 609 bieu dien duoi dang tong cac so nguyen to:
+609 = 2 + 607
+So nguyen 610 bieu dien duoi dang tong cac so nguyen to:
+610 = 3 + 607
+So nguyen 611 bieu dien duoi dang tong cac so nguyen to:
+611 = 2 + 2 + 607
+So nguyen 612 bieu dien duoi dang tong cac so nguyen to:
+612 = 5 + 607
+So nguyen 613 bieu dien duoi dang tong cac so nguyen to:
+613 = 613
+So nguyen 614 bieu dien duoi dang tong cac so nguyen to:
+614 = 7 + 607
+So nguyen 615 bieu dien duoi dang tong cac so nguyen to:
+615 = 2 + 613
+So nguyen 616 bieu dien duoi dang tong cac so nguyen to:
+616 = 3 + 613
+So nguyen 617 bieu dien duoi dang tong cac so nguyen to:
+617 = 617
+So nguyen 618 bieu dien duoi dang tong cac so nguyen to:
+618 = 5 + 613
+So nguyen 619 bieu dien duoi dang tong cac so nguyen to:
+619 = 619
+So nguyen 620 bieu dien duoi dang tong cac so nguyen to:
+620 = 3 + 617
+So nguyen 621 bieu dien duoi dang tong cac so nguyen to:
+621 = 2 + 619
+So nguyen 622 bieu dien duoi dang tong cac so nguyen to:
+622 = 3 + 619
+So nguyen 623 bieu dien duoi dang tong cac so nguyen to:
+623 = 2 + 2 + 619
+So nguyen 624 bieu dien duoi dang tong cac so nguyen to:
+624 = 5 + 619
+So nguyen 625 bieu dien duoi dang tong cac so nguyen to:
+625 = 3 + 3 + 619
+So nguyen 626 bieu dien duoi dang tong cac so nguyen to:
+626 = 7 + 619
+So nguyen 627 bieu dien duoi dang tong cac so nguyen to:
+627 = 3 + 5 + 619
+So nguyen 628 bieu dien duoi dang tong cac so nguyen to:
+628 = 11 + 617
+So nguyen 629 bieu dien duoi dang tong cac so nguyen to:
+629 = 3 + 7 + 619
+So nguyen 630 bieu dien duoi dang tong cac so nguyen to:
+630 = 11 + 619
+So nguyen 631 bieu dien duoi dang tong cac so nguyen to:
+631 = 631
+So nguyen 632 bieu dien duoi dang tong cac so nguyen to:
+632 = 13 + 619
+So nguyen 633 bieu dien duoi dang tong cac so nguyen to:
+633 = 2 + 631
+So nguyen 634 bieu dien duoi dang tong cac so nguyen to:
+634 = 3 + 631
+So nguyen 635 bieu dien duoi dang tong cac so nguyen to:
+635 = 2 + 2 + 631
+So nguyen 636 bieu dien duoi dang tong cac so nguyen to:
+636 = 5 + 631
+So nguyen 637 bieu dien duoi dang tong cac so nguyen to:
+637 = 3 + 3 + 631
+So nguyen 638 bieu dien duoi dang tong cac so nguyen to:
+638 = 7 + 631
+So nguyen 639 bieu dien duoi dang tong cac so nguyen to:
+639 = 3 + 5 + 631
+So nguyen 640 bieu dien duoi dang tong cac so nguyen to:
+640 = 23 + 617
+So nguyen 641 bieu dien duoi dang tong cac so nguyen to:
+641 = 641
+So nguyen 642 bieu dien duoi dang tong cac so nguyen to:
+642 = 11 + 631
+So nguyen 643 bieu dien duoi dang tong cac so nguyen to:
+643 = 643
+So nguyen 644 bieu dien duoi dang tong cac so nguyen to:
+644 = 3 + 641
+So nguyen 645 bieu dien duoi dang tong cac so nguyen to:
+645 = 2 + 643
+So nguyen 646 bieu dien duoi dang tong cac so nguyen to:
+646 = 3 + 643
+So nguyen 647 bieu dien duoi dang tong cac so nguyen to:
+647 = 647
+So nguyen 648 bieu dien duoi dang tong cac so nguyen to:
+648 = 5 + 643
+So nguyen 649 bieu dien duoi dang tong cac so nguyen to:
+649 = 2 + 647
+So nguyen 650 bieu dien duoi dang tong cac so nguyen to:
+650 = 3 + 647
+So nguyen 651 bieu dien duoi dang tong cac so nguyen to:
+651 = 2 + 2 + 647
+So nguyen 652 bieu dien duoi dang tong cac so nguyen to:
+652 = 5 + 647
+So nguyen 653 bieu dien duoi dang tong cac so nguyen to:
+653 = 653
+So nguyen 654 bieu dien duoi dang tong cac so nguyen to:
+654 = 7 + 647
+So nguyen 655 bieu dien duoi dang tong cac so nguyen to:
+655 = 2 + 653
+So nguyen 656 bieu dien duoi dang tong cac so nguyen to:
+656 = 3 + 653
+So nguyen 657 bieu dien duoi dang tong cac so nguyen to:
+657 = 2 + 2 + 653
+So nguyen 658 bieu dien duoi dang tong cac so nguyen to:
+658 = 5 + 653
+So nguyen 659 bieu dien duoi dang tong cac so nguyen to:
+659 = 659
+So nguyen 660 bieu dien duoi dang tong cac so nguyen to:
+660 = 7 + 653
+So nguyen 661 bieu dien duoi dang tong cac so nguyen to:
+661 = 661
+So nguyen 662 bieu dien duoi dang tong cac so nguyen to:
+662 = 3 + 659
+So nguyen 663 bieu dien duoi dang tong cac so nguyen to:
+663 = 2 + 661
+So nguyen 664 bieu dien duoi dang tong cac so nguyen to:
+664 = 3 + 661
+So nguyen 665 bieu dien duoi dang tong cac so nguyen to:
+665 = 2 + 2 + 661
+So nguyen 666 bieu dien duoi dang tong cac so nguyen to:
+666 = 5 + 661
+So nguyen 667 bieu dien duoi dang tong cac so nguyen to:
+667 = 3 + 3 + 661
+So nguyen 668 bieu dien duoi dang tong cac so nguyen to:
+668 = 7 + 661
+So nguyen 669 bieu dien duoi dang tong cac so nguyen to:
+669 = 3 + 5 + 661
+So nguyen 670 bieu dien duoi dang tong cac so nguyen to:
+670 = 11 + 659
+So nguyen 671 bieu dien duoi dang tong cac so nguyen to:
+671 = 3 + 7 + 661
+So nguyen 672 bieu dien duoi dang tong cac so nguyen to:
+672 = 11 + 661
+So nguyen 673 bieu dien duoi dang tong cac so nguyen to:
+673 = 673
+So nguyen 674 bieu dien duoi dang tong cac so nguyen to:
+674 = 13 + 661
+So nguyen 675 bieu dien duoi dang tong cac so nguyen to:
+675 = 2 + 673
+So nguyen 676 bieu dien duoi dang tong cac so nguyen to:
+676 = 3 + 673
+So nguyen 677 bieu dien duoi dang tong cac so nguyen to:
+677 = 677
+So nguyen 678 bieu dien duoi dang tong cac so nguyen to:
+678 = 5 + 673
+So nguyen 679 bieu dien duoi dang tong cac so nguyen to:
+679 = 2 + 677
+So nguyen 680 bieu dien duoi dang tong cac so nguyen to:
+680 = 3 + 677
+So nguyen 681 bieu dien duoi dang tong cac so nguyen to:
+681 = 2 + 2 + 677
+So nguyen 682 bieu dien duoi dang tong cac so nguyen to:
+682 = 5 + 677
+So nguyen 683 bieu dien duoi dang tong cac so nguyen to:
+683 = 683
+So nguyen 684 bieu dien duoi dang tong cac so nguyen to:
+684 = 7 + 677
+So nguyen 685 bieu dien duoi dang tong cac so nguyen to:
+685 = 2 + 683
+So nguyen 686 bieu dien duoi dang tong cac so nguyen to:
+686 = 3 + 683
+So nguyen 687 bieu dien duoi dang tong cac so nguyen to:
+687 = 2 + 2 + 683
+So nguyen 688 bieu dien duoi dang tong cac so nguyen to:
+688 = 5 + 683
+So nguyen 689 bieu dien duoi dang tong cac so nguyen to:
+689 = 3 + 3 + 683
+So nguyen 690 bieu dien duoi dang tong cac so nguyen to:
+690 = 7 + 683
+So nguyen 691 bieu dien duoi dang tong cac so nguyen to:
+691 = 691
+So nguyen 692 bieu dien duoi dang tong cac so nguyen to:
+692 = 19 + 673
+So nguyen 693 bieu dien duoi dang tong cac so nguyen to:
+693 = 2 + 691
+So nguyen 694 bieu dien duoi dang tong cac so nguyen to:
+694 = 3 + 691
+So nguyen 695 bieu dien duoi dang tong cac so nguyen to:
+695 = 2 + 2 + 691
+So nguyen 696 bieu dien duoi dang tong cac so nguyen to:
+696 = 5 + 691
+So nguyen 697 bieu dien duoi dang tong cac so nguyen to:
+697 = 3 + 3 + 691
+So nguyen 698 bieu dien duoi dang tong cac so nguyen to:
+698 = 7 + 691
+So nguyen 699 bieu dien duoi dang tong cac so nguyen to:
+699 = 3 + 5 + 691
+So nguyen 700 bieu dien duoi dang tong cac so nguyen to:
+700 = 17 + 683
+So nguyen 701 bieu dien duoi dang tong cac so nguyen to:
+701 = 701
+So nguyen 702 bieu dien duoi dang tong cac so nguyen to:
+702 = 11 + 691
+So nguyen 703 bieu dien duoi dang tong cac so nguyen to:
+703 = 2 + 701
+So nguyen 704 bieu dien duoi dang tong cac so nguyen to:
+704 = 3 + 701
+So nguyen 705 bieu dien duoi dang tong cac so nguyen to:
+705 = 2 + 2 + 701
+So nguyen 706 bieu dien duoi dang tong cac so nguyen to:
+706 = 5 + 701
+So nguyen 707 bieu dien duoi dang tong cac so nguyen to:
+707 = 3 + 3 + 701
+So nguyen 708 bieu dien duoi dang tong cac so nguyen to:
+708 = 7 + 701
+So nguyen 709 bieu dien duoi dang tong cac so nguyen to:
+709 = 709
+So nguyen 710 bieu dien duoi dang tong cac so nguyen to:
+710 = 19 + 691
+So nguyen 711 bieu dien duoi dang tong cac so nguyen to:
+711 = 2 + 709
+So nguyen 712 bieu dien duoi dang tong cac so nguyen to:
+712 = 3 + 709
+So nguyen 713 bieu dien duoi dang tong cac so nguyen to:
+713 = 2 + 2 + 709
+So nguyen 714 bieu dien duoi dang tong cac so nguyen to:
+714 = 5 + 709
+So nguyen 715 bieu dien duoi dang tong cac so nguyen to:
+715 = 3 + 3 + 709
+So nguyen 716 bieu dien duoi dang tong cac so nguyen to:
+716 = 7 + 709
+So nguyen 717 bieu dien duoi dang tong cac so nguyen to:
+717 = 3 + 5 + 709
+So nguyen 718 bieu dien duoi dang tong cac so nguyen to:
+718 = 17 + 701
+So nguyen 719 bieu dien duoi dang tong cac so nguyen to:
+719 = 719
+So nguyen 720 bieu dien duoi dang tong cac so nguyen to:
+720 = 11 + 709
+So nguyen 721 bieu dien duoi dang tong cac so nguyen to:
+721 = 2 + 719
+So nguyen 722 bieu dien duoi dang tong cac so nguyen to:
+722 = 3 + 719
+So nguyen 723 bieu dien duoi dang tong cac so nguyen to:
+723 = 2 + 2 + 719
+So nguyen 724 bieu dien duoi dang tong cac so nguyen to:
+724 = 5 + 719
+So nguyen 725 bieu dien duoi dang tong cac so nguyen to:
+725 = 3 + 3 + 719
+So nguyen 726 bieu dien duoi dang tong cac so nguyen to:
+726 = 7 + 719
+So nguyen 727 bieu dien duoi dang tong cac so nguyen to:
+727 = 727
+So nguyen 728 bieu dien duoi dang tong cac so nguyen to:
+728 = 19 + 709
+So nguyen 729 bieu dien duoi dang tong cac so nguyen to:
+729 = 2 + 727
+So nguyen 730 bieu dien duoi dang tong cac so nguyen to:
+730 = 3 + 727
+So nguyen 731 bieu dien duoi dang tong cac so nguyen to:
+731 = 2 + 2 + 727
+So nguyen 732 bieu dien duoi dang tong cac so nguyen to:
+732 = 5 + 727
+So nguyen 733 bieu dien duoi dang tong cac so nguyen to:
+733 = 733
+So nguyen 734 bieu dien duoi dang tong cac so nguyen to:
+734 = 7 + 727
+So nguyen 735 bieu dien duoi dang tong cac so nguyen to:
+735 = 2 + 733
+So nguyen 736 bieu dien duoi dang tong cac so nguyen to:
+736 = 3 + 733
+So nguyen 737 bieu dien duoi dang tong cac so nguyen to:
+737 = 2 + 2 + 733
+So nguyen 738 bieu dien duoi dang tong cac so nguyen to:
+738 = 5 + 733
+So nguyen 739 bieu dien duoi dang tong cac so nguyen to:
+739 = 739
+So nguyen 740 bieu dien duoi dang tong cac so nguyen to:
+740 = 7 + 733
+So nguyen 741 bieu dien duoi dang tong cac so nguyen to:
+741 = 2 + 739
+So nguyen 742 bieu dien duoi dang tong cac so nguyen to:
+742 = 3 + 739
+So nguyen 743 bieu dien duoi dang tong cac so nguyen to:
+743 = 743
+So nguyen 744 bieu dien duoi dang tong cac so nguyen to:
+744 = 5 + 739
+So nguyen 745 bieu dien duoi dang tong cac so nguyen to:
+745 = 2 + 743
+So nguyen 746 bieu dien duoi dang tong cac so nguyen to:
+746 = 3 + 743
+So nguyen 747 bieu dien duoi dang tong cac so nguyen to:
+747 = 2 + 2 + 743
+So nguyen 748 bieu dien duoi dang tong cac so nguyen to:
+748 = 5 + 743
+So nguyen 749 bieu dien duoi dang tong cac so nguyen to:
+749 = 3 + 3 + 743
+So nguyen 750 bieu dien duoi dang tong cac so nguyen to:
+750 = 7 + 743
+So nguyen 751 bieu dien duoi dang tong cac so nguyen to:
+751 = 751
+So nguyen 752 bieu dien duoi dang tong cac so nguyen to:
+752 = 13 + 739
+So nguyen 753 bieu dien duoi dang tong cac so nguyen to:
+753 = 2 + 751
+So nguyen 754 bieu dien duoi dang tong cac so nguyen to:
+754 = 3 + 751
+So nguyen 755 bieu dien duoi dang tong cac so nguyen to:
+755 = 2 + 2 + 751
+So nguyen 756 bieu dien duoi dang tong cac so nguyen to:
+756 = 5 + 751
+So nguyen 757 bieu dien duoi dang tong cac so nguyen to:
+757 = 757
+So nguyen 758 bieu dien duoi dang tong cac so nguyen to:
+758 = 7 + 751
+So nguyen 759 bieu dien duoi dang tong cac so nguyen to:
+759 = 2 + 757
+So nguyen 760 bieu dien duoi dang tong cac so nguyen to:
+760 = 3 + 757
+So nguyen 761 bieu dien duoi dang tong cac so nguyen to:
+761 = 761
+So nguyen 762 bieu dien duoi dang tong cac so nguyen to:
+762 = 5 + 757
+So nguyen 763 bieu dien duoi dang tong cac so nguyen to:
+763 = 2 + 761
+So nguyen 764 bieu dien duoi dang tong cac so nguyen to:
+764 = 3 + 761
+So nguyen 765 bieu dien duoi dang tong cac so nguyen to:
+765 = 2 + 2 + 761
+So nguyen 766 bieu dien duoi dang tong cac so nguyen to:
+766 = 5 + 761
+So nguyen 767 bieu dien duoi dang tong cac so nguyen to:
+767 = 3 + 3 + 761
+So nguyen 768 bieu dien duoi dang tong cac so nguyen to:
+768 = 7 + 761
+So nguyen 769 bieu dien duoi dang tong cac so nguyen to:
+769 = 769
+So nguyen 770 bieu dien duoi dang tong cac so nguyen to:
+770 = 13 + 757
+So nguyen 771 bieu dien duoi dang tong cac so nguyen to:
+771 = 2 + 769
+So nguyen 772 bieu dien duoi dang tong cac so nguyen to:
+772 = 3 + 769
+So nguyen 773 bieu dien duoi dang tong cac so nguyen to:
+773 = 773
+So nguyen 774 bieu dien duoi dang tong cac so nguyen to:
+774 = 5 + 769
+So nguyen 775 bieu dien duoi dang tong cac so nguyen to:
+775 = 2 + 773
+So nguyen 776 bieu dien duoi dang tong cac so nguyen to:
+776 = 3 + 773
+So nguyen 777 bieu dien duoi dang tong cac so nguyen to:
+777 = 2 + 2 + 773
+So nguyen 778 bieu dien duoi dang tong cac so nguyen to:
+778 = 5 + 773
+So nguyen 779 bieu dien duoi dang tong cac so nguyen to:
+779 = 3 + 3 + 773
+So nguyen 780 bieu dien duoi dang tong cac so nguyen to:
+780 = 7 + 773
+So nguyen 781 bieu dien duoi dang tong cac so nguyen to:
+781 = 3 + 5 + 773
+So nguyen 782 bieu dien duoi dang tong cac so nguyen to:
+782 = 13 + 769
+So nguyen 783 bieu dien duoi dang tong cac so nguyen to:
+783 = 3 + 7 + 773
+So nguyen 784 bieu dien duoi dang tong cac so nguyen to:
+784 = 11 + 773
+So nguyen 785 bieu dien duoi dang tong cac so nguyen to:
+785 = 3 + 13 + 769
+So nguyen 786 bieu dien duoi dang tong cac so nguyen to:
+786 = 13 + 773
+So nguyen 787 bieu dien duoi dang tong cac so nguyen to:
+787 = 787
+So nguyen 788 bieu dien duoi dang tong cac so nguyen to:
+788 = 19 + 769
+So nguyen 789 bieu dien duoi dang tong cac so nguyen to:
+789 = 2 + 787
+So nguyen 790 bieu dien duoi dang tong cac so nguyen to:
+790 = 3 + 787
+So nguyen 791 bieu dien duoi dang tong cac so nguyen to:
+791 = 2 + 2 + 787
+So nguyen 792 bieu dien duoi dang tong cac so nguyen to:
+792 = 5 + 787
+So nguyen 793 bieu dien duoi dang tong cac so nguyen to:
+793 = 3 + 3 + 787
+So nguyen 794 bieu dien duoi dang tong cac so nguyen to:
+794 = 7 + 787
+So nguyen 795 bieu dien duoi dang tong cac so nguyen to:
+795 = 3 + 5 + 787
+So nguyen 796 bieu dien duoi dang tong cac so nguyen to:
+796 = 23 + 773
+So nguyen 797 bieu dien duoi dang tong cac so nguyen to:
+797 = 797
+So nguyen 798 bieu dien duoi dang tong cac so nguyen to:
+798 = 11 + 787
+So nguyen 799 bieu dien duoi dang tong cac so nguyen to:
+799 = 2 + 797
+So nguyen 800 bieu dien duoi dang tong cac so nguyen to:
+800 = 3 + 797
+So nguyen 801 bieu dien duoi dang tong cac so nguyen to:
+801 = 2 + 2 + 797
+So nguyen 802 bieu dien duoi dang tong cac so nguyen to:
+802 = 5 + 797
+So nguyen 803 bieu dien duoi dang tong cac so nguyen to:
+803 = 3 + 3 + 797
+So nguyen 804 bieu dien duoi dang tong cac so nguyen to:
+804 = 7 + 797
+So nguyen 805 bieu dien duoi dang tong cac so nguyen to:
+805 = 3 + 5 + 797
+So nguyen 806 bieu dien duoi dang tong cac so nguyen to:
+806 = 19 + 787
+So nguyen 807 bieu dien duoi dang tong cac so nguyen to:
+807 = 3 + 7 + 797
+So nguyen 808 bieu dien duoi dang tong cac so nguyen to:
+808 = 11 + 797
+So nguyen 809 bieu dien duoi dang tong cac so nguyen to:
+809 = 809
+So nguyen 810 bieu dien duoi dang tong cac so nguyen to:
+810 = 13 + 797
+So nguyen 811 bieu dien duoi dang tong cac so nguyen to:
+811 = 811
+So nguyen 812 bieu dien duoi dang tong cac so nguyen to:
+812 = 3 + 809
+So nguyen 813 bieu dien duoi dang tong cac so nguyen to:
+813 = 2 + 811
+So nguyen 814 bieu dien duoi dang tong cac so nguyen to:
+814 = 3 + 811
+So nguyen 815 bieu dien duoi dang tong cac so nguyen to:
+815 = 2 + 2 + 811
+So nguyen 816 bieu dien duoi dang tong cac so nguyen to:
+816 = 5 + 811
+So nguyen 817 bieu dien duoi dang tong cac so nguyen to:
+817 = 3 + 3 + 811
+So nguyen 818 bieu dien duoi dang tong cac so nguyen to:
+818 = 7 + 811
+So nguyen 819 bieu dien duoi dang tong cac so nguyen to:
+819 = 3 + 5 + 811
+So nguyen 820 bieu dien duoi dang tong cac so nguyen to:
+820 = 11 + 809
+So nguyen 821 bieu dien duoi dang tong cac so nguyen to:
+821 = 821
+So nguyen 822 bieu dien duoi dang tong cac so nguyen to:
+822 = 11 + 811
+So nguyen 823 bieu dien duoi dang tong cac so nguyen to:
+823 = 823
+So nguyen 824 bieu dien duoi dang tong cac so nguyen to:
+824 = 3 + 821
+So nguyen 825 bieu dien duoi dang tong cac so nguyen to:
+825 = 2 + 823
+So nguyen 826 bieu dien duoi dang tong cac so nguyen to:
+826 = 3 + 823
+So nguyen 827 bieu dien duoi dang tong cac so nguyen to:
+827 = 827
+So nguyen 828 bieu dien duoi dang tong cac so nguyen to:
+828 = 5 + 823
+So nguyen 829 bieu dien duoi dang tong cac so nguyen to:
+829 = 829
+So nguyen 830 bieu dien duoi dang tong cac so nguyen to:
+830 = 3 + 827
+So nguyen 831 bieu dien duoi dang tong cac so nguyen to:
+831 = 2 + 829
+So nguyen 832 bieu dien duoi dang tong cac so nguyen to:
+832 = 3 + 829
+So nguyen 833 bieu dien duoi dang tong cac so nguyen to:
+833 = 2 + 2 + 829
+So nguyen 834 bieu dien duoi dang tong cac so nguyen to:
+834 = 5 + 829
+So nguyen 835 bieu dien duoi dang tong cac so nguyen to:
+835 = 3 + 3 + 829
+So nguyen 836 bieu dien duoi dang tong cac so nguyen to:
+836 = 7 + 829
+So nguyen 837 bieu dien duoi dang tong cac so nguyen to:
+837 = 3 + 5 + 829
+So nguyen 838 bieu dien duoi dang tong cac so nguyen to:
+838 = 11 + 827
+So nguyen 839 bieu dien duoi dang tong cac so nguyen to:
+839 = 839
+So nguyen 840 bieu dien duoi dang tong cac so nguyen to:
+840 = 11 + 829
+So nguyen 841 bieu dien duoi dang tong cac so nguyen to:
+841 = 2 + 839
+So nguyen 842 bieu dien duoi dang tong cac so nguyen to:
+842 = 3 + 839
+So nguyen 843 bieu dien duoi dang tong cac so nguyen to:
+843 = 2 + 2 + 839
+So nguyen 844 bieu dien duoi dang tong cac so nguyen to:
+844 = 5 + 839
+So nguyen 845 bieu dien duoi dang tong cac so nguyen to:
+845 = 3 + 3 + 839
+So nguyen 846 bieu dien duoi dang tong cac so nguyen to:
+846 = 7 + 839
+So nguyen 847 bieu dien duoi dang tong cac so nguyen to:
+847 = 3 + 5 + 839
+So nguyen 848 bieu dien duoi dang tong cac so nguyen to:
+848 = 19 + 829
+So nguyen 849 bieu dien duoi dang tong cac so nguyen to:
+849 = 3 + 7 + 839
+So nguyen 850 bieu dien duoi dang tong cac so nguyen to:
+850 = 11 + 839
+So nguyen 851 bieu dien duoi dang tong cac so nguyen to:
+851 = 3 + 19 + 829
+So nguyen 852 bieu dien duoi dang tong cac so nguyen to:
+852 = 13 + 839
+So nguyen 853 bieu dien duoi dang tong cac so nguyen to:
+853 = 853
+So nguyen 854 bieu dien duoi dang tong cac so nguyen to:
+854 = 31 + 823
+So nguyen 855 bieu dien duoi dang tong cac so nguyen to:
+855 = 2 + 853
+So nguyen 856 bieu dien duoi dang tong cac so nguyen to:
+856 = 3 + 853
+So nguyen 857 bieu dien duoi dang tong cac so nguyen to:
+857 = 857
+So nguyen 858 bieu dien duoi dang tong cac so nguyen to:
+858 = 5 + 853
+So nguyen 859 bieu dien duoi dang tong cac so nguyen to:
+859 = 859
+So nguyen 860 bieu dien duoi dang tong cac so nguyen to:
+860 = 3 + 857
+So nguyen 861 bieu dien duoi dang tong cac so nguyen to:
+861 = 2 + 859
+So nguyen 862 bieu dien duoi dang tong cac so nguyen to:
+862 = 3 + 859
+So nguyen 863 bieu dien duoi dang tong cac so nguyen to:
+863 = 863
+So nguyen 864 bieu dien duoi dang tong cac so nguyen to:
+864 = 5 + 859
+So nguyen 865 bieu dien duoi dang tong cac so nguyen to:
+865 = 2 + 863
+So nguyen 866 bieu dien duoi dang tong cac so nguyen to:
+866 = 3 + 863
+So nguyen 867 bieu dien duoi dang tong cac so nguyen to:
+867 = 2 + 2 + 863
+So nguyen 868 bieu dien duoi dang tong cac so nguyen to:
+868 = 5 + 863
+So nguyen 869 bieu dien duoi dang tong cac so nguyen to:
+869 = 3 + 3 + 863
+So nguyen 870 bieu dien duoi dang tong cac so nguyen to:
+870 = 7 + 863
+So nguyen 871 bieu dien duoi dang tong cac so nguyen to:
+871 = 3 + 5 + 863
+So nguyen 872 bieu dien duoi dang tong cac so nguyen to:
+872 = 13 + 859
+So nguyen 873 bieu dien duoi dang tong cac so nguyen to:
+873 = 3 + 7 + 863
+So nguyen 874 bieu dien duoi dang tong cac so nguyen to:
+874 = 11 + 863
+So nguyen 875 bieu dien duoi dang tong cac so nguyen to:
+875 = 3 + 13 + 859
+So nguyen 876 bieu dien duoi dang tong cac so nguyen to:
+876 = 13 + 863
+So nguyen 877 bieu dien duoi dang tong cac so nguyen to:
+877 = 877
+So nguyen 878 bieu dien duoi dang tong cac so nguyen to:
+878 = 19 + 859
+So nguyen 879 bieu dien duoi dang tong cac so nguyen to:
+879 = 2 + 877
+So nguyen 880 bieu dien duoi dang tong cac so nguyen to:
+880 = 3 + 877
+So nguyen 881 bieu dien duoi dang tong cac so nguyen to:
+881 = 881
+So nguyen 882 bieu dien duoi dang tong cac so nguyen to:
+882 = 5 + 877
+So nguyen 883 bieu dien duoi dang tong cac so nguyen to:
+883 = 883
+So nguyen 884 bieu dien duoi dang tong cac so nguyen to:
+884 = 3 + 881
+So nguyen 885 bieu dien duoi dang tong cac so nguyen to:
+885 = 2 + 883
+So nguyen 886 bieu dien duoi dang tong cac so nguyen to:
+886 = 3 + 883
+So nguyen 887 bieu dien duoi dang tong cac so nguyen to:
+887 = 887
+So nguyen 888 bieu dien duoi dang tong cac so nguyen to:
+888 = 5 + 883
+So nguyen 889 bieu dien duoi dang tong cac so nguyen to:
+889 = 2 + 887
+So nguyen 890 bieu dien duoi dang tong cac so nguyen to:
+890 = 3 + 887
+So nguyen 891 bieu dien duoi dang tong cac so nguyen to:
+891 = 2 + 2 + 887
+So nguyen 892 bieu dien duoi dang tong cac so nguyen to:
+892 = 5 + 887
+So nguyen 893 bieu dien duoi dang tong cac so nguyen to:
+893 = 3 + 3 + 887
+So nguyen 894 bieu dien duoi dang tong cac so nguyen to:
+894 = 7 + 887
+So nguyen 895 bieu dien duoi dang tong cac so nguyen to:
+895 = 3 + 5 + 887
+So nguyen 896 bieu dien duoi dang tong cac so nguyen to:
+896 = 13 + 883
+So nguyen 897 bieu dien duoi dang tong cac so nguyen to:
+897 = 3 + 7 + 887
+So nguyen 898 bieu dien duoi dang tong cac so nguyen to:
+898 = 11 + 887
+So nguyen 899 bieu dien duoi dang tong cac so nguyen to:
+899 = 3 + 13 + 883
+So nguyen 900 bieu dien duoi dang tong cac so nguyen to:
+900 = 13 + 887
+So nguyen 901 bieu dien duoi dang tong cac so nguyen to:
+901 = 3 + 11 + 887
+So nguyen 902 bieu dien duoi dang tong cac so nguyen to:
+902 = 19 + 883
+So nguyen 903 bieu dien duoi dang tong cac so nguyen to:
+903 = 3 + 13 + 887
+So nguyen 904 bieu dien duoi dang tong cac so nguyen to:
+904 = 17 + 887
+So nguyen 905 bieu dien duoi dang tong cac so nguyen to:
+905 = 3 + 19 + 883
+So nguyen 906 bieu dien duoi dang tong cac so nguyen to:
+906 = 19 + 887
+So nguyen 907 bieu dien duoi dang tong cac so nguyen to:
+907 = 907
+So nguyen 908 bieu dien duoi dang tong cac so nguyen to:
+908 = 31 + 877
+So nguyen 909 bieu dien duoi dang tong cac so nguyen to:
+909 = 2 + 907
+So nguyen 910 bieu dien duoi dang tong cac so nguyen to:
+910 = 3 + 907
+So nguyen 911 bieu dien duoi dang tong cac so nguyen to:
+911 = 911
+So nguyen 912 bieu dien duoi dang tong cac so nguyen to:
+912 = 5 + 907
+So nguyen 913 bieu dien duoi dang tong cac so nguyen to:
+913 = 2 + 911
+So nguyen 914 bieu dien duoi dang tong cac so nguyen to:
+914 = 3 + 911
+So nguyen 915 bieu dien duoi dang tong cac so nguyen to:
+915 = 2 + 2 + 911
+So nguyen 916 bieu dien duoi dang tong cac so nguyen to:
+916 = 5 + 911
+So nguyen 917 bieu dien duoi dang tong cac so nguyen to:
+917 = 3 + 3 + 911
+So nguyen 918 bieu dien duoi dang tong cac so nguyen to:
+918 = 7 + 911
+So nguyen 919 bieu dien duoi dang tong cac so nguyen to:
+919 = 919
+So nguyen 920 bieu dien duoi dang tong cac so nguyen to:
+920 = 13 + 907
+So nguyen 921 bieu dien duoi dang tong cac so nguyen to:
+921 = 2 + 919
+So nguyen 922 bieu dien duoi dang tong cac so nguyen to:
+922 = 3 + 919
+So nguyen 923 bieu dien duoi dang tong cac so nguyen to:
+923 = 2 + 2 + 919
+So nguyen 924 bieu dien duoi dang tong cac so nguyen to:
+924 = 5 + 919
+So nguyen 925 bieu dien duoi dang tong cac so nguyen to:
+925 = 3 + 3 + 919
+So nguyen 926 bieu dien duoi dang tong cac so nguyen to:
+926 = 7 + 919
+So nguyen 927 bieu dien duoi dang tong cac so nguyen to:
+927 = 3 + 5 + 919
+So nguyen 928 bieu dien duoi dang tong cac so nguyen to:
+928 = 17 + 911
+So nguyen 929 bieu dien duoi dang tong cac so nguyen to:
+929 = 929
+So nguyen 930 bieu dien duoi dang tong cac so nguyen to:
+930 = 11 + 919
+So nguyen 931 bieu dien duoi dang tong cac so nguyen to:
+931 = 2 + 929
+So nguyen 932 bieu dien duoi dang tong cac so nguyen to:
+932 = 3 + 929
+So nguyen 933 bieu dien duoi dang tong cac so nguyen to:
+933 = 2 + 2 + 929
+So nguyen 934 bieu dien duoi dang tong cac so nguyen to:
+934 = 5 + 929
+So nguyen 935 bieu dien duoi dang tong cac so nguyen to:
+935 = 3 + 3 + 929
+So nguyen 936 bieu dien duoi dang tong cac so nguyen to:
+936 = 7 + 929
+So nguyen 937 bieu dien duoi dang tong cac so nguyen to:
+937 = 937
+So nguyen 938 bieu dien duoi dang tong cac so nguyen to:
+938 = 19 + 919
+So nguyen 939 bieu dien duoi dang tong cac so nguyen to:
+939 = 2 + 937
+So nguyen 940 bieu dien duoi dang tong cac so nguyen to:
+940 = 3 + 937
+So nguyen 941 bieu dien duoi dang tong cac so nguyen to:
+941 = 941
+So nguyen 942 bieu dien duoi dang tong cac so nguyen to:
+942 = 5 + 937
+So nguyen 943 bieu dien duoi dang tong cac so nguyen to:
+943 = 2 + 941
+So nguyen 944 bieu dien duoi dang tong cac so nguyen to:
+944 = 3 + 941
+So nguyen 945 bieu dien duoi dang tong cac so nguyen to:
+945 = 2 + 2 + 941
+So nguyen 946 bieu dien duoi dang tong cac so nguyen to:
+946 = 5 + 941
+So nguyen 947 bieu dien duoi dang tong cac so nguyen to:
+947 = 947
+So nguyen 948 bieu dien duoi dang tong cac so nguyen to:
+948 = 7 + 941
+So nguyen 949 bieu dien duoi dang tong cac so nguyen to:
+949 = 2 + 947
+So nguyen 950 bieu dien duoi dang tong cac so nguyen to:
+950 = 3 + 947
+So nguyen 951 bieu dien duoi dang tong cac so nguyen to:
+951 = 2 + 2 + 947
+So nguyen 952 bieu dien duoi dang tong cac so nguyen to:
+952 = 5 + 947
+So nguyen 953 bieu dien duoi dang tong cac so nguyen to:
+953 = 953
+So nguyen 954 bieu dien duoi dang tong cac so nguyen to:
+954 = 7 + 947
+So nguyen 955 bieu dien duoi dang tong cac so nguyen to:
+955 = 2 + 953
+So nguyen 956 bieu dien duoi dang tong cac so nguyen to:
+956 = 3 + 953
+So nguyen 957 bieu dien duoi dang tong cac so nguyen to:
+957 = 2 + 2 + 953
+So nguyen 958 bieu dien duoi dang tong cac so nguyen to:
+958 = 5 + 953
+So nguyen 959 bieu dien duoi dang tong cac so nguyen to:
+959 = 3 + 3 + 953
+So nguyen 960 bieu dien duoi dang tong cac so nguyen to:
+960 = 7 + 953
+So nguyen 961 bieu dien duoi dang tong cac so nguyen to:
+961 = 3 + 5 + 953
+So nguyen 962 bieu dien duoi dang tong cac so nguyen to:
+962 = 43 + 919
+So nguyen 963 bieu dien duoi dang tong cac so nguyen to:
+963 = 3 + 7 + 953
+So nguyen 964 bieu dien duoi dang tong cac so nguyen to:
+964 = 11 + 953
+So nguyen 965 bieu dien duoi dang tong cac so nguyen to:
+965 = 3 + 43 + 919
+So nguyen 966 bieu dien duoi dang tong cac so nguyen to:
+966 = 13 + 953
+So nguyen 967 bieu dien duoi dang tong cac so nguyen to:
+967 = 967
+So nguyen 968 bieu dien duoi dang tong cac so nguyen to:
+968 = 31 + 937
+So nguyen 969 bieu dien duoi dang tong cac so nguyen to:
+969 = 2 + 967
+So nguyen 970 bieu dien duoi dang tong cac so nguyen to:
+970 = 3 + 967
+So nguyen 971 bieu dien duoi dang tong cac so nguyen to:
+971 = 971
+So nguyen 972 bieu dien duoi dang tong cac so nguyen to:
+972 = 5 + 967
+So nguyen 973 bieu dien duoi dang tong cac so nguyen to:
+973 = 2 + 971
+So nguyen 974 bieu dien duoi dang tong cac so nguyen to:
+974 = 3 + 971
+So nguyen 975 bieu dien duoi dang tong cac so nguyen to:
+975 = 2 + 2 + 971
+So nguyen 976 bieu dien duoi dang tong cac so nguyen to:
+976 = 5 + 971
+So nguyen 977 bieu dien duoi dang tong cac so nguyen to:
+977 = 977
+So nguyen 978 bieu dien duoi dang tong cac so nguyen to:
+978 = 7 + 971
+So nguyen 979 bieu dien duoi dang tong cac so nguyen to:
+979 = 2 + 977
+So nguyen 980 bieu dien duoi dang tong cac so nguyen to:
+980 = 3 + 977
+So nguyen 981 bieu dien duoi dang tong cac so nguyen to:
+981 = 2 + 2 + 977
+So nguyen 982 bieu dien duoi dang tong cac so nguyen to:
+982 = 5 + 977
+So nguyen 983 bieu dien duoi dang tong cac so nguyen to:
+983 = 983
+So nguyen 984 bieu dien duoi dang tong cac so nguyen to:
+984 = 7 + 977
+So nguyen 985 bieu dien duoi dang tong cac so nguyen to:
+985 = 2 + 983
+So nguyen 986 bieu dien duoi dang tong cac so nguyen to:
+986 = 3 + 983
+So nguyen 987 bieu dien duoi dang tong cac so nguyen to:
+987 = 2 + 2 + 983
+So nguyen 988 bieu dien duoi dang tong cac so nguyen to:
+988 = 5 + 983
+So nguyen 989 bieu dien duoi dang tong cac so nguyen to:
+989 = 3 + 3 + 983
+So nguyen 990 bieu dien duoi dang tong cac so nguyen to:
+990 = 7 + 983
+So nguyen 991 bieu dien duoi dang tong cac so nguyen to:
+991 = 991
+So nguyen 992 bieu dien duoi dang tong cac so nguyen to:
+992 = 73 + 919
+So nguyen 993 bieu dien duoi dang tong cac so nguyen to:
+993 = 2 + 991
+So nguyen 994 bieu dien duoi dang tong cac so nguyen to:
+994 = 3 + 991
+So nguyen 995 bieu dien duoi dang tong cac so nguyen to:
+995 = 2 + 2 + 991
+So nguyen 996 bieu dien duoi dang tong cac so nguyen to:
+996 = 5 + 991
+So nguyen 997 bieu dien duoi dang tong cac so nguyen to:
+997 = 997
+So nguyen 998 bieu dien duoi dang tong cac so nguyen to:
+998 = 7 + 991
+So nguyen 999 bieu dien duoi dang tong cac so nguyen to:
+999 = 2 + 997
+So nguyen 1000 bieu dien duoi dang tong cac so nguyen to:
+1000 = 3 + 997

@@ -1,0 +1,9 @@
+Nhap so tang lau M = Nhap so phong moi tang N = Nhap thong tin cua cac phong tren tang 1(ngan cach boi khoang trang): Nhap thong tin cua cac phong tren tang 2(ngan cach boi khoang trang): Nhap thong tin cua cac phong tren tang 3(ngan cach boi khoang trang): Nhap thong tin cua cac phong tren tang 4(ngan cach boi khoang trang): Nhap thong tin cua cac phong tren tang 5(ngan cach boi khoang trang): Nhap thong tin cua cac phong tren tang 6(ngan cach boi khoang trang): Nhap thong tin cua cac phong tren tang 7(ngan cach boi khoang trang): 
+Kho bau thu duoc nhieu nhat la 605 dong.
+Tai tang 1, tham phong 2 de lay so tien la 87 dong.
+Tai tang 2, tham phong 3 de lay so tien la 76 dong.
+Tai tang 3, tham phong 4 de lay so tien la 90 dong.
+Tai tang 4, tham phong 5 de lay so tien la 84 dong.
+Tai tang 5, tham phong 4 de lay so tien la 93 dong.
+Tai tang 6, tham phong 3 de lay so tien la 81 dong.
+Tai tang 7, tham phong 4 de lay so tien la 94 dong.

@@ -1,0 +1,5 @@
+Please input the number of element in array: Input a[0] = Input a[1] = Input a[2] = Input a[3] = Input a[4] = Input a[5] = Input a[6] = Input a[7] = Input a[8] = Input a[9] = Input a[10] = Finding the longest increasing subsequence in an array using bottom-up method.
+Length of LIS: 5
+LIS in array: 1 2 4 5 9
+Finding LIS using top-down method.
+Length of LIS: 5
