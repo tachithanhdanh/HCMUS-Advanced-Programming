@@ -1,30 +1,28 @@
-#ifndef SINGLY_LINKED_LIST_HPP_
-#define SINGLY_LINKED_LIST_HPP_
+#ifndef LIST_HPP_
+#define LIST_HPP_
 
-#include "SNode.hpp"
+#include "Node.hpp"
 #include <iostream>
 
 template<typename T>
-using cmpFcn = bool(T, T);
+using cmpFcnPtr = bool(*)(const T&, const T&);
 
 template<typename T>
-using cmpFcn_ptr = cmpFcn<T>*;
-
-template<typename T>
-struct SLL {
+class List {
 private:
     Node_ptr<T> m_head = nullptr;
+    Node_ptr<T> merge(Node_ptr<T> firstNode, Node_ptr<T> secondNode, cmpFcnPtr<T> cmpFcn);
+    Node_ptr<T> merge_sort(Node_ptr<T> head, cmpFcnPtr<T> cmpFcn);
 
 public:
-
     // constructors and destructors
-    SLL(Node_ptr<T> head = nullptr);
-    ~SLL();
+    List(Node_ptr<T> head = nullptr);
+    ~List();
 
     // deleted methods
-    SLL(const SLL& list) = delete;
-    SLL& operator=(const SLL& list) = delete;
-    void deepCopy(const SLL& source) = delete;
+    List(const List& list) = delete;
+    List& operator=(const List& list) = delete;
+    void deepCopy(const List& source) = delete;
 
     // basic methods
     bool isEmpty() const;
@@ -34,12 +32,14 @@ public:
     Node_ptr<T> getKthElement(int k) const;
 
     // operation 1
-    void inputSLL() = delete;
+    void input(std::istream& in, std::ostream& out, const T& nullVal);
     void insertAtBeginning(const T& data);
 
     // operation 2
-    void displaySLL() const;
-    friend std::ostream& operator<<(std::ostream& out, const SLL<T>& list);
+    void display(std::ostream& out) const;
+
+    template<typename U>
+    friend std::ostream& operator<<(std::ostream& out, const List<U>& list);
 
     // operation 3
     void deleteAllNode();
@@ -71,6 +71,10 @@ public:
 
     // operation 12
     void deleteKthNode(int k);
+
+    // functions for sorting purposes
+    Node_ptr<T> findMiddle(Node_ptr<T> curHead) const;
+    void sort(cmpFcnPtr<T> cmpFcn);
 };
 
 
@@ -78,37 +82,37 @@ using std::cout;
 
 // done
 template<typename T>
-SLL<T>::SLL(Node_ptr<T> head): m_head(head) {}
+List<T>::List(Node_ptr<T> head): m_head(head) {}
 
 // done
 template<typename T>
-SLL<T>::~SLL() {
-    std::cout << "Singly Linked List destructor called.\n";
+List<T>::~List() {
+    // std::cout << "Singly Linked List destructor called.\n";
     this->deleteAllNode();
 }
 
 // done
 template<typename T>
-bool SLL<T>::isEmpty() const {
+bool List<T>::isEmpty() const {
     return this->getHead() == nullptr;
 }
 
 // done
 template<typename T>
-void SLL<T>::setHead(Node_ptr<T> pNode) {
+void List<T>::setHead(Node_ptr<T> pNode) {
     this->m_head = pNode;
     return;
 }
 
 // done
 template<typename T>
-Node_ptr<T> SLL<T>::getHead() const {
+Node_ptr<T> List<T>::getHead() const {
     return this->m_head;
 }
 
 // done
 template<typename T>
-Node_ptr<T> SLL<T>::getTail() const {
+Node_ptr<T> List<T>::getTail() const {
     if (isEmpty()) return nullptr;
     Node_ptr<T> pNode = this->getHead();
     for (; pNode->nextNode(); pNode = pNode->nextNode());
@@ -117,7 +121,7 @@ Node_ptr<T> SLL<T>::getTail() const {
 
 // done
 template<typename T>
-Node_ptr<T> SLL<T>::getKthElement(int k) const {
+Node_ptr<T> List<T>::getKthElement(int k) const {
     Node_ptr<T> pNode = this->getHead();
     for (int i = 0; pNode && i != k; pNode = pNode->nextNode(), ++i);
     return pNode;
@@ -125,7 +129,7 @@ Node_ptr<T> SLL<T>::getKthElement(int k) const {
 
 // operation 1: done
 template<typename T>
-void SLL<T>::insertAtBeginning(const T& data) {
+void List<T>::insertAtBeginning(const T& data) {
     cout << "Thao tac 0: them phan tu vao dau danh sach.\n";
     Node_ptr<T> new_pHead = new Node<T>(data, this->getHead());
     this->setHead(new_pHead);
@@ -134,21 +138,21 @@ void SLL<T>::insertAtBeginning(const T& data) {
 
 // operation 3: done
 template<typename T>
-void SLL<T>::deleteAllNode() {
+void List<T>::deleteAllNode() {
     if (countNode() == 0) return;
-    std::cout << "Thao tac 3: Thao tac huy toan bo danh sach lien ket don.\n";
-    std::cout << "SLL<T>::deleteAllNode function called.\n";
-    cout << "Ban dau danh sach lien ket co " << countNode() << " phan tu.\n";
+    // std::cout << "Thao tac 3: Thao tac huy toan bo danh sach lien ket don.\n";
+    // std::cout << "List<T>::deleteAllNode function called.\n";
+    // cout << "Ban dau danh sach lien ket co " << countNode() << " phan tu.\n";
     while (this->getHead()) {
         this->deleteAtBeginning();
-        cout << "Danh sach lien ket con " << countNode() << " phan tu.\n";
+        // cout << "Danh sach lien ket con " << countNode() << " phan tu.\n";
     }
     return;
 }
 
 // operation 4: done
 template<typename T>
-void SLL<T>::insertAtEnding(const T& data) {
+void List<T>::insertAtEnding(const T& data) {
     cout << "Thao tac 4: them phan tu vao cuoi danh sach.\n";
     Node_ptr<T> pTail = this->getTail();
     if (pTail == nullptr) {
@@ -165,7 +169,7 @@ void SLL<T>::insertAtEnding(const T& data) {
 
 // operation 5: done
 template<typename T>
-void SLL<T>::insertAfter(Node_ptr<T> pNode, const T& data, bool flag) {
+void List<T>::insertAfter(Node_ptr<T> pNode, const T& data, bool flag) {
     if (flag) {
         cout << "Thao tac 5: them phan tu vao sau mot phan tu nao do trong danh sach.\n";
     }
@@ -180,7 +184,7 @@ void SLL<T>::insertAfter(Node_ptr<T> pNode, const T& data, bool flag) {
 
 // operation 6: done
 template<typename T>
-void SLL<T>::insertBefore(Node_ptr<T> pNode, const T& data) {
+void List<T>::insertBefore(Node_ptr<T> pNode, const T& data) {
     cout << "Thao tac 6: Them phan tu vao truoc phan tu nao do trong danh sach.\n";
     if (pNode) {
         Node_ptr<T> cur = getHead();
@@ -199,10 +203,10 @@ void SLL<T>::insertBefore(Node_ptr<T> pNode, const T& data) {
 
 // operation 7: done
 template<typename T>
-void SLL<T>::deleteAtBeginning() {
-    cout << "Thao tac 7: Xoa phan tu dau danh sach lien ket.\n";
+void List<T>::deleteAtBeginning() {
+    // cout << "Thao tac 7: Xoa phan tu dau danh sach lien ket.\n";
     Node_ptr<T> old_pHead = this->getHead();
-    cout << "Phan tu bi xoa co dia chi " << old_pHead << "\n";
+    // cout << "Phan tu bi xoa co dia chi " << old_pHead << "\n";
     if (this->getHead()) this->setHead(this->getHead()->nextNode());
     delete old_pHead;
     return;
@@ -210,7 +214,7 @@ void SLL<T>::deleteAtBeginning() {
 
 // operation 8: done
 template<typename T>
-void SLL<T>::deleteAtEnding() {
+void List<T>::deleteAtEnding() {
     cout << "Thao tac 8: Xoa phan tu cuoi danh sach lien ket.\n";
     Node_ptr<T> pNode = this->getHead();
 
@@ -236,7 +240,7 @@ void SLL<T>::deleteAtEnding() {
 
 // operation 9: done
 template<typename T>
-void SLL<T>::deleteNodeWithData(const T& data) {
+void List<T>::deleteNodeWithData(const T& data) {
     Node_ptr<T> prev = nullptr;
     Node_ptr<T> cur = this->getHead();
     for (; cur; prev = cur, cur = cur->nextNode()) {
@@ -256,7 +260,7 @@ void SLL<T>::deleteNodeWithData(const T& data) {
 }
 
 template<typename T>
-void SLL<T>::deleteANode(Node_ptr<T> pNode) {
+void List<T>::deleteANode(Node_ptr<T> pNode) {
     cout << "Thao tac 9: Xoa phan tu giua trong danh sach lien ket.\n";
     Node_ptr<T> prev = nullptr;
     Node_ptr<T> cur = this->getHead();
@@ -277,7 +281,7 @@ void SLL<T>::deleteANode(Node_ptr<T> pNode) {
 
 // operation 10: done
 template<typename T>
-int SLL<T>::countNode() const {
+int List<T>::countNode() const {
     int count = 0;
     for (Node_ptr<T> pNode = this->getHead(); pNode; pNode = pNode->nextNode()) {
         ++count;
@@ -287,7 +291,7 @@ int SLL<T>::countNode() const {
 
 // operation 11: done
 template<typename T>
-void SLL<T>::insertBeforeKthElement(const T& data, int k) {
+void List<T>::insertBeforeKthElement(const T& data, int k) {
     // chia 2 TH
     // TH1: so am hoac vuot qua size cua linked list 
     //      -> khong chen, bao loi
@@ -323,7 +327,7 @@ void SLL<T>::insertBeforeKthElement(const T& data, int k) {
 
 // operation 12: done
 template<typename T>
-void SLL<T>::deleteKthNode(int k) {
+void List<T>::deleteKthNode(int k) {
     // handle 5 cases:
     // k < 0: noop
     // k == 0: deleteAtBeginning
@@ -357,13 +361,13 @@ void SLL<T>::deleteKthNode(int k) {
 }
 
 template<typename T>
-void SLL<T>::displaySLL() const {
-    std::cout << *this;
+void List<T>::display(std::ostream& out) const {
+    out << *this;
     return;
 }
 
-template <typename T>
-std::ostream& operator<<(std::ostream& out, const SLL<T>& list) {
+template<typename T>
+std::ostream& operator<<(std::ostream& out, const List<T>& list) {
     if (list.getHead() == nullptr) {
         out << "Empty List!\n";
         return out;
@@ -372,7 +376,96 @@ std::ostream& operator<<(std::ostream& out, const SLL<T>& list) {
     for (Node_ptr<T> pNode = list.getHead(); pNode; pNode = pNode->nextNode()) {
         out << *pNode;
     }
+    out.put('\n');
     return out;
 }
+
+template<typename T>
+void List<T>::input(std::istream& in, std::ostream& out, const T& nullVal) {
+    // T nullVal{};
+    T val;
+    Node_ptr<T> cur;
+    out << "Input a Singly Linked list.\n";
+    do {
+        out << "Please input current element: ";
+        in >> val;
+        if (val != nullVal) {
+            if (this->isEmpty()) {
+                this->setHead(new Node(val));
+                cur = this->getHead();
+            } else {
+                cur->setNextNode(new Node(val));
+                cur = cur->nextNode();
+            }
+        }
+    } while (val != nullVal);
+    return;
+}
+
+template<typename T>
+void List<T>::sort(cmpFcnPtr<T> cmpFcn) {
+    this->setHead(this->merge_sort(this->getHead(), cmpFcn));
+}
+
+template<typename T>
+Node_ptr<T> List<T>::merge_sort(Node_ptr<T> head, cmpFcnPtr<T> cmpFcn) {
+    if (head == nullptr || head->nextNode() == nullptr) {
+        return head;
+    }
+    Node_ptr<T> mid = this->findMiddle(head);
+    Node_ptr<T> head2 = mid->nextNode();
+    mid->setNextNode(nullptr);
+
+    Node_ptr<T> finalHead = merge(merge_sort(head, cmpFcn), merge_sort(head2, cmpFcn), cmpFcn);
+    return finalHead;
+}
+
+template<typename T>
+Node_ptr<T> List<T>::merge(Node_ptr<T> firstNode, Node_ptr<T> secondNode, cmpFcnPtr<T> cmpFcn) {
+    Node_ptr<T> res;
+    Node_ptr<T> temp = new Node<T>();
+    res = temp;
+
+    while (firstNode && secondNode) {
+        if (cmpFcn(firstNode->getData(), secondNode->getData())) {
+            temp->setNextNode(firstNode);
+            firstNode = firstNode->nextNode();
+        } else {
+            temp->setNextNode(secondNode);
+            secondNode = secondNode->nextNode();
+        }
+        temp = temp->nextNode();
+    }
+    
+    while (firstNode) {
+        temp->setNextNode(firstNode);
+        firstNode = firstNode->nextNode();
+        temp = temp->nextNode();
+    }
+    
+    while (secondNode) {
+        temp->setNextNode(secondNode);
+        secondNode = secondNode->nextNode();
+        temp = temp->nextNode();
+    }
+
+    temp = res;
+    res = res->nextNode();
+    delete temp;
+
+    return res;
+}
+
+template<typename T>
+Node_ptr<T> List<T>::findMiddle(Node_ptr<T> curHead) const {
+    Node_ptr<T> slowNode = curHead;
+    Node_ptr<T> fastNode = curHead->nextNode();
+    while (fastNode && fastNode->nextNode()) {
+        slowNode = slowNode->nextNode();
+        fastNode = fastNode->nextNode()->nextNode();
+    }
+    return slowNode;
+}
+
 
 #endif

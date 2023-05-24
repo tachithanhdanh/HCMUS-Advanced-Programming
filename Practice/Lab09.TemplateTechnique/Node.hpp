@@ -1,21 +1,22 @@
-#ifndef SNODE_HPP_
-#define SNODE_HPP_
+#ifndef NODE_HPP_
+#define NODE_HPP_
 
 #include <iostream>
 
 template<typename T>
-struct Node;
+class Node;
 
 template<typename T>
 using Node_ptr = Node<T>*;
 
 template<typename T>
-struct Node {
+class Node {
 private:
     T m_data;
     Node_ptr<T> m_next;
 
 public:
+    Node();
     Node(T data, Node_ptr<T> next = nullptr);
     ~Node();
     Node(const Node& node) = delete;
@@ -23,18 +24,23 @@ public:
     Node_ptr<T> nextNode() const;
     const T& getData() const;
     void setNextNode(Node_ptr<T> next);
-    friend std::ostream& operator<<(std::ostream& out, const Node<T>& node);
+
+    template<typename U>
+    friend std::ostream& operator<<(std::ostream& out, const Node<U>& node);
     // friend std::istream& operator>>(std::istream& in, Node& node);
 };
 
+
+template<typename T>
+Node<T>::Node(): m_data{}, m_next{nullptr} {}
 
 template<typename T>
 Node<T>::Node(T data, Node_ptr<T> next): m_data(data), m_next(next) {}
 
 template<typename T>
 Node<T>::~Node() {
-    std::cout << "Node destructor called for node has data address = " << this->getData();
-    std::cout << " at address " << this << '\n';
+    // std::cout << "Node destructor called for node has data address = " << this->getData();
+    // std::cout << " at address " << this << '\n';
     // delete m_data;
 }
 
@@ -56,10 +62,9 @@ void Node<T>::setNextNode(Node_ptr<T> next) {
 
 template<typename T>
 std::ostream& operator<<(std::ostream& out, const Node<T>& node) {
-    out << "Current node:";
-    out << " address of data = " << node.getData();
+    out << "Current node: data = " << node.getData();
     out << ", address = " << &node;
-    out << ", pNext = " << node.nextNode();
+    out << ", pNext = " << node.nextNode() << '\n';
     return out;
 }
 

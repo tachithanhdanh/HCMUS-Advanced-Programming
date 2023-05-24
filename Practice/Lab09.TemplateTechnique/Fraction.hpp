@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-struct Fraction {
+class Fraction {
 private:
     int m_numerator;
     int m_denominator;

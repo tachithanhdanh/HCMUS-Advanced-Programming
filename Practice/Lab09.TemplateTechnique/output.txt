@@ -1,0 +1,188 @@
+Da em chao thay,em la Ta Chi Thanh Danh, MSSV 22120049.
+Hom nay em xin demo ham sap xep mang cho hai kieu du lieu Fraction va std::string.
+Voi moi kieu du lieu, em se demo mang duoc sap xep tang dan va sau do la sap xep giam dan.
+Em xin phep demo ham sap xep mang chua kieu du lieu Fraction.
+De nhap phan so, thay vui long nhap theo dinh dang a/b (vi du: 1/2 3/5 7/9).
+Input current array:
+Please input the size of array: Please input the elements of current array:
+Input a[0] = Input a[1] = Input a[2] = Input a[3] = Input a[4] = Input a[5] = Input a[6] = Input a[7] = Input a[8] = Input a[9] = Mang Fraction truoc khi duoc sap xep:
+Current array:
+size = 10
+List of element in array:
+arr[0] = 1/37
+arr[1] = 17/37
+arr[2] = 19/37
+arr[3] = 2/37
+arr[4] = 4/37
+arr[5] = 12/37
+arr[6] = 101/200
+arr[7] = 201/200
+arr[8] = 99/10
+arr[9] = 7/8
+
+Mang Fraction sau khi duoc sap xep theo thu tu tang dan:
+Current array:
+size = 10
+List of element in array:
+arr[0] = 1/37
+arr[1] = 2/37
+arr[2] = 4/37
+arr[3] = 12/37
+arr[4] = 17/37
+arr[5] = 101/200
+arr[6] = 19/37
+arr[7] = 7/8
+arr[8] = 201/200
+arr[9] = 99/10
+
+Mang Fraction sau khi duoc sap xep theo thu tu giam dan:
+Current array:
+size = 10
+List of element in array:
+arr[0] = 99/10
+arr[1] = 201/200
+arr[2] = 7/8
+arr[3] = 19/37
+arr[4] = 101/200
+arr[5] = 17/37
+arr[6] = 12/37
+arr[7] = 4/37
+arr[8] = 2/37
+arr[9] = 1/37
+
+
+Em xin phep demo ham sap xep mang chua kieu du lieu std::string.
+Mang std::string chi nhan cac ky tu lien nhau.
+Input current array:
+Please input the size of array: Please input the elements of current array:
+Input a[0] = Input a[1] = Input a[2] = Input a[3] = Input a[4] = Input a[5] = Input a[6] = Input a[7] = Input a[8] = Input a[9] = Mang std::string truoc khi duoc sap xep:
+Current array:
+size = 10
+List of element in array:
+arr[0] = aaa
+arr[1] = bbb
+arr[2] = zzz
+arr[3] = ooo
+arr[4] = ddd
+arr[5] = eee
+arr[6] = ppp
+arr[7] = TemplateTechnique
+arr[8] = hhh
+arr[9] = lmao
+
+Mang std::string sau khi duoc sap xep theo thu tu tang dan:
+Current array:
+size = 10
+List of element in array:
+arr[0] = TemplateTechnique
+arr[1] = aaa
+arr[2] = bbb
+arr[3] = ddd
+arr[4] = eee
+arr[5] = hhh
+arr[6] = lmao
+arr[7] = ooo
+arr[8] = ppp
+arr[9] = zzz
+
+Mang std::string sau khi duoc sap xep theo thu tu giam dan:
+Current array:
+size = 10
+List of element in array:
+arr[0] = zzz
+arr[1] = ppp
+arr[2] = ooo
+arr[3] = lmao
+arr[4] = hhh
+arr[5] = eee
+arr[6] = ddd
+arr[7] = bbb
+arr[8] = aaa
+arr[9] = TemplateTechnique
+
+
+Em xin demo ham sap xep danh sach lien ket don cho hai kieu du lieu Fraction va std::string.
+Voi moi kieu du lieu, em se demo danh sach lien ket duoc sap xep tang dan va sau do la sap xep giam dan.
+Em xin phep demo ham sap xep danh sach lien ket don chua kieu du lieu Fraction.
+De nhap phan so, thay vui long nhap theo dinh dang a/b (vi du: 1/2 3/5 7/9).
+De dung viec nhap phan so, thay vui long nhap 0/0.
+Input a Singly Linked list.
+Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Danh sach Fraction truoc khi duoc sap xep:
+Singly Linked List (print order from head to tail):
+Current node: data = 1/37, address = 0x2970cd136b0, pNext = 0x2970cd137f0
+Current node: data = 17/37, address = 0x2970cd137f0, pNext = 0x2970cd13590
+Current node: data = 19/37, address = 0x2970cd13590, pNext = 0x2970cd13810
+Current node: data = 2/37, address = 0x2970cd13810, pNext = 0x2970cd13570
+Current node: data = 4/37, address = 0x2970cd13570, pNext = 0x2970cd136d0
+Current node: data = 12/37, address = 0x2970cd136d0, pNext = 0x2970cd13710
+Current node: data = 101/200, address = 0x2970cd13710, pNext = 0x2970cd135f0
+Current node: data = 201/200, address = 0x2970cd135f0, pNext = 0x2970cd135b0
+Current node: data = 99/10, address = 0x2970cd135b0, pNext = 0x2970cd135d0
+Current node: data = 7/8, address = 0x2970cd135d0, pNext = 0
+
+Danh sach Fraction sau khi duoc sap xep theo thu tu tang dan:
+Singly Linked List (print order from head to tail):
+Current node: data = 1/37, address = 0x2970cd136b0, pNext = 0x2970cd13810
+Current node: data = 2/37, address = 0x2970cd13810, pNext = 0x2970cd13570
+Current node: data = 4/37, address = 0x2970cd13570, pNext = 0x2970cd136d0
+Current node: data = 12/37, address = 0x2970cd136d0, pNext = 0x2970cd137f0
+Current node: data = 17/37, address = 0x2970cd137f0, pNext = 0x2970cd13710
+Current node: data = 101/200, address = 0x2970cd13710, pNext = 0x2970cd13590
+Current node: data = 19/37, address = 0x2970cd13590, pNext = 0x2970cd135d0
+Current node: data = 7/8, address = 0x2970cd135d0, pNext = 0x2970cd135f0
+Current node: data = 201/200, address = 0x2970cd135f0, pNext = 0x2970cd135b0
+Current node: data = 99/10, address = 0x2970cd135b0, pNext = 0
+
+Danh sach Fraction sau khi duoc sap xep theo thu tu giam dan:
+Singly Linked List (print order from head to tail):
+Current node: data = 99/10, address = 0x2970cd135b0, pNext = 0x2970cd135f0
+Current node: data = 201/200, address = 0x2970cd135f0, pNext = 0x2970cd135d0
+Current node: data = 7/8, address = 0x2970cd135d0, pNext = 0x2970cd13590
+Current node: data = 19/37, address = 0x2970cd13590, pNext = 0x2970cd13710
+Current node: data = 101/200, address = 0x2970cd13710, pNext = 0x2970cd137f0
+Current node: data = 17/37, address = 0x2970cd137f0, pNext = 0x2970cd136d0
+Current node: data = 12/37, address = 0x2970cd136d0, pNext = 0x2970cd13570
+Current node: data = 4/37, address = 0x2970cd13570, pNext = 0x2970cd13810
+Current node: data = 2/37, address = 0x2970cd13810, pNext = 0x2970cd136b0
+Current node: data = 1/37, address = 0x2970cd136b0, pNext = 0
+
+Em xin phep demo ham sap xep danh sach lien ket don chua kieu du lieu std::string.
+De nhap chuoi, thay vui long nhap chuoi khong co dau cach, ket thuc boi dau xuong dong.
+De dung viec nhap chuoi, thay vui long nhap STOP.
+Input a Singly Linked list.
+Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Please input current element: Danh sach std::string truoc khi duoc sap xep:
+Singly Linked List (print order from head to tail):
+Current node: data = aaa, address = 0x2970ce06710, pNext = 0x2970ce06950
+Current node: data = bbb, address = 0x2970ce06950, pNext = 0x2970ce06830
+Current node: data = zzz, address = 0x2970ce06830, pNext = 0x2970ce066b0
+Current node: data = ooo, address = 0x2970ce066b0, pNext = 0x2970ce066e0
+Current node: data = ddd, address = 0x2970ce066e0, pNext = 0x2970ce06980
+Current node: data = eee, address = 0x2970ce06980, pNext = 0x2970ce06890
+Current node: data = ppp, address = 0x2970ce06890, pNext = 0x2970ce06740
+Current node: data = TemplateTechnique, address = 0x2970ce06740, pNext = 0x2970ce06770
+Current node: data = hhh, address = 0x2970ce06770, pNext = 0
+
+Danh sach std::string sau khi duoc sap xep theo thu tu tang dan:
+Singly Linked List (print order from head to tail):
+Current node: data = TemplateTechnique, address = 0x2970ce06740, pNext = 0x2970ce06710
+Current node: data = aaa, address = 0x2970ce06710, pNext = 0x2970ce06950
+Current node: data = bbb, address = 0x2970ce06950, pNext = 0x2970ce066e0
+Current node: data = ddd, address = 0x2970ce066e0, pNext = 0x2970ce06980
+Current node: data = eee, address = 0x2970ce06980, pNext = 0x2970ce06770
+Current node: data = hhh, address = 0x2970ce06770, pNext = 0x2970ce066b0
+Current node: data = ooo, address = 0x2970ce066b0, pNext = 0x2970ce06890
+Current node: data = ppp, address = 0x2970ce06890, pNext = 0x2970ce06830
+Current node: data = zzz, address = 0x2970ce06830, pNext = 0
+
+Danh sach std::string sau khi duoc sap xep theo thu tu giam dan:
+Singly Linked List (print order from head to tail):
+Current node: data = zzz, address = 0x2970ce06830, pNext = 0x2970ce06890
+Current node: data = ppp, address = 0x2970ce06890, pNext = 0x2970ce066b0
+Current node: data = ooo, address = 0x2970ce066b0, pNext = 0x2970ce06770
+Current node: data = hhh, address = 0x2970ce06770, pNext = 0x2970ce06980
+Current node: data = eee, address = 0x2970ce06980, pNext = 0x2970ce066e0
+Current node: data = ddd, address = 0x2970ce066e0, pNext = 0x2970ce06950
+Current node: data = bbb, address = 0x2970ce06950, pNext = 0x2970ce06710
+Current node: data = aaa, address = 0x2970ce06710, pNext = 0x2970ce06740
+Current node: data = TemplateTechnique, address = 0x2970ce06740, pNext = 0
+

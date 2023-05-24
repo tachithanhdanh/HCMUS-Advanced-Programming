@@ -18,7 +18,14 @@ public:
     void deepCopy(const Array& srcArr);
     void read(std::istream& in, std::ostream& out);
     void print(std::ostream& out) const;
-    friend std::ostream& operator<<(std::ostream& out, Array<T>& arr); 
+
+    T& operator[](int index);
+    const T& operator[](int index) const;
+
+    // hack nao
+    // https://stackoverflow.com/questions/4660123/overloading-friend-operator-for-template-class
+    template<typename U>
+    friend std::ostream& operator<<(std::ostream& out, const Array<U>& arr); 
     friend std::istream& operator>>(std::istream& in, Array& arr) = delete;
     void sort(cmpFcnPtr<T> cmpFcn);
 };
@@ -54,9 +61,9 @@ Array<T>::~Array() {
 
 template<typename T>
 void Array<T>::deepCopy(const Array<T>& source) {
-    delete[] arr;
+    delete[] m_arr;
 
-    this->m_size = arr.m_size;
+    this->m_size = source.m_size;
     
     if (source.m_arr) {
         this->m_arr = new T[this->m_size];
@@ -93,19 +100,30 @@ void Array<T>::print(std::ostream& out) const {
 }
 
 template<typename T>
-std::ostream& operator<<(std::ostream& out, Array<T>& arr) {
-    out << "Array:\n";
+std::ostream& operator<<(std::ostream& out, const Array<T>& arr) {
+    out << "Current array:\n";
     out << "size = " << arr.m_size << '\n';
     out << "List of element in array:\n";
     for (int i = 0; i < arr.m_size; ++i) {
-        out << "arr[" << i << "] = " << arr[i] << " \n"[i == arr.m_size - 1];
+        out << "arr[" << i << "] = " << arr[i] << '\n';
     }
+    out.put('\n');
     return out;
 }
 
 template<typename T>
 void Array<T>::sort(cmpFcnPtr<T> cmpFcn) {
-    sort(m_arr, m_size, cmpFcn);
+    ::sort(m_arr, m_size, cmpFcn);
+}
+
+template<typename T>
+T& Array<T>::operator[](int index) {
+    return m_arr[index];
+}
+
+template<typename T>
+const T& Array<T>::operator[](int index) const {
+    return m_arr[index];
 }
 
 // template<typename T>
