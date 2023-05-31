@@ -1,0 +1,1 @@
+Bài tập: Mở file input.txt để đọc dưới dạng nhị phân, sau đó nhảy đến byte thứ 12 rồi đọc 10 bytes lưu vô mảng char* buffer, sau đó đẩy dữ liệu vô file output.txt. Đóng hai file này, mở lại file input.txt vừa đọc vừa ghi,  thay thế chữ thường thành chữ in và ngược lại.

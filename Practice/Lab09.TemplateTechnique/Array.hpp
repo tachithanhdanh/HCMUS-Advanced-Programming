@@ -5,7 +5,7 @@
 #include <iostream>
 
 template<typename T>
-struct Array {
+class Array {
 private:
     int m_size = 0;
     T* m_arr = nullptr;

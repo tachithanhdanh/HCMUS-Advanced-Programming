@@ -1,9 +1,9 @@
 #include "ListSort.hpp"
+#include <iostream>
 
 void sort(List& list) {
     list.head = merge_sort(list.head);
 }
-#include <iostream>
 
 Node_ptr merge_sort(Node_ptr head) {
     // static int cnt = 0;
